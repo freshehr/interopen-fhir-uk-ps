@@ -227,7 +227,7 @@
       <PractitionerRole>
         <id value="afead11c-3bee-4020-af4f-44040abfa961"/>
         <meta>
-          <profile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-practitionerrole"/>
+          <profile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-practitionerrole"/>
         </meta>
         <identifier>
           <type>
@@ -277,7 +277,7 @@
       <Practitioner>
         <id value="f8135a88-5992-4a78-8d9f-6bc3f533292d"/>
         <meta>
-          <profile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-practitioner"/>
+          <profile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-practitioner"/>
         </meta>
         <identifier>
           <type>

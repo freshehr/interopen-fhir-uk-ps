@@ -706,7 +706,7 @@ Overall, Joyce maintains a healthy and supportive lifestyle, with good access to
       <PractitionerRole>
         <id value="afead11c-3bee-4020-af4f-44040abfa961"/>
         <meta>
-          <profile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-practitionerrole"/>
+          <profile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-practitionerrole"/>
         </meta>
         <identifier>
           <type>
@@ -761,7 +761,7 @@ Overall, Joyce maintains a healthy and supportive lifestyle, with good access to
       <Practitioner>
         <id value="0c0e2c4f-a748-4cc7-afde-f09bdc2d6fa9"/>
         <meta>
-          <profile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-practitioner"/>
+          <profile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-practitioner"/>
         </meta>
         <identifier>
           <type>

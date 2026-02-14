@@ -540,7 +540,7 @@
       <min value="1"/>
       <type>
         <code value="Practitioner"/>
-        <profile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-practitioner"/>
+        <profile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-practitioner"/>
       </type>
     </element>
     <element id="Bundle.entry:practitionerrole">
@@ -554,7 +554,7 @@
       <min value="1"/>
       <type>
         <code value="PractitionerRole"/>
-        <profile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-practitionerrole"/>
+        <profile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-practitionerrole"/>
       </type>
     </element>
     <element id="Bundle.entry:procedure">
