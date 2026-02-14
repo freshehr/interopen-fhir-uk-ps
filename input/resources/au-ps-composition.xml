@@ -443,7 +443,7 @@
       <path value="Composition.custodian"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-organization"/>
+        <targetProfile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-organization"/>
       </type>
       <mustSupport value="true"/>
     </element>

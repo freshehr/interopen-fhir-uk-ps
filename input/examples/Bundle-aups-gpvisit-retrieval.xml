@@ -1876,7 +1876,7 @@
         <meta>
           <versionId value="5"/>
           <lastUpdated value="2024-02-27T11:39:15.709+11:00"/>
-          <profile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-organization"/>
+          <profile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-organization"/>
         </meta>
         <identifier>
           <type>
@@ -1939,7 +1939,7 @@
         <meta>
           <versionId value="2"/>
           <lastUpdated value="2024-02-27T11:39:15.709+11:00"/>
-          <profile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-organization"/>
+          <profile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-organization"/>
         </meta>
         <identifier>
           <type>

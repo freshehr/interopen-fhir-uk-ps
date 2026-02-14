@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="au-ps-patient"/>
+  <id value="uk-ps-patient"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile">
     <valueCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
   </extension>
-  <url value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-patient"/>
-  <name value="AUPSPatient"/>
-  <title value="AU PS Patient"/>
+  <url value="http://hl7.org.au/fhir/ps/StructureDefinition/uk-ps-patient"/>
+  <name value="UKPSPatient"/>
+  <title value="UK PS Patient"/>
   <status value="active"/>
   <description value="This profile sets minimum expectations for a Patient resource in the context of a patient summary in a UK context. It is based on the [UKCore Patient](https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient) profile, and applies the additional requirements from [Patient (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips)."/>
   <kind value="resource"/>
@@ -533,9 +533,9 @@
       <path value="Patient.generalPractitioner"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-organization"/>
-        <targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-practitioner" />
-        <targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-practitionerrole"/>
+        <targetProfile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-organization"/>
+        <targetProfile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-practitioner" />
+        <targetProfile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-practitionerrole"/>
       </type>
       <mustSupport value="true"/>
     </element>

@@ -803,7 +803,7 @@ Overall, Joyce maintains a healthy and supportive lifestyle, with good access to
       <Organization>
         <id value="14292353-98f0-43b3-a25b-406baf3f9175"/>
         <meta>
-          <profile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-organization"/>
+          <profile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-organization"/>
         </meta>
         <identifier>
           <type>
