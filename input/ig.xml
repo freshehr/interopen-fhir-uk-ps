@@ -88,13 +88,13 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/au-ps-medication"/>
+				<reference value="StructureDefinition/uk-ps-medication"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/au-ps-medicationrequest"/>
+				<reference value="StructureDefinition/uk-ps-medicationrequest"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>

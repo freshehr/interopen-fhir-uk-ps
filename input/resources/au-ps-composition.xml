@@ -1313,8 +1313,8 @@
 			<max value="*"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-medicationstatement"/>
-				<targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-medicationrequest"/>
+				<targetProfile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-medicationstatement"/>
+				<targetProfile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-medicationrequest"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
