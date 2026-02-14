@@ -11,15 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Java
-        uses: actions/setup-java@v3
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-
-      - name: Make script executable
-        run: chmod +x ./_genonce.sh
-
       - name: Build IG
         run: |
           ./_genonce.sh
