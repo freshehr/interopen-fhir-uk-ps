@@ -28,6 +28,4 @@ publisher.jar
 /_build.bat
 /_build.sh
 !/input/ignoreWarnings.txt
-/input-cache/publisher.jar
-!/input-cache/publisher.jar
-/input-cache/
+
