@@ -106,19 +106,19 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/au-ps-organization"/>
+				<reference value="StructureDefinition/uk-ps-organization"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/au-ps-practitioner"/>
+				<reference value="StructureDefinition/uk-ps-practitioner"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/au-ps-practitionerrole"/>
+				<reference value="StructureDefinition/uk-ps-practitionerrole"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
