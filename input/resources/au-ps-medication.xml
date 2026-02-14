@@ -53,13 +53,13 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
     </element>
-    <element id="Medication.code.coding:pbs">
+    <element id="Medication.code.coding:snomedCT">
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
         <extension url="code">
           <valueCode value="SHALL:populate-if-known"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -67,31 +67,13 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="Medication.code.coding"/>
-      <sliceName value="pbs"/>
-    </element>
-    <element id="Medication.code.coding:amt">
-      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
-        <extension url="code">
-          <valueCode value="SHALL:populate-if-known"/>
-        </extension>
-        <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
-        <extension url="code">
-          <valueCode value="SHALL:handle"/>
-        </extension>
-        <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
-        </extension>
-      </extension>
-      <path value="Medication.code.coding"/>
-      <sliceName value="amt"/>
+      <sliceName value="snomedCT"/>
+      <short value="dm+d code from SNOMED CT UK Drug Extension"/>
+      <definition value="A code from the SNOMED Clinical Terms UK Drug Extension (dm+d) for medication identification"/>
     </element>
     <element id="Medication.form">
 			<extension url="http://hl7.org/fhir/StructureDefinition/obligation">
