@@ -417,7 +417,6 @@
       <min value="1"/>
       <type>
         <code value="Immunization"/>
-        <profile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-immunization"/>
       </type>
     </element>
     <element id="Bundle.entry:immunizationRecommendation">

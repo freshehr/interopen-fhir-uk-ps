@@ -1512,7 +1512,7 @@
       <max value="*"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-immunization"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Immunization"/>
       </type>
       <mustSupport value="true"/>
     </element>
