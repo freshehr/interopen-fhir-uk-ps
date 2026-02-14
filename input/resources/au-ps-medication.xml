@@ -53,6 +53,16 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
     </element>
+    <element id="Medication.code.coding">
+      <path value="Medication.code.coding"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="system"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
     <element id="Medication.code.coding:snomedCT">
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
         <extension url="code">

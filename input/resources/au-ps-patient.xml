@@ -7,7 +7,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile">
     <valueCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
   </extension>
-  <url value="http://hl7.org.au/fhir/ps/StructureDefinition/uk-ps-patient"/>
+  <url value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-patient"/>
   <name value="UKPSPatient"/>
   <title value="UK PS Patient"/>
   <status value="active"/>
