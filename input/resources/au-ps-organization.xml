@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="au-ps-organization"/>
+  <id value="uk-ps-organization"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile">
     <valueCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"/>
   </extension>
-  <url value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-organization"/>
-  <name value="AUPSOrganization"/>
-  <title value="AU PS Organization"/>
+  <url value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-organization"/>
+  <name value="UKPSOrganization"/>
+  <title value="UK PS Organization"/>
   <status value="active"/>
-  <description value="This profile sets minimum expectations for an Organization resource in the context of a patient summary in an Australian context. It is based on the [AU Core Organization](http://hl7.org.au/fhir/core/StructureDefinition/au-core-organization) profile, and applies the additional requirements from [Organization (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips)."/>
+  <description value="This profile sets minimum expectations for an Organization resource in the context of a patient summary in a UK context. It is based on the [UKCore Organization](https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization) profile, and applies the additional requirements from [Organization (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips)."/>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Organization"/>
-  <baseDefinition value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-organization"/>
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization"/>
   <derivation value="constraint"/>
   <differential>
     <element id="Organization">
@@ -27,7 +27,7 @@
           <valueCode value="SHALL:populate-if-known"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -35,7 +35,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -43,66 +43,10 @@
           <valueCode value="SHOULD:display"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="Organization.identifier"/>
-    </element>
-    <element id="Organization.identifier:hpio">
-      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
-        <extension url="code">
-          <valueCode value="SHALL:populate-if-known"/>
-        </extension>
-        <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
-        <extension url="code">
-          <valueCode value="SHALL:handle"/>
-        </extension>
-        <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
-        <extension url="code">
-          <valueCode value="SHOULD:display"/>
-        </extension>
-        <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
-        </extension>
-      </extension>
-      <path value="Organization.identifier"/>
-      <sliceName value="hpio"/>
-    </element>
-    <element id="Organization.identifier:abn">
-      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
-        <extension url="code">
-          <valueCode value="SHALL:populate-if-known"/>
-        </extension>
-        <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
-        <extension url="code">
-          <valueCode value="SHALL:handle"/>
-        </extension>
-        <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
-        <extension url="code">
-          <valueCode value="SHOULD:display"/>
-        </extension>
-        <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
-        </extension>
-      </extension>
-      <path value="Organization.identifier"/>
-      <sliceName value="abn"/>
     </element>
     <element id="Organization.type">
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -110,7 +54,7 @@
           <valueCode value="SHALL:populate-if-known"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -118,7 +62,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -126,7 +70,7 @@
           <valueCode value="SHOULD:display"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="Organization.type"/>
@@ -141,7 +85,7 @@
           <valueCode value="SHALL:populate-if-known"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -149,7 +93,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -157,7 +101,7 @@
           <valueCode value="SHOULD:display"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="Organization.name"/>
@@ -168,7 +112,7 @@
           <valueCode value="SHALL:populate-if-known"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -176,7 +120,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -184,7 +128,7 @@
           <valueCode value="SHOULD:display"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="Organization.telecom"/>
@@ -195,7 +139,7 @@
           <valueCode value="SHALL:populate-if-known"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -203,7 +147,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="Organization.telecom.system"/>
@@ -214,7 +158,7 @@
           <valueCode value="SHALL:populate-if-known"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -222,7 +166,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="Organization.telecom.value"/>
@@ -233,7 +177,7 @@
           <valueCode value="SHALL:populate-if-known"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -241,7 +185,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -249,7 +193,7 @@
           <valueCode value="SHOULD:display"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="Organization.address"/>
