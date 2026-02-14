@@ -158,7 +158,6 @@
       <path value="Procedure.encounter"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-encounter"/>
       </type>
     </element>
     <element id="Procedure.performed[x]">

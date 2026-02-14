@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="au-ps-patient"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="1"/> 
+    <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile">
     <valueCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
@@ -244,7 +244,7 @@
       </extension>
       <path value="Patient.name"/>
       <constraint>
-        <key value="ips-pat-1"/> 
+        <key value="ips-pat-1"/>
         <severity value="error"/>
         <human value="Patient.name.given, Patient.name.family or Patient.name.text SHALL be present"/>
         <expression value="family.exists() or given.exists() or text.exists()"/>

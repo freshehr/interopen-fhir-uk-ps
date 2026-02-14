@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="au-ps-encounter"/>
+  <id value="uk-ps-encounter"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1"/>
   </extension>
-  <url value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-encounter"/>
-  <name value="AUPSEncounter"/>
-  <title value="AU PS Encounter"/>
+  <url value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-encounter"/>
+  <name value="UKPSEncounter"/>
+  <title value="UK PS Encounter"/>
   <status value="active"/>
-  <description value="This profile sets minimum expectations for an Encounter resource in the context of a patient summary in an Australian context. It is based on the [AU Core Encounter](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-encounter.html) profile, and applies the additional constraints for use in a patient summary context consistent with the profiling conventions of [IPS](https://hl7.org/fhir/uv/ips/STU2/)." />
+  <description value="This profile sets minimum expectations for an Encounter resource in the context of a patient summary in a UK context. It is based on the [UKCore Encounter](https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter) profile, and applies the additional constraints for use in a patient summary context consistent with the profiling conventions of [IPS](https://hl7.org/fhir/uv/ips/STU2/)." />
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Encounter"/>
-  <baseDefinition value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-encounter"/>
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter"/>
   <derivation value="constraint"/>
   <differential>
     <element id="Encounter">
@@ -131,7 +131,7 @@
       <path value="Encounter.subject"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-patient"/>
+        <targetProfile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-patient"/>
       </type>
     </element>
     <!--<element id="Encounter.subject.reference">
@@ -225,8 +225,8 @@
       <path value="Encounter.participant.individual"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-practitioner" />
-        <targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-practitionerrole"/>
+        <targetProfile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-practitioner" />
+        <targetProfile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-practitionerrole"/>
         <targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-relatedperson"/>
       </type>
     </element>
@@ -316,7 +316,7 @@
       <path value="Encounter.reasonReference"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-condition"/>
+        <targetProfile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-condition"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
         <targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-procedure"/>
       </type>
@@ -403,7 +403,7 @@
       <path value="Encounter.serviceProvider"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-organization"/>
+        <targetProfile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-organization"/>
       </type>
     </element>
   </differential>

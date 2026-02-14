@@ -1,35 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-	<id value="hl7.fhir.uk.ps"/>
+	<id value="hl7.fhir.au.ps"/>
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
 		<valueCode value="draft"/>
 	</extension>
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
 		<valueInteger value="1"/>
 	</extension>
-	<url value="http://hl7.org.uk/fhir/ps/ImplementationGuide/hl7.fhir.uk.ps"/>
-	<version value="0.1.0-cibuild"/>
-	<name value="UKPatientSummaryImplementationGuide"/>
-	<title value="UK Patient Summary Implementation Guide"/>
+	<url value="http://hl7.org.au/fhir/ps/ImplementationGuide/hl7.fhir.au.ps"/>
+	<version value="0.6.0-cibuild"/>
+	<name value="AUPatientSummaryImplementationGuide"/>
+	<title value="AU Patient Summary Implementation Guide"/>
 	<status value="active"/>
 	<experimental value="false"/>
-	<publisher value="HL7 UK / INTEROPen"/>
+	<publisher value="InterOPEN UK"/>
 	<contact>
-		<name value="INTEROPen"/>
-		<telecom>
-			<system value="url"/>
-			<value value="https://interopen.org"/>
-			<use value="work"/>
-		</telecom>
-	</contact>
-	<description value="UK Patient Summary (UK PS) is provided to support the use of patient summaries in HL7® FHIR®© in a UK context. It complies with the requirements defined in IPS and UK Core, and sets the minimum expectations on FHIR resources to support conformance and implementation in systems."/>
+		<name value="InterOPEN Work Group"/>
+    </contact>
+	<description value="UK Patient Summary (UK PS) is provided to support the use of patient summaries in HL7® FHIR®© in a UK context. It complies with the requirements defined in IPS and AU Core, and sets the minimum expectations on FHIR resources to support conformance and implementation in systems."/>
 	<jurisdiction>
 		<coding>
 			<system value="urn:iso:std:iso:3166"/>
 			<code value="GB"/>
 		</coding>
 	</jurisdiction>
-	<copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License. HL7 UK© 2025+; Licensed Under Creative Commons No Rights Reserved."/>
+	<copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License. HL7 Australia© 2022+; Licensed Under Creative Commons No Rights Reserved."/>
 	<packageId value="hl7.fhir.uk.ps"/>
 	<license value="CC0-1.0"/>
 	<fhirVersion value="4.0.1"/>
@@ -39,9 +34,9 @@
 		<version value="2.0.0"/>
 	</dependsOn>
 	<dependsOn>
-		<uri value="https://fhir.hl7.org.uk/ImplementationGuide/hl7.fhir.r4.ukcore.stu3"/>
-		<packageId value="fhir.r4.ukcore.stu3.currentbuild"/>
-		<version value="0.0.8-pre-release"/>
+		<uri value="http://hl7.org.au/fhir/core/ImplementationGuide/hl7.fhir.au.core"/>
+		<packageId value="hl7.fhir.au.core"/>
+		<version value="current"/>
 	</dependsOn>
 	<definition>
 		<resource>
@@ -58,37 +53,31 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/uk-ps-allergyintolerance"/>
+				<reference value="StructureDefinition/au-ps-allergyintolerance"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/uk-ps-bundle"/>
+				<reference value="StructureDefinition/au-ps-bundle"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/uk-ps-composition"/>
+				<reference value="StructureDefinition/au-ps-composition"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/uk-ps-condition"/>
+				<reference value="StructureDefinition/au-ps-condition"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/uk-ps-encounter"/>
-			</reference>
-			<exampleBoolean value="false"/>
-		</resource>
-		<resource>
-			<reference>
-				<reference value="StructureDefinition/au-ps-immunization"/>
+				<reference value="StructureDefinition/au-ps-encounter"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
@@ -106,7 +95,7 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/uk-ps-medicationstatement"/>
+				<reference value="StructureDefinition/au-ps-medicationstatement"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
@@ -128,30 +117,6 @@
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
-		<resource>
-			<reference>
-				<reference value="StructureDefinition/au-ps-procedure"/>
-			</reference>
-			<exampleBoolean value="false"/>
-		</resource>
-		<resource>
-			<reference>
-				<reference value="StructureDefinition/au-ps-relatedperson"/>
-			</reference>
-			<exampleBoolean value="false"/>
-		</resource>
-		<resource>
-			<reference>
-				<reference value="StructureDefinition/au-ps-smokingstatus"/>
-			</reference>
-			<exampleBoolean value="false"/>
-		</resource>
-		<resource>
-			<reference>
-				<reference value="StructureDefinition/au-ps-diagnosticresult-path"/>
-			</reference>
-			<exampleBoolean value="false"/>
-		</resource>
 		<!-- EXAMPLES-->
 		<resource>
 			<reference>
@@ -159,7 +124,7 @@
 			</reference>
 			<name value="Bundle - Section empty reason"/>
 			<description value="Shows a software-assembled patient summary that demonstrates missing data for Patient.birthDate and suppressed data for Patient.gender and Patient.identifier using the Data Absent Reason extension. The system also has no information for the sections: problems, allergies, medications, and immunisations. Example for the *AU PS Bundle* and *AU PS Composition* profiles. Patient: Ronny Lawrence Irvine."/>
-			<exampleCanonical value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-bundle"/>
+			<exampleCanonical value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-bundle"/>
 		</resource>
 		<resource>
 			<reference>
@@ -167,7 +132,7 @@
 			</reference>
 			<name value="Bundle - No Known X"/>
 			<description value="Shows an example of a patient summary that demonstrates no known problems or disabilities, no known allergies and intolerances, and no known current medications. Example for the *AU PS Bundle* and *AU PS Composition* profile. Patient: Charlotte Morris."/>
-			<exampleCanonical value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-bundle"/>
+			<exampleCanonical value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-bundle"/>
 		</resource>
 		<resource>
 			<reference>
@@ -175,15 +140,7 @@
 			</reference>
 			<name value="Bundle - Basic summary"/>
 			<description value="Shows an example of a provider curated patient summary that demonstrates no known problems or disabilities, current allergies and intolerances, and current medication use. Example for the *AU PS Bundle* and *AU PS Composition* profile. Patient: Mia Leanne Banks."/>
-			<exampleCanonical value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-bundle"/>
-		</resource>
-		<resource>
-			<reference>
-				<reference value="Bundle/aups-referral-endoconsult-curated"/>
-			</reference>
-			<name value="Bundle - Patient Summary for Joyce Johnson as of 28 OCT 2024 (with electronic signature)"/>
-			<description value="[Referral to Specialist and Allied Health use case](uc-referral.html) example. Shows an example of a patient summary containing the medical history and current medications at the time of referral that was authored by the GP through curation of a generated view of the data within their clinical information system, and was attested at the time of creation of the patient summary and signed electronically. Example for the *AU PS Bundle* and *AU PS Composition* profile. Patient: Joyce Johnson."/>
-			<exampleCanonical value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-bundle"/>
+			<exampleCanonical value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-bundle"/>
 		</resource>
 		<resource>
 			<reference>
@@ -191,15 +148,7 @@
 			</reference>
 			<name value="Bundle - Patient Summary for Joyce Johnson as of 07 NOV 2024 (with digital signature)"/>
 			<description value="[Referral to Specialist and Allied Health use case](uc-referral.html) example. Shows an example of a patient summary containing the medical history and current medications that is automatically generated by a clinical information system and includes the most recent information. This example is digitally signed. Example for the *AU PS Bundle* and *AU PS Composition* profile. Patient: Joyce Johnson."/>
-			<exampleCanonical value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-bundle"/>
-		</resource>
-		<resource>
-			<reference>
-				<reference value="Bundle/aups-gpvisit-retrieval"/>
-			</reference>
-			<name value="Bundle - Jeramy’s Patient Summary as of 27 May 2025"/>
-			<description value="[Interstate GP use case](uc-interstate.html) example. Shows an example of a patient summary authored by the patient's usual GP that was updated after a recent admission to hospital. Example for the *AU PS Bundle* and *AU PS Composition* profile. Patient: Jeramy Ezra Banks."/>
-			<exampleCanonical value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-bundle"/>
+			<exampleCanonical value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-bundle"/>
 		</resource>
 		<!-- PAGES-->
 		<page>

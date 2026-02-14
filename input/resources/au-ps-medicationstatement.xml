@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="au-ps-medicationstatement"/>
+  <id value="uk-ps-medicationstatement"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="1"/> 
+    <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile">
     <valueCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
   </extension>
-  <url value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-medicationstatement"/>
-  <name value="AUPSMedicationStatement"/>
-  <title value="AU PS MedicationStatement"/>
+  <url value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-medicationstatement"/>
+  <name value="UKPSMedicationStatement"/>
+  <title value="UK PS MedicationStatement"/>
   <status value="active"/>
-  <description value="This profile sets minimum expectations for a MedicationStatement resource in the context of a patient summary in an Australian context. It is based on the [AU Core MedicationStatement](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-medicationstatement.html) profile, and applies the additional requirements from [MedicationStatement (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips)." />
+  <description value="This profile sets minimum expectations for a MedicationStatement resource in the context of a patient summary in a UK context. It is based on the [UKCore MedicationStatement](https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement) profile, and applies the additional requirements from [MedicationStatement (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips)." />
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="MedicationStatement"/>
-  <baseDefinition value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-medicationstatement"/>
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement"/>
   <derivation value="constraint"/>
   <differential>
     <element id="MedicationStatement">
@@ -27,7 +27,7 @@
           <valueCode value="SHALL:populate"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -35,7 +35,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -43,7 +43,7 @@
           <valueCode value="SHOULD:display"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="MedicationStatement.status"/>
@@ -54,7 +54,7 @@
           <valueCode value="SHALL:populate"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -62,7 +62,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -70,7 +70,7 @@
           <valueCode value="SHOULD:display"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="MedicationStatement.medication[x]"/>
@@ -82,7 +82,7 @@
           <valueCode value="SHALL:populate"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -90,7 +90,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -98,7 +98,7 @@
           <valueCode value="SHOULD:display"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="MedicationStatement.medication[x]"/>
@@ -114,7 +114,7 @@
           <valueCode value="SHALL:populate-if-known"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -122,7 +122,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="MedicationStatement.medication[x].coding"/>
@@ -134,7 +134,7 @@
           <valueCode value="SHALL:populate-if-known"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -142,7 +142,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="MedicationStatement.medication[x].coding"/>
@@ -154,7 +154,7 @@
           <valueCode value="SHALL:populate"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -162,7 +162,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -170,14 +170,14 @@
           <valueCode value="SHOULD:display"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="MedicationStatement.medication[x]"/>
       <sliceName value="medicationReference"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-medication"/>
+        <targetProfile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-medication"/>
       </type>
     </element>
 		<element id="MedicationStatement.subject">
@@ -186,7 +186,7 @@
           <valueCode value="SHALL:populate"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -194,7 +194,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -202,13 +202,13 @@
           <valueCode value="SHOULD:display"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="MedicationStatement.subject"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-patient"/>
+				<targetProfile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-patient"/>
 			</type>
 		</element>
 		<element id="MedicationStatement.subject.reference">
@@ -217,7 +217,7 @@
           <valueCode value="SHALL:populate"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -225,7 +225,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="MedicationStatement.subject.reference"/>
@@ -238,7 +238,7 @@
           <valueCode value="SHALL:populate-if-known"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -246,7 +246,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -254,7 +254,7 @@
           <valueCode value="SHOULD:display"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="MedicationStatement.effective[x]"/>
@@ -265,7 +265,7 @@
             <valueCode value="SHALL:populate-if-known"/>
           </extension>
           <extension url="actor">
-            <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+            <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
           </extension>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -273,7 +273,7 @@
             <valueCode value="SHOULD:able-to-populate"/>
           </extension>
           <extension url="actor">
-            <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+            <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
           </extension>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -281,7 +281,7 @@
             <valueCode value="SHALL:handle"/>
           </extension>
           <extension url="actor">
-            <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+            <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
           </extension>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -289,7 +289,7 @@
             <valueCode value="SHOULD:display"/>
           </extension>
           <extension url="actor">
-            <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+            <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
           </extension>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
@@ -307,7 +307,7 @@
           <valueCode value="SHALL:populate-if-known"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -315,7 +315,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -323,7 +323,7 @@
           <valueCode value="SHOULD:display"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="MedicationStatement.dateAsserted"/>
@@ -334,7 +334,7 @@
           <valueCode value="SHALL:populate-if-known"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -342,7 +342,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -350,7 +350,7 @@
           <valueCode value="SHOULD:display"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="MedicationStatement.reasonCode"/>
@@ -365,7 +365,7 @@
           <valueCode value="SHALL:populate-if-known"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -373,7 +373,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -381,13 +381,13 @@
           <valueCode value="SHOULD:display"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="MedicationStatement.reasonReference"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-condition" />
+        <targetProfile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-condition" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
         <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips"/>
       </type>
@@ -398,7 +398,7 @@
           <valueCode value="SHALL:populate-if-known"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -406,7 +406,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -414,7 +414,7 @@
           <valueCode value="SHOULD:display"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="MedicationStatement.dosage"/>
@@ -425,7 +425,7 @@
           <valueCode value="SHALL:populate-if-known"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -433,7 +433,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -441,7 +441,7 @@
           <valueCode value="SHOULD:display"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="MedicationStatement.dosage.text"/>
@@ -452,7 +452,7 @@
           <valueCode value="SHALL:populate-if-known"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -460,7 +460,7 @@
           <valueCode value="SHALL:handle"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -468,7 +468,7 @@
           <valueCode value="SHOULD:display"/>
         </extension>
         <extension url="actor">
-          <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-consumer"/>
+          <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
       <path value="MedicationStatement.dosage.timing"/>
