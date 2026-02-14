@@ -318,7 +318,6 @@
         <code value="Reference"/>
         <targetProfile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-condition"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-        <targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-procedure"/>
       </type>
     </element>
     <element id="Encounter.location">

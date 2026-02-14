@@ -570,7 +570,6 @@
       <min value="1"/>
       <type>
         <code value="Procedure"/>
-        <profile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-procedure"/>
       </type>
     </element>
     <element id="Bundle.entry:relatedperson">
