@@ -124,12 +124,6 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/au-ps-relatedperson"/>
-			</reference>
-			<exampleBoolean value="false"/>
-		</resource>
-		<resource>
-			<reference>
 				<reference value="StructureDefinition/au-ps-smokingstatus"/>
 			</reference>
 			<exampleBoolean value="false"/>
