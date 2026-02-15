@@ -1,5 +1,7 @@
 name: Build the IG
-on: [push, pull_request]
+on:
+  push:
+       branches: [ interopen-hack ]
 jobs:
   test:
     runs-on: ubuntu-latest
