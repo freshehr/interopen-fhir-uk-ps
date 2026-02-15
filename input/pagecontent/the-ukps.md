@@ -77,8 +77,6 @@ A summary of these additional requirements is provided in the sections below. Wh
 
 UK PS profiles the following resources that are not profiled in IPS:
 
-- [UK PS Encounter](StructureDefinition-au-ps-encounter.html) profiles FHIR resource [Encounter](http://hl7.org/fhir/R4/encounter.html)
-- [UK PS RelatedPerson](StructureDefinition-au-ps-relatedperson.html) profiles FHIR resource [RelatedPerson](http://hl7.org/fhir/R4/relatedperson.html)
 
 In addition to the profiles defined in this implementation guide and in IPS, the following profiles defined elsewhere are used by UK PS as the target of a *Must Support* reference element in an UK PS profile:
 - [UK Core Location](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-location.html)
