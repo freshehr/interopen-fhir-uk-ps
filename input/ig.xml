@@ -26,7 +26,7 @@
 	<jurisdiction>
 		<coding>
 			<system value="urn:iso:std:iso:3166"/>
-			<code value="GB"/>
+			<code value="UK"/>
 		</coding>
 	</jurisdiction>
 	<copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License. HL7 UK© 2025+; Licensed Under Creative Commons No Rights Reserved."/>
@@ -121,7 +121,7 @@
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
-		<!-- EXAMPLES-->
+		<!-- EXAMPLES
 		<resource>
 			<reference>
 				<reference value="Bundle/aups-section-emptyreason"/>
@@ -170,6 +170,8 @@
 			<description value="[Interstate GP use case](uc-interstate.html) example. Shows an example of a patient summary authored by the patient's usual GP that was updated after a recent admission to hospital. Example for the *AU PS Bundle* and *AU PS Composition* profile. Patient: Jeramy Ezra Banks."/>
 			<exampleCanonical value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-bundle"/>
 		</resource>
+		-->
+
 		<!-- PAGES-->
 		<page>
 			<nameUrl value="toc.html"/>

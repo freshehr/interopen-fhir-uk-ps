@@ -8,6 +8,7 @@ input-cache/
 /output
 /node_modules
 /terms
+/unused-au-profiles/
 
 # Windows generated files #
 ###########################
@@ -28,4 +29,5 @@ publisher.jar
 /_build.bat
 /_build.sh
 !/input/ignoreWarnings.txt
+
 
