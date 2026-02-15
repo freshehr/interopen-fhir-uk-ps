@@ -14,7 +14,7 @@
     </ul>
   </li>
   <li>
-    <a href="the-aups.html">The AU PS</a>
+    <a href="the-aups.html">The UK PS</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
@@ -30,21 +30,15 @@
       <li>
         <a href="sex-and-gender.html">Sex and Gender</a>
       </li>
-      <li>
-        <a href="aucdi.html">AUCDI</a>
-      </li>
        <li>
         <a href="relationship.html">Relationship With Other IGs</a>
       </li>
       <li>
-        <a href="variance.html">AU Variance Statement</a>
+        <a href="variance.html">UK Variance Statement</a>
       </li>
       <li>
         <a href="comparison.html">Comparison With Other National and International IGs</a>
       </li>
-      <li>
-        <a href="future.html">Future of AU PS</a>
-      </li> 
     </ul>
   </li>
   <li class="dropdown">
@@ -53,10 +47,7 @@
     </a>
      <ul class="dropdown-menu">
       <li>
-        <a href="uc-interstate.html">Interstate GP Visit</a>
-      </li>
-      <li>
-        <a href="uc-referral.html">Referral to Specialist and Allied Health</a>
+        <a href="uc-interstate.html">Cross-locality Unscheduled Care</a>
       </li>
     </ul>
   </li>

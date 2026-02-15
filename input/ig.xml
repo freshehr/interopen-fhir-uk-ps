@@ -26,7 +26,7 @@
 	<jurisdiction>
 		<coding>
 			<system value="urn:iso:std:iso:3166"/>
-			<code value="UK"/>
+			<code value="GB"/>
 		</coding>
 	</jurisdiction>
 	<copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License. HL7 UK© 2025+; Licensed Under Creative Commons No Rights Reserved."/>
@@ -198,8 +198,8 @@
 				</page>
 			</page>
 			<page>
-				<nameUrl value="the-aups.html"/>
-				<title value="The AU PS"/>
+				<nameUrl value="the-ukps.html"/>
+				<title value="The UK PS"/>
 				<generation value="markdown"/>
 			</page>
 			<page>
@@ -217,16 +217,6 @@
 					<generation value="markdown"/>
 				</page>
 				<page>
-					<nameUrl value="sex-and-gender.html"/>
-					<title value="Sex and Gender"/>
-					<generation value="markdown"/>
-				</page>
-				<page>
-					<nameUrl value="aucdi.html"/>
-					<title value="AUCDI"/>
-					<generation value="markdown"/>
-				</page>
-				<page>
 					<nameUrl value="relationship.html"/>
 					<title value="Relationship With Other IGs"/>
 					<generation value="markdown"/>
@@ -238,12 +228,7 @@
 				</page>
 				<page>
 					<nameUrl value="variance.html"/>
-					<title value="AU Variance Statement"/>
-					<generation value="markdown"/>
-				</page>
-				<page>
-					<nameUrl value="future.html"/>
-					<title value="Future of AU Patient Summary"/>
+					<title value="UK Variance Statement"/>
 					<generation value="markdown"/>
 				</page>
 			</page>
@@ -254,11 +239,6 @@
 				<page>
 					<nameUrl value="uc-interstate.html"/>
 					<title value="Interstate GP Visit"/>
-					<generation value="markdown"/>
-				</page>
-				<page>
-					<nameUrl value="uc-referral.html"/>
-					<title value="Referral to Specialist and Allied Health"/>
 					<generation value="markdown"/>
 				</page>
 			</page>
