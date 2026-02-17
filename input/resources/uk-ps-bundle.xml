@@ -8,6 +8,12 @@
     <valueCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"/>
   </extension>
   <url value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-bundle"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="GB"/>
+    </coding>
+  </jurisdiction>
   <name value="UKPSBundle"/>
   <title value="UK PS Bundle"/>
   <status value="active"/>
@@ -20,8 +26,8 @@
   <differential>
     <element id="Bundle">
         <path value="Bundle"/>
-        <short value="AU Patient Summary Bundle"/>
-        <definition value="AU Patient Summary Bundle. A container for a collection of resources in the patient summary document in an Australian healthcare context."/>
+        <short value="UK Patient Summary Bundle"/>
+        <definition value="UK Patient Summary Bundle. A container for a collection of resources in the patient summary document in a UK healthcare context."/>
         <constraint>
           <key value="bdl-ips-1"/>
           <severity value="error"/>
@@ -257,32 +263,6 @@
         <profile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-allergyintolerance"/>
       </type>
     </element>
-    <element id="Bundle.entry:careteam">
-      <path value="Bundle.entry"/>
-      <sliceName value="careteam"/>
-      <min value="0"/>
-      <max value="*"/>
-    </element>
-    <element id="Bundle.entry:careteam.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
-      <type>
-        <code value="CareTeam"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:clinicalimpression">
-      <path value="Bundle.entry"/>
-      <sliceName value="clinicalimpression"/>
-      <min value="0"/>
-      <max value="*"/>
-    </element>
-    <element id="Bundle.entry:clinicalimpression.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
-      <type>
-        <code value="ClinicalImpression"/>
-      </type>
-    </element>
     <element id="Bundle.entry:condition">
       <path value="Bundle.entry"/>
       <sliceName value="condition"/>
@@ -295,73 +275,6 @@
       <type>
         <code value="Condition"/>
         <profile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-condition"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:consent">
-      <path value="Bundle.entry"/>
-      <sliceName value="consent"/>
-      <min value="0"/>
-      <max value="*"/>
-    </element>
-    <element id="Bundle.entry:consent.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
-      <type>
-        <code value="Consent"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:device">
-      <path value="Bundle.entry"/>
-      <sliceName value="device"/>
-      <min value="0"/>
-      <max value="*"/>
-    </element>
-    <element id="Bundle.entry:device.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
-      <type>
-        <code value="Device"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:deviceusestatement">
-      <path value="Bundle.entry"/>
-      <sliceName value="deviceusestatement"/>
-      <min value="0"/>
-      <max value="*"/>
-    </element>
-    <element id="Bundle.entry:deviceusestatement.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
-      <type>
-        <code value="DeviceUseStatement"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:diagnosticreport">
-      <path value="Bundle.entry"/>
-      <sliceName value="diagnosticreport"/>
-      <min value="0"/>
-      <max value="*"/>
-    </element>
-    <element id="Bundle.entry:diagnosticreport.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
-      <type>
-        <code value="DiagnosticReport"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:documentreference">
-      <path value="Bundle.entry"/>
-      <sliceName value="documentreference"/>
-      <min value="0"/>
-      <max value="*"/>
-    </element>
-    <element id="Bundle.entry:documentreference.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
-      <type>
-        <code value="DocumentReference"/>
       </type>
     </element>
     <element id="Bundle.entry:encounter">
@@ -378,60 +291,7 @@
         <profile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-encounter"/>
       </type>
     </element>
-    <element id="Bundle.entry:flag">
-      <path value="Bundle.entry"/>
-      <sliceName value="flag"/>
-      <min value="0"/>
-      <max value="*"/>
-    </element>
-    <element id="Bundle.entry:flag.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
-      <type>
-        <code value="Flag"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Flag-alert-uv-ips"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:imagingstudy">
-      <path value="Bundle.entry"/>
-      <sliceName value="imagingstudy"/>
-      <min value="0"/>
-      <max value="*"/>
-    </element>
-    <element id="Bundle.entry:imagingstudy.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
-      <type>
-        <code value="ImagingStudy"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:immunization">
-      <path value="Bundle.entry"/>
-      <sliceName value="immunization"/>
-      <min value="0"/>
-      <max value="*"/>
-    </element>
-    <element id="Bundle.entry:immunization.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
-      <type>
-        <code value="Immunization"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:immunizationRecommendation">
-      <path value="Bundle.entry"/>
-      <sliceName value="immunizationRecommendation"/>
-      <min value="0"/>
-      <max value="*"/>
-    </element>
-    <element id="Bundle.entry:immunizationRecommendation.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
-      <type>
-        <code value="ImmunizationRecommendation"/>
-      </type>
-    </element>
+
     <element id="Bundle.entry:location">
       <path value="Bundle.entry"/>
       <sliceName value="location"/>
@@ -488,33 +348,6 @@
         <profile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-medicationstatement"/>
       </type>
     </element>
-    <element id="Bundle.entry:observation">
-      <path value="Bundle.entry"/>
-      <sliceName value="observation"/>
-      <min value="0"/>
-      <max value="*"/>
-    </element>
-    <element id="Bundle.entry:observation.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
-      <type>
-        <code value="Observation"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-radiology-uv-ips"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
-        <profile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-bloodpressure"/>
-        <profile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-bodyheight"/>
-        <profile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-bodytemp"/>
-        <profile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-bodyweight"/>
-        <profile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-heartrate"/>
-        <profile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-resprate"/>
-        <profile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-waistcircum"/>
-      </type>
-    </element>
     <element id="Bundle.entry:organization">
       <path value="Bundle.entry"/>
       <sliceName value="organization"/>
@@ -557,32 +390,6 @@
         <profile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-practitionerrole"/>
       </type>
     </element>
-    <element id="Bundle.entry:procedure">
-      <path value="Bundle.entry"/>
-      <sliceName value="procedure"/>
-      <min value="0"/>
-      <max value="*"/>
-    </element>
-    <element id="Bundle.entry:procedure.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
-      <type>
-        <code value="Procedure"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:specimen">
-      <path value="Bundle.entry"/>
-      <sliceName value="specimen"/>
-      <min value="0"/>
-      <max value="*"/>
-    </element>
-    <element id="Bundle.entry:specimen.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
-      <type>
-        <code value="Specimen"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"/>
-      </type>
-    </element>
+
   </differential>
 </StructureDefinition>

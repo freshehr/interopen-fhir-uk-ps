@@ -8,6 +8,12 @@
     <valueCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"/>
   </extension>
   <url value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-allergyintolerance"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="GB"/>
+    </coding>
+  </jurisdiction>
   <name value="UKPSAllergyIntolerance"/>
   <title value="UK PS AllergyIntolerance"/>
   <status value="active"/>

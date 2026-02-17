@@ -45,13 +45,13 @@
 	<definition>
 		<resource>
 			<reference>
-				<reference value="ActorDefinition/au-ps-actor-consumer"/>
+				<reference value="ActorDefinition/uk-ps-actor-consumer"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
 		<resource>
 			<reference>
-				<reference value="ActorDefinition/au-ps-actor-producer"/>
+				<reference value="ActorDefinition/uk-ps-actor-producer"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
