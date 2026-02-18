@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-	<id value="hl7.fhir.uk.ps"/>
+	<id value="interopen.uk.ps"/>
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
 		<valueCode value="draft"/>
 	</extension>
@@ -11,8 +11,8 @@
 	<version value="0.1.0-cibuild"/>
 	<name value="UKPatientSummaryImplementationGuide"/>
 	<title value="UK Patient Summary Implementation Guide"/>
-	<status value="active"/>
-	<experimental value="false"/>
+	<status value="draft"/>
+	<experimental value="true"/>
 	<publisher value="HL7 UK / INTEROPen"/>
 	<contact>
 		<name value="INTEROPen"/>
@@ -30,7 +30,7 @@
 		</coding>
 	</jurisdiction>
 	<copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License. HL7 UK© 2025+; Licensed Under Creative Commons No Rights Reserved."/>
-	<packageId value="hl7.fhir.uk.ps"/>
+	<packageId value="interopen.uk.ps"/>
 	<license value="CC0-1.0"/>
 	<fhirVersion value="4.0.1"/>
 	<dependsOn>

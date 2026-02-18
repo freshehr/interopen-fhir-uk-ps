@@ -8,15 +8,9 @@
     <valueCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"/>
   </extension>
   <url value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-allergyintolerance"/>
-  <jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166"/>
-      <code value="GB"/>
-    </coding>
-  </jurisdiction>
   <name value="UKPSAllergyIntolerance"/>
   <title value="UK PS AllergyIntolerance"/>
-  <status value="active"/>
+  <status value="draft"/>
   <description value="This profile sets minimum expectations for an AllergyIntolerance resource in the context of a patient summary in a UK context. It is based on the [UKCore AllergyIntolerance](https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance) profile, and applies the additional requirements from [AllergyIntolerance (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips)."/>
   <kind value="resource"/>
   <abstract value="false"/>

@@ -10,7 +10,7 @@
   <url value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-composition"/>
   <name value="UKPSComposition"/>
   <title value="UK PS Composition"/>
-  <status value="active"/>
+  <status value="draft"/>
   <description value="This profile sets minimum expectations for a Composition resource in the context of a patient summary in a UK context. It is based on [UKCore Composition](https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition) and imposes [Composition (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips). &#xD;&#xA;UK Patient Summary (UK PS) is specified in this guide as a HL7 FHIR document (a Bundle including a Composition), composed by a set of potentially reusable 'minimal' data blocks (the UK PS profiles)."/>
   <kind value="resource"/>
   <abstract value="false"/>
@@ -29,7 +29,7 @@
     <element id="Composition.meta.profile">
       <path value="Composition.meta.profile"/>
       <short value="Conformance claim to a specific Patient Summary specification"/>
-      <definition value="The conformance of this Composition to a specific version of a Patient Summary specification (e.g. UK PS 1.0.0 conformance claim http://hl7.org.UK/fhir/ps/StructureDefinition/uk-ps-composition|1.0.0, IPS 2.0.0 conformance claim http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips|2.0.0)"/>
+      <definition value="The conformance of this Composition to a specific version of a Patient Summary specification (e.g. UK PS 1.0.0 conformance claim http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-composition|1.0.0, IPS 2.0.0 conformance claim http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips|2.0.0)"/>
       <mustSupport value="true"/>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
         <extension url="code">
@@ -256,8 +256,8 @@
           <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
         </extension>
       </extension>
-      <path value="Composition.UKthor"/>
-      <short value="Who and/or what UKthored the patient summary"/>
+      <path value="Composition.author"/>
+      <short value="Who and/or what authored the patient summary"/>
       <definition value="Identifies who is responsible for the information in the patient summary, not necessarily who typed it in.&#xD;&#xA;&#xD;&#xA;The type of UKthor(s) contribute to determine the &quot;nature&quot;of the patient summary: e.g. a &quot;human-curated&quot; Vs. UKtomatically generated (&quot;software assembled&quot;). The distinction between the two types of patient summary, &quot;human-curated&quot; or &quot;software-assembled&quot;, is based on the UKthors recorded in the composition: the UKthor will be a human (e.g. Practitioner), if the patient summary provenance type is &quot;human-curated&quot;, or a device if the patient summary provenance type is &quot;software-assembled&quot;. In the case of a &quot;software-assembled&quot; patient summary that is then verified by a human, the document provenance type will be &quot;software-assembled&quot; and the UKthor will be the device or system that constructed the patient summary document, but an additional attester identity will name the human who performed this check."/>
       <type>
         <code value="Reference"/>
@@ -2614,7 +2614,7 @@
       <max value="*"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.UK/fhir/ps/StructureDefinition/uk-ps-condition"/>
+        <targetProfile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-condition"/>
       </type>
     </element>
     <element id="Composition.section:sectionPregnancyHx">
