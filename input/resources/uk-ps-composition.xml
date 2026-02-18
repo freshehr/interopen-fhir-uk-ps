@@ -23,7 +23,14 @@
       <short value="UK Patient Summary Composition"/>
       <definition value="UK Patient Summary Composition. A composition is a set of healthcare-related information that is assembled together into a single logical document that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. While a Composition defines the structure, it does not actually contain the content: rather the full content of a document is contained in a Bundle, of which the Composition is the first resource contained."/>
     </element>
+    <element id="Composition.meta">
+      <path value="Composition.meta"/>
+    </element>
     <element id="Composition.meta.profile">
+      <path value="Composition.meta.profile"/>
+      <short value="Conformance claim to a specific Patient Summary specification"/>
+      <definition value="The conformance of this Composition to a specific version of a Patient Summary specification (e.g. UK PS 1.0.0 conformance claim http://hl7.org.UK/fhir/ps/StructureDefinition/uk-ps-composition|1.0.0, IPS 2.0.0 conformance claim http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips|2.0.0)"/>
+      <mustSupport value="true"/>
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
         <extension url="code">
           <valueCode value="MAY:able-to-populate"/>
@@ -32,10 +39,6 @@
           <valueCanonical value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer"/>
         </extension>
       </extension>
-      <path value="Composition.meta.profile"/>
-      <short value="Conformance claim to a specific Patient Summary specification"/>
-      <definition value="The conformance of this Composition to a specific version of a Patient Summary specification (e.g. UK PS 1.0.0 conformance claim http://hl7.org.UK/fhir/ps/StructureDefinition/uk-ps-composition|1.0.0, IPS 2.0.0 conformance claim http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips|2.0.0)"/>
-      <mustSupport value="true"/>
     </element>
     <element id="Composition.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -2468,7 +2471,7 @@
       <max value="*"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.ukukuuukuk/fhir/ps/StructureDefinition/uk-ps-condition"/>
+        <targetProfile value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-condition"/>
       </type>
     </element>
     <element id="Composition.section:sectionFunctionalStatus.entry:functionalAssessment">

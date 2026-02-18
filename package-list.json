@@ -1,7 +1,8 @@
 {
-  "package-id" : "hl7.fhir.au.ps",
+  "package-id" : "hl7.fhir.uk.ps",
   "title" : "UK Patient Summary",
   "canonical" : "http://hl7.org.uk/fhir/uk-ps",
+  "jurisdiction": "urn:iso:std:iso:3166#GB",
   "introduction" : "TBD",
   "category" : "TBD",
   "list" : [
