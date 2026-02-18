@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9587f257-2a8f-47de-879c-66c10175f400-93",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9587f257-2a8f-47de-879c-66c10175f400-93",
+  "name" : "IntersectionmedicationRequest Category CodesAndUKCoreMedicationRequestCategory",
+  "title" : "Intersection of Medication request  category  codes And UK Core Medication Request Category",
+  "status" : "draft",
+  "date" : "2026-02-18T15:43:54+00:00"
+}

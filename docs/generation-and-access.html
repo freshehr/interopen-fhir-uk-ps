@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Generation and Access - UK Patient Summary Implementation Guide v0.1.0-cibuild</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"4.2"}
+    h3,h4,h5,h6{--heading-prefix:"4.2"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UK Patient Summary Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0-cibuild - CI Build
+
+
+
+  <img src="assets/images/gbr.svg" alt="United Kingdom flag" title="United Kingdom" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-requirements.html">General Requirements</a>
+        <a href="declaring-conformance.html">Declaring Conformance</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="the-ukps.html">The UK PS</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+     <ul class="dropdown-menu">
+      <li>
+        <a href="general-guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="generation-and-access.html">Generation and Access</a>
+      </li>
+      <li><a name="l190">​</a>
+        <a href="sex-and-gender.html">Sex and Gender</a>
+      </li>
+       <li>
+        <a href="relationship.html">Relationship With Other IGs</a>
+      </li>
+      <li>
+        <a href="variance.html">UK Variance Statement</a>
+      </li>
+      <li>
+        <a href="comparison.html">Comparison With Other National and International IGs</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases
+      <b class="caret"></b>
+    </a>
+     <ul class="dropdown-menu">
+      <li>
+        <a href="uc-interstate.html">Cross-locality Unscheduled Care</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="security.html">Security and Privacy</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artefacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+       <li>
+        <a href="artifacts.html">Artefacts Summary</a>
+      </li>
+      <li>
+        <a href="profiles-and-extensions.html">Profiles and Extensions</a>
+      </li>
+        <!-- <li>
+        <a href="search-parameters.html">Search Parameters</a>
+      </li> -->
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+        <!-- <li>
+        <a href="capability-statements.html">Capability Statements</a>
+      </li> -->
+      <li>
+        <a href="actors.html">Actor Definitions</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="license.html">License and Legal</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+</ul>
+
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="guidance.html"><b>Guidance</b></a></li><li><b>Generation and Access</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">UK Patient Summary Implementation Guide - Local Development build (v0.1.0-cibuild) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://hl7.org.uk/fhir/ps/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Generation and Access</h2>
+  
+
+
+
+
+
+  <table class="colsi">
+    <tr>
+  
+      <td>
+        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
+        
+      </td>
+  
+  
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+
+<h3 id="generating--accessing-au-patient-summary-au-ps-documents">Generating &amp; Accessing AU Patient Summary (AU PS) Documents</h3>
+<p><a name="l418">​</a>AU PS is specified in this guide as a HL7 FHIR document (a Bundle including a Composition), composed by a set of potentially reusable "minimal" data blocks (the AU PS profiles). See <a href="the-aups.html#structure-of-the-au-ps">Structure of the AU PS</a>.</p>
+
+<p>The IPS recommends two potential operations (<code class="language-plaintext highlighter-rouge">$summary</code> and <code class="language-plaintext highlighter-rouge">$docref</code>) for how IPS documents may be generated, but does not constrain solutions or strategies for the creation, sharing and use of patient summary documents (see <a href="https://hl7.org/fhir/uv/ips/Generation-and-Data-Inclusion.html">Generating &amp; Accessing IPS Documents</a>). These and other options for generation and access have been discussed during the AU PS project and HL7 AU Connectathons. The options under discussion for most implementations in the Australian context are referenced and briefly described in this guide in the sections below.</p>
+
+<p>In addition to the options described below, future releases of AU PS (or IPS) may describe alternative methods and recommendations such as:</p>
+<ul>
+  <li>Document Bundle Interactions - FHIR REST API interactions on Bundle resource type to create, update, search and read a patient summary document Bundle. A named query search approach could be used to provide more controlled and advanced search requirements.</li>
+  <li>Document Bundle and DocumentReference Interactions - Integrating the Healthcare Enterprise (IHE) has published guidance on the <a href="https://profiles.ihe.net/ITI/sIPS/index.html">IHE Sharing of IPS (sIPS)</a>, which has been implemented in a number of jurisdictional implementations of IPS.</li>
+  <li>Encrypted File Exchange - in cases where patient summary document exchange is performed using insecure transport media such as email, USB or DVD.</li>
+</ul>
+
+<p>When generating an AU PS document, implementers are advised to be familiar with the following IPS guidance:</p>
+<ul>
+  <li><a href="https://hl7.org/fhir/uv/ips/STU2/Design-Conventions.html#narrative-and-language-translation">Narrative and Language Translation</a>.</li>
+  <li><a href="https://hl7.org/fhir/uv/ips/STU2/Generation-and-Data-Inclusion.html#data-included-in-ips-documents">Data Included in IPS Documents</a>.</li>
+</ul>
+
+<h4 id="ips-summary-fhir-operation">IPS $summary FHIR Operation</h4>
+<p>The IPS defines the <a href="https://hl7.org/fhir/uv/ips/STU2/OperationDefinition-summary.html">IPS Summary</a> (<code class="language-plaintext highlighter-rouge">$summary</code>) operation. This operation is recommended by IPS for generating an IPS document. It has two endpoint URLs based on the Patient resource:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">[base]/Patient/$summary</code> - a Patient resource type endpoint where a patient (business) identifier is provided as a parameter in the operation request body</li>
+  <li><code class="language-plaintext highlighter-rouge">[base]/Patient/[id]/$summary</code> - a Patient instance endpoint where a patient resource id is provided as a parameter in the URL path</li>
+</ul>
+
+<p>An optional <code class="language-plaintext highlighter-rouge">profile</code> parameter can be included in the request to allow the server to generate a FHIR document that conforms to the specified profile (e.g. AU PS Composition). If the profile parameter is not provided, or if the specified profile is not supported, the server defaults to generating a document based on the IPS Composition profile.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">$summary</code> operation returns a FHIR Bundle resource of type document. The returned document is typically generated on demand and represents the most current patient summary information. It is not expected that the returned document is persisted as part of this request; therefore, this operation as a standalone does not support use cases where retrieval of a previously generated document is required.</p>
+
+<p>A consuming system can invoke the Patient <code class="language-plaintext highlighter-rouge">$summary</code> operation on a server to retrieve an on-demand, system generated patient summary document. The operation can also be used within a system to generate an initial patient summary document that a user can review, curate, assert, display, persist or take further action on.</p>
+
+<p alt="IPS Summary Operation" class="mermaid">
+---
+config:
+  theme: default
+---
+sequenceDiagram
+participant Server as Patient Summary Server
+    participant Consumer as Patient Summary Consumer
+
+    alt
+        Consumer-&gt;&gt;Server: Patient/$summary { identifier, ... }
+    else 
+        Consumer-&gt;&gt;Server: Patient/[id]/$summary { ... }
+    end
+
+    Server--&gt;&gt;Consumer: Bundle { type: 'document' }
+</p>
+<p><em>Figure 1: The IPS Summary operation</em>
+<br/></p>
+
+<h4 id="ipa-docref-fhir-operation">IPA $docref FHIR Operation</h4>
+<p>The International Patient Access (IPA) defines the <a href="https://hl7.org/fhir/uv/ipa/STU1.1/OperationDefinition-docref.html">IPA Fetch DocumentReference</a> (<code class="language-plaintext highlighter-rouge">$docref</code>) operation. This operation is recommended by IPS, and has been incorporated in <a href="https://hl7.org/fhir/R5/">FHIR Release 5</a> as <a href="https://hl7.org/fhir/R5/documentreference-operation-docref.html">Operation $docref on DocumentReference</a>. The <a href="https://hl7.org/fhir/us/core/CapabilityStatement-us-core-server.html#documentreference">US Core Server CapabilityStatement</a> in US Core 8.0.1 specifies this operation as SHALL support, returning at least a reference to a generated Continuity of Care Document (CCD) document if available.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">$docref</code> operation has a DocumentReference resource type endpoint that returns a searchset Bundle containing DocumentReference resources that match the specified request parameters.</p>
+
+<p><code class="language-plaintext highlighter-rouge">$docref</code> operation parameters include:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">patient</code>: required patient resource id</li>
+  <li><code class="language-plaintext highlighter-rouge">start</code>: optional care date range start</li>
+  <li><code class="language-plaintext highlighter-rouge">end</code>: optional care date range end</li>
+  <li><code class="language-plaintext highlighter-rouge">type</code>: optional document type codes</li>
+  <li><code class="language-plaintext highlighter-rouge">profile</code>: optional document profile URLs</li>
+  <li><code class="language-plaintext highlighter-rouge">on-demand</code>: optional flag for only on-demand documents returned</li>
+</ul>
+
+<p>A consuming system can invoke the <code class="language-plaintext highlighter-rouge">$docref</code> operation on a server to retrieve all DocumentReference resources related to a patient. When no parameters are specified other than the required patient resource id, the server returns a single DocumentReference pointing to the patient’s most current summary document. The type of this summary document depends on jurisdictional processing rules - for example, the Consolidated CDA (C-CDA) is commonly used in North America, whereas in Australia, the document may be specified as an AU PS document.</p>
+
+<p>When optional parameters are provided, the server can return existing documents that match the request parameters. In this way, the <code class="language-plaintext highlighter-rouge">$docref</code> operation behaves similarly to a DocumentReference search. However, if no parameters are provided, a single current summary document is returned. Additionally, if supported, the on-demand parameter allows the client to request generation and storage of a new document.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">$docref</code> operation expects that a document will always exist or can be dynamically generated. This expectation may be further constrained within a jurisdictional context, including specification of the expected operation outcome when a document is unavailable—such as returning an empty searchset Bundle.</p>
+
+<p>The document metadata provided in the returned DocumentReference resource can be used to identify a document for retrieval. The <code class="language-plaintext highlighter-rouge">DocumentReference.content.attachment</code> element is then used to retrieve the referenced document, which may either be encapsulated within the data sub-element or referenced via the <code class="language-plaintext highlighter-rouge">url</code> sub-element. A consuming system can retrieve a referenced document by accessing the location specified in the <code class="language-plaintext highlighter-rouge">content.attachment.url</code> element, which may retrieve a FHIR Binary resource of various document formats.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">$docref</code> operation supports multiple document retrieval use cases, including retrieving a patient summary document from a previous point in time, accessing the current patient summary document, and generating a new document on demand. The benefit of this operation is the use of a single endpoint to support these scenarios, including retrieval of other document types and formats such as HL7 CDA or PDF documents. This flexibility suggests that jurisdictional and implementation-level profiles may be necessary to clearly specify supported input parameters, document capabilities, and the expected output of the operation.</p>
+
+<p alt="IPS DocumentReference Operation" class="mermaid">
+---
+config:
+  theme: default
+---
+sequenceDiagram
+  participant Server as Patient Summary Server
+  participant Consumer as Patient Summary Consumer
+  Consumer-&gt;&gt;Server: DocumentReference/$docref { ... }
+  Server--&gt;&gt;Consumer: Bundle { type: 'searchset', entry[]: DocumentReference }
+  Consumer-&gt;&gt;Server: Bundle/[id] read
+  Server--&gt;&gt;Consumer: Bundle { type: 'document' }
+</p>
+<p><em>Figure 2: The IPA Fetch DocumentReference operation</em>
+<br/></p>
+
+<h4 id="smart-health-links">SMART Health Links</h4>
+<p><a href="https://hl7.org/fhir/uv/smart-health-cards-and-links/">SMART Health Cards and Links</a> is a FHIR standard that supports scenarios where document exchange is initiated by the healthcare consumer by sharing a link to a patient summary document with trusted recipient.</p>
+
+<p>A user that wants to share a patient summary document (or other health information) retrieves a SMART Health Link (SHL) from an SHL Sharing Application. While the method of retrieving the SHL is not specified by the standard, the SHL itself is a structured, encoded link that includes a URL to a file manifest, an encryption key, and metadata describing the link. It is important to consider securing the SHL as it contains the cryptographic key required to access the document.</p>
+
+<p>The user can optionally specify a passcode, which serves as the only access control mechanism and is required to retrieve the file manifest and subsequently, the patient summary document.</p>
+
+<p>To aid in viewing and processing the patient summary document, the SHL can be prefixed with a URL to an SHL Receiving Application, and the complete link can be encoded as a QR code to facilitate sharing.</p>
+
+<p>When the receiving user submits the SHL to an SHL Receiving Application, the application decodes the SHL and, if required, requests a passcode from the receiving user. The decoded data and passcode is used to retrieve a file manifest from the SHL Sharing Application. The manifest contains a list of files - either via external URLs or embedded directly in the response. Once a file is retrieved or decoded, it is decrypted using the key contained in the SHL. The decrypted file contains the patient summary document as a FHIR Bundle resource, which can then be used by the SHL Receiving Application.</p>
+
+<p alt="SMART Health Links Patient Summary Exchange" class="mermaid">
+---
+config:
+  theme: default
+---
+sequenceDiagram
+
+    participant SharingUser as Sharing User
+    participant SharingApp as SHL Sharing Application
+    participant ReceivingApp as SHL Receiving Application
+    participant ReceivingUser as Receiving User
+
+    SharingUser -&gt;&gt; SharingApp: Create SHL { passcode }
+    SharingApp --&gt;&gt; SharingUser: shlink:/ ...
+
+    SharingUser --&gt;&gt; ReceivingUser: Sharing user exchanges SHL with receiving user
+
+    ReceivingUser -&gt;&gt; ReceivingApp: View SHL #shlink:/ ...
+    ReceivingApp -&gt;&gt; SharingApp: POST manifest-url { recipient, passcode }
+    SharingApp --&gt;&gt; ReceivingApp: Manifest { files: [ { contentType, location | embedded } ]}
+
+    alt 
+        ReceivingApp -&gt;&gt; SharingApp: GET location
+        SharingApp --&gt;&gt; ReceivingApp: encrypted(Bundle { type: 'document' })
+    else
+        ReceivingApp -&gt;&gt; ReceivingApp: Decode embedded content
+    end
+
+    ReceivingApp -&gt;&gt; ReceivingApp: Decrypt (SHL key)
+</p>
+<p><em>Figure 3: SMART Health Links Patient Summary Exchange</em>
+<br/></p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interopen.org">HL7 UK / INTEROPen</a>.  Package interopen.uk.ps#0.1.0-cibuild based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 18, 2026 15:41+0000">2026-02-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

@@ -1,0 +1,1107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>General Requirements - UK Patient Summary Implementation Guide v0.1.0-cibuild</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"2.1"}
+    h3,h4,h5,h6{--heading-prefix:"2.1"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UK Patient Summary Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0-cibuild - CI Build
+
+
+
+  <img src="assets/images/gbr.svg" alt="United Kingdom flag" title="United Kingdom" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-requirements.html">General Requirements</a>
+        <a href="declaring-conformance.html">Declaring Conformance</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="the-ukps.html">The UK PS</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+     <ul class="dropdown-menu">
+      <li>
+        <a href="general-guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="generation-and-access.html">Generation and Access</a>
+      </li>
+      <li><a name="l190">​</a>
+        <a href="sex-and-gender.html">Sex and Gender</a>
+      </li>
+       <li>
+        <a href="relationship.html">Relationship With Other IGs</a>
+      </li>
+      <li>
+        <a href="variance.html">UK Variance Statement</a>
+      </li>
+      <li>
+        <a href="comparison.html">Comparison With Other National and International IGs</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases
+      <b class="caret"></b>
+    </a>
+     <ul class="dropdown-menu">
+      <li>
+        <a href="uc-interstate.html">Cross-locality Unscheduled Care</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="security.html">Security and Privacy</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artefacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+       <li>
+        <a href="artifacts.html">Artefacts Summary</a>
+      </li>
+      <li>
+        <a href="profiles-and-extensions.html">Profiles and Extensions</a>
+      </li>
+        <!-- <li>
+        <a href="search-parameters.html">Search Parameters</a>
+      </li> -->
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+        <!-- <li>
+        <a href="capability-statements.html">Capability Statements</a>
+      </li> -->
+      <li>
+        <a href="actors.html">Actor Definitions</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="license.html">License and Legal</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+</ul>
+
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="conformance.html"><b>Conformance</b></a></li><li><b>General Requirements</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">UK Patient Summary Implementation Guide - Local Development build (v0.1.0-cibuild) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://hl7.org.uk/fhir/ps/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>General Requirements</h2>
+  
+
+
+
+
+
+  <table class="colsi">
+    <tr>
+  
+      <td>
+        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
+        
+      </td>
+  
+  
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#conforming-to-uk-patient-summary-uk-ps" id="markdown-toc-conforming-to-uk-patient-summary-uk-ps">Conforming to UK Patient Summary (UK PS)</a></li>
+  <li><a href="#conformance-artifacts" id="markdown-toc-conformance-artifacts">Conformance Artifacts</a>    <ul>
+      <li><a href="#uk-ps-profiles-and-extensions" id="markdown-toc-uk-ps-profiles-and-extensions">UK PS Profiles and Extensions</a></li>
+      <li><a href="#uk-ps-actors" id="markdown-toc-uk-ps-actors">UK PS Actors</a></li>
+    </ul>
+  </li>
+  <li><a href="#mandatory-elements" id="markdown-toc-mandatory-elements">Mandatory Elements</a></li>
+  <li><a href="#missing-data-empty-sections-known-absence-of-data" id="markdown-toc-missing-data-empty-sections-known-absence-of-data">Missing Data, Empty Sections, Known Absence of Data</a>    <ul>
+      <li><a href="#missing-data" id="markdown-toc-missing-data">Missing Data</a></li>
+      <li><a href="#empty-sections" id="markdown-toc-empty-sections">Empty Sections</a></li>
+      <li><a href="#known-absence-of-data-due-to-workflow" id="markdown-toc-known-absence-of-data-due-to-workflow">Known Absence of Data Due to Workflow</a></li>
+      <li><a href="#no-known-x" id="markdown-toc-no-known-x">No Known X</a></li>
+    </ul>
+  </li>
+  <li><a href="#suppressed-data" id="markdown-toc-suppressed-data">Suppressed Data</a></li>
+  <li><a href="#must-support-and-obligation" id="markdown-toc-must-support-and-obligation">Must Support and Obligation</a>    <ul>
+      <li><a href="#presentation-of-must-support-and-obligation-in-profiles" id="markdown-toc-presentation-of-must-support-and-obligation-in-profiles">Presentation of Must Support and Obligation in Profiles</a></li>
+      <li><a href="#interpreting-profile-elements-labelled-must-support" id="markdown-toc-interpreting-profile-elements-labelled-must-support">Interpreting Profile Elements Labelled Must Support</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<h3 id="conforming-to-uk-patient-summary-uk-ps">Conforming to UK Patient Summary (UK PS)</h3>
+
+<p>Systems claiming conformance to UK PS will represent digital health information using the content models of <a href="profiles-and-extensions.html">UK PS profiles</a> AND implement the requirements of one or both <a href="actors.html">UK PS actors</a>.</p>
+
+<p>The requirements of the FHIR standard and <a href="http://hl7.org/fhir/conformance-rules.html">FHIR Conformance Rules</a> apply, and define the use of terms in this guide including the conformance verbs - <strong>SHALL</strong>, <strong>SHALL NOT</strong>, <strong>SHOULD</strong>, <strong>SHOULD NOT</strong>, <strong>MAY</strong>.</p>
+
+<p>Implementers are advised to be familiar with the requirements of the FHIR standard and IPS when implementing UK PS, in particular:</p>
+<ul>
+  <li><a href="https://hl7.org/fhir/uv/ips/STU2/Generation-and-Data-Inclusion.html#generation-and-data-inclusion">IPS Generation and Data Inclusion</a></li>
+  <li><a href="https://hl7.org/fhir/uv/ips/STU2/Design-Conventions.html#narrative-and-language-translation">IPS Narrative and Language Translation</a></li>
+  <li><a href="http://hl7.org/fhir/R4/terminologies.html">FHIR Terminology requirements</a></li>
+  <li><a href="https://hl7.org/fhir/R4/documents.html">FHIR Documents</a> and <a href="https://hl7.org/fhir/uv/fhir-clinical-document/">FHIR Clinical Documents</a></li>
+  <li><a href="http://hl7.org/fhir/R4/http.html">FHIR RESTful API</a></li>
+  <li><a href="http://hl7.org/fhir/R4/search.html">FHIR Search</a></li>
+  <li><a href="http://hl7.org/fhir/R4/resource.html">FHIR Resource formats</a></li>
+  <li><a href="http://hl7.org/fhir/R4/datatypes.html">FHIR Data Types</a></li>
+</ul>
+
+<h3 id="conformance-artifacts">Conformance Artifacts</h3>
+
+<h4 id="uk-ps-profiles-and-extensions">UK PS Profiles and Extensions</h4>
+<p>The <a href="profiles-and-extensions.html">Profiles and Extensions</a> page lists the UK PS profiles and extensions defined for this implementation guide. An UK PS profile <a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a> defines the minimum elements, extensions, vocabularies and value sets that <strong>SHALL</strong> be present and constrains the way elements are used when conforming to the profile.</p>
+
+<p>UK PS profile elements include mandatory and <em>Must Support</em> requirements. <a href="#mandatory-elements">Mandatory elements</a> are required and have a minimum cardinality &gt; 0. <a href="#must-support-and-obligation">Must Support</a> elements have defined conformance obligations in UK PS.</p>
+
+<h4 id="uk-ps-actors">UK PS Actors</h4>
+<p>The <a href="actors.html">Actor Definitions</a> page lists the UK PS actors defined for this implementation guide and the requirements for implementing that actor. An UK PS profile <a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a> defines the obligations for an UK PS actor when implementing that profile.</p>
+
+<h3 id="mandatory-elements">Mandatory Elements</h3>
+<p>Mandatory elements are elements with minimum cardinality &gt; 0. When an element is mandatory, the data is expected to always be present. Very rarely, it may not be, and in this circumstance the requirements defined by UK Core for <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/general-requirements.html#missing-data">Missing Data</a> <strong>SHALL</strong> be applied.</p>
+
+<p>An element can be both <em>Must Support</em> and mandatory, and in this circumstance the requirements defined for <a href="general-requirements.html#missing-must-support-and-mandatory-data">Missing Must Support and Mandatory Data</a> <strong>SHALL</strong> be applied.</p>
+
+<p>The convention in this guide is to mark all mandatory and conditionally mandatory elements as <em>Must Support</em> unless they are nested under an optional element.</p>
+
+<h3 id="missing-data-empty-sections-known-absence-of-data">Missing Data, Empty Sections, Known Absence of Data</h3>
+<p>It is important to differentiate between the following mutually exclusive circumstances:</p>
+<ul>
+  <li>Affirmatively stating that a patient has "no known X" or "no history of X" (for example, that a patient has no known allergies).</li>
+  <li>Not having data in the record for a particular section (for example, where a source system does not have information on a patient's allergies).</li>
+  <li>Asserting that this data is not available due to a workflow reason (for example, allergies were not reviewed and are unknown).</li>
+  <li>Not having data for a particular element (for example, the onset date of a particular allergy is not available in the system and the system does not know the reason for the absence).</li>
+</ul>
+
+<p>In the above circumstances the following is applied:</p>
+<ul>
+  <li>When stating "no known X" or "no history of X", systems <strong>SHOULD</strong> implement the guidance of the <a href="general-requirements.html#no-known-x">No Known X</a> section.</li>
+  <li>Where data is missing for a section and the reason is not known, systems <strong>SHALL</strong> implement the requirements of the <a href="general-requirements.html#empty-sections">Empty Sections</a> section.</li>
+  <li>Where data is not available due to a known workflow reason, systems <strong>SHOULD</strong> implement the requirements of the <a href="general-requirements.html#known-absence-of-data-due-to-workflow">Known Absence of Data Due to Workflow</a> section.</li>
+  <li>Where data is missing for an element within a resource and the reason is not known, systems <strong>SHALL</strong> implement the requirements of the <a href="general-requirements.html#missing-data">Missing Data</a> section.</li>
+</ul>
+
+<h4 id="missing-data">Missing Data</h4>
+
+<h5 id="missing-must-support-and-optional-data">Missing Must Support and Optional Data</h5>
+
+<p>If the source system (UK PS Producer) does not know the value for an optional element (minimum cardinality = 0), including elements labelled <em>Must Support</em>, as per the requirements defined in <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/general-requirements.html#missing-must-support-and-optional-data">UK Core</a>, the data element <strong>SHALL</strong> be omitted from the resource.</p>
+
+<h5 id="missing-must-support-and-mandatory-data">Missing Must Support and Mandatory Data</h5>
+
+<p>If the data element is a mandatory element (minimum cardinality is &gt; 0), the element <strong>SHALL</strong> be present <em>even if</em> the source system (UK PS Producer) does not know the value or the reason the value is absent. In this circumstance, the requirements defined by UK Core for <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/general-requirements.html#missing-must-support-and-mandatory-data">Missing Must Support and Mandatory Data</a> <strong>SHALL</strong> be applied.</p>
+
+<p>Example: MedicationRequest resource where status and requester are missing</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ...
+  {
+    "resourceType" : "MedicationRequest",
+    "status" : "unknown",
+    "intent" : "order",
+    "medicationCodeableConcept" : {
+      "coding" : [
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "79115011000036100",
+          "display" : "Paracetamol 500 mg + codeine phosphate hemihydrate 30 mg tablet"
+        }
+      ]
+    },
+    ...
+    "authoredOn" : "2018-07-15",
+    "requester" : {
+      "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode" : "unknown"
+        }
+      ]
+    },
+  ...
+</code></pre></div></div>
+<h4 id="empty-sections">Empty Sections</h4>
+
+<p>An UK PS Producer <strong>SHOULD</strong> omit non-mandatory sections when the source system does not have any information and does not know the reason the information is absent.</p>
+
+<p>For a mandatory section (minimum cardinality is &gt; 0), the section <strong>SHALL</strong> be present <em>even if</em> the source system (UK PS Producer) does not have any information for that section or know the reason the information is absent. In this circumstance, an UK PS Producer <strong>SHALL</strong>:</p>
+
+<ul>
+  <li>use the code <code class="language-plaintext highlighter-rouge">unavailable</code> from the <a href="http://terminology.hl7.org/CodeSystem/list-empty-reason">List Empty Reasons</a> code system</li>
+</ul>
+
+<p>UK PS Consumers are advised that other meaningful values can be captured in <code class="language-plaintext highlighter-rouge">Composition.section.emptyReason</code> beyond missing or suppressed.</p>
+
+<p>Example: UK PS - Allergies and Intolerances Section where the patient's allergy information is not available.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ...
+    "section" : [
+       {
+        "title" : "Allergies and Intolerances",
+        "code" : {
+        "coding" : [
+          {
+            "system" : "http://loinc.org",
+            "code" : "48765-2",
+            "display" : "Allergies and adverse reactions Document"
+          }
+        ]
+        },
+        "text" : {
+        "status" : "generated",
+        "div" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-UK\" lang=\"en-UK\"&gt;There is no information available regarding the consumer's allergy conditions.&lt;/div&gt;"
+        },
+        "emptyReason" : {
+          "coding" : [
+            {
+            "system" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+            "code" : "unavailable",
+            "display" : "Unavailable"
+            }
+          ],
+          "text" : "No information available"
+        }
+      },
+    ...
+</code></pre></div></div>
+
+<h4 id="known-absence-of-data-due-to-workflow">Known Absence of Data Due to Workflow</h4>
+
+<p>Where the system does not have information for a particular section and there is a known workflow reason (for example, the patient preferred not to answer), the system <strong>SHOULD</strong> represent that reason by populating <code class="language-plaintext highlighter-rouge">Composition.section.emptyReason</code>:</p>
+<ul>
+  <li>Prefer not to answer may be represented by sending the <a href="http://terminology.hl7.org/CodeSystem/data-absent-reason">Data Absent Reason</a> code "asked-declined"</li>
+  <li>Asked but not known may be represented by sending the <a href="http://terminology.hl7.org/CodeSystem/data-absent-reason">Data Absent Reason</a> code "asked-unknown"</li>
+  <li>Where the workflow does not obtain the information, it may be represented by sending the <a href="https://hl7.org/fhir/R4/codesystem-list-empty-reason.html">List Empty Reason</a> code "notasked"</li>
+</ul>
+
+<p>Example: UK PS - Allergies and Intolerances Section where there is a workflow reason the patient's allergy information is not available.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ...
+  "section" : [
+    {
+      "title" : "Allergies and Intolerances",
+      "code" : {
+      "coding" : [
+        {
+          "system" : "http://loinc.org",
+          "code" : "48765-2",
+          "display" : "Allergies and adverse reactions Document"
+        }
+      ]
+      },
+      "text" : {
+      "status" : "generated",
+      "div" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-UK\" lang=\"en-UK\"&gt;The patient was not asked about allergies.&lt;/div&gt;"
+      },
+      "emptyReason" : {
+        "coding" : [
+          {
+           "system" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+            "code" : "notasked",
+            "display" : "Not Asked"
+          }
+        ],
+        "text" : "Patient was not asked"
+      }
+    },
+  ...
+</code></pre></div></div>
+
+<h4 id="no-known-x">No Known X</h4>
+
+<p>Where the system can assert "no known X" (for example, no known conditions) or "no history of X" (for example, no history of cardiovascular system disease), the system <strong>SHOULD</strong> populate <code class="language-plaintext highlighter-rouge">Composition.section.entry</code> in accordance with the relevant profile specific implementation guidance.</p>
+
+<p>For example, to represent that a patient does not have an allergy or category of allergies, an appropriate negation code (e.g. 716186003 |No known allergy| or 1003774007 |No known Hevea brasiliensis latex allergy|) is used in <code class="language-plaintext highlighter-rouge">AllergyIntolerance.code</code> as per the profile specific implementation guidance.</p>
+
+<p>In UK PS this approach is preferred to using <code class="language-plaintext highlighter-rouge">Composition.section.emptyReason</code> due to the widely known and implemented patterns established within FHIR, IPS, and UK Core to assert "no known X" or "no history of X".</p>
+
+<p>Example: Condition resource representing 'No Known Problems'</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ...
+  {
+    "resourceType" : "Condition",
+    "clinicalStatus" : "active",
+    "code" : {
+      "coding" : [
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "160245001",
+          "display" : "No current problems or disability"
+        }
+      ]
+    },
+  ...
+</code></pre></div></div>
+
+<h3 id="suppressed-data">Suppressed Data</h3>
+
+<p>In some circumstances, specific pieces of data are hidden:</p>
+<ul>
+  <li>if an optional section (minimum cardinality = 0) is not able to be shared, it <strong>MAY</strong> be omitted; but if provided use the code <code class="language-plaintext highlighter-rouge">unavailable</code> or <code class="language-plaintext highlighter-rouge">withheld</code> from the <a href="https://hl7.org/fhir/R4/codesystem-list-empty-reason.html">List Empty Reason</a> in <code class="language-plaintext highlighter-rouge">Composition.section.emptyReason</code>.</li>
+  <li>if a mandatory section (minimum cardinality &gt; 0) is not able to be shared, use the code <code class="language-plaintext highlighter-rouge">unavailable</code> or <code class="language-plaintext highlighter-rouge">withheld</code> from the <a href="https://hl7.org/fhir/R4/codesystem-list-empty-reason.html">List Empty Reason</a> in <code class="language-plaintext highlighter-rouge">Composition.section.emptyReason</code>.</li>
+  <li>if an optional element (minimum cardinality = 0) is not able to be shared, it <strong>SHALL</strong> be omitted.</li>
+  <li>
+    <p>if a mandatory element (minimum cardinality &gt; 0) is not able to be shared, use the code <code class="language-plaintext highlighter-rouge">unknown</code> or <code class="language-plaintext highlighter-rouge">masked</code> from the <a href="http://terminology.hl7.org/CodeSystem/data-absent-reason">DataAbsentReason Code System</a> following the section on <a href="#missing-data">Missing Data</a>.</p>
+
+    <p>Example: UK PS - Allergies and Intolerances Section where the patient's allergy information is not allowed to be shared.</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      ...
+      "section" : [
+          {
+            "title" : "Allergies and Intolerances",
+            "code" : {
+              "coding" : [
+                  {
+                  "system" : "http://loinc.org",
+                  "code" : "48765-2",
+                  "display" : "Allergies and adverse reactions Document"
+                }
+              ]
+            },
+            "text" : {
+              "status" : "generated",
+              "div" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-UK\" lang=\"en-UK\"&gt;This information is withheld.&lt;/div&gt;"
+            },
+            "emptyReason" : {
+              "coding" : [
+                  {
+                  "system" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+                  "code" : "withheld",
+                  "display" : "Withheld"
+                  }
+              ],
+              "text" : "Withheld"
+            }
+          },
+      ...
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="must-support-and-obligation">Must Support and Obligation</h3>
+<p>Labelling an element <em><a href="https://www.hl7.org/fhir/conformance-rules.html#mustSupport">Must Support</a></em> means that systems that produce or consume resources <strong>SHALL</strong> provide support for the element in some meaningful way. The FHIR standard does not define exactly what 'meaningful' support for an element means, but indicates that a profile <strong>SHALL</strong> make clear exactly what kind of support is required when an element is labelled as <em>Must Support</em>.</p>
+
+<p>In UK PS, the meaning of <em>Must Support</em> is specified in terms of <a href="https://hl7.org/fhir/extensions/CodeSystem-obligation.html">Obligation Codes</a> in <a href="https://hl7.org/fhir/extensions/StructureDefinition-obligation.html">obligation extensions</a> on the element definition. The obligation codes used to define the minimum obligations of <em>Must Support</em> elements in this implementation guide are reiterated below.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Code</th>
+      <th>Definition</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a name="l995">​</a><a href="ActorDefinition-au-ps-actor-consumer.html">UK PS Consumer actor</a></td>
+      <td><a href="https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-SHALL.58handle">SHALL:handle</a></td>
+      <td>Conformant applications SHALL handle the meaning of this element correctly.</td>
+      <td>This rule is vague in that doesn't specify any particular handling of the element. But it's important because an application that ignores this element is non-conformant. A good example would be a status code of 'entered-in-error' - how exactly a Resource Consumer handles this depends on the use case etc., but the application can never simply ignore such a status code. Note that whether the resource or information from it is stored for later use is irrelevant - when the resource or information in it is processed, the consequences of the element are considered. In UK PS, all elements marked as <em>Must Support</em> have this obligation applied.</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><a href="https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-SHOULD.58display">SHOULD:display</a></td>
+      <td>Conformant applications SHOULD display the value of this element when presenting the data to a human user.</td>
+      <td>Exactly how it is displayed is not specified, but it means that a human looking at the content of the resource is made aware of the value of the element so that they can consider the meaning of the resource. In UK PS, most elements marked as <em>Must Support</em> have this obligation applied.</td>
+    </tr>
+    <tr>
+      <td><a name="l1034">​</a><a href="ActorDefinition-au-ps-actor-producer.html">UK PS Producer actor</a></td>
+      <td><a href="https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-SHALL.58populate">SHALL:populate</a></td>
+      <td>Conformant applications producing resources SHALL include this element if a value is known and allowed to be shared</td>
+      <td>This implementation obligation means that whenever the producer knows the correct value for an element, it populates it. This is NOT the same as cardinality, as a 'populate' element can be omitted if no data exists or the data that exists is prohibited from being shared. SHALL:populate combines able-to-populate and populate-if-known for the element.</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><a href="https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-SHALL.58able-to-populate">SHALL:able-to-populate</a></td>
+      <td>Conformant applications producing resources SHALL be able to correctly populate this element.</td>
+      <td>Typically, this means that an application needs to demonstrate during some conformance testing process that there are some conditions under which it populates the element with a correct value. (i.e. not a data-absent-reason or equivalent.) This obligation does not impose expectations on the circumstances in which the element will be sent, only that it can be in at least some situations.</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><a href="https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-SHALL.58populate-if-known">SHALL:populate-if-known</a></td>
+      <td>Conformant applications producing resources SHALL correctly populate this element if they know a value for the element, but it is acceptable if the system is unable to ever know a value for the element.</td>
+      <td>This obligation does not impose a requirement to be able to know a value, unlike populate and able-to-populate which do. 'Knowing' an element means that a value for the element is available in memory, persistent store, or is otherwise available within the system claiming conformance. With the exception of UK PS Composition, all profiles referenced by UK PS Bundle have this obligation applied to elements marked as <em>Must Support</em>.</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><a href="https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-SHOULD.58able-to-populate">SHOULD:able-to-populate</a></td>
+      <td>Conformant applications producing resources SHOULD be able to correctly populate this element.</td>
+      <td>Typically, this means that an application needs to demonstrate during some conformance testing process that there are some conditions under which it populates the element with a correct value. (i.e. not a data-absent-reason or equivalent.) This obligation does not impose expectations on the circumstances in which the element will be sent, only that it can be in at least some situations.</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><a href="https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-SHOULD.58populate-if-known">SHOULD:populate-if-known</a></td>
+      <td>Conformant applications producing resources SHOULD correctly populate this element if they know a value for the element, but it is acceptable if the system is unable to ever know a value for the element.</td>
+      <td>This obligation does not impose a requirement to be able to know a value, unlike populate and able-to-populate which do. 'Knowing' an element means that a value for the element is available in memory, persistent store, or is otherwise available within the system claiming conformance.</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><a href="https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-MAY.58able-to-populate">MAY:able-to-populate</a></td>
+      <td>Conformant applications producing resources MAY be able to correctly populate this element.</td>
+      <td>Typically, this means that an application needs to demonstrate during some conformance testing process that there are some conditions under which it populates the element with a correct value. (i.e. not a data-absent-reason or equivalent.)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="l1134">​</a><em>Must Support</em> elements are treated differently between <a href="ActorDefinition-au-ps-actor-consumer.html">UK PS Consumer</a> and <a href="ActorDefinition-au-ps-actor-producer.html">UK PS Producer</a> actors. <em>Must Support</em> on a profile element <strong>SHALL</strong> be interpreted as follows.</p>
+
+<h4 id="presentation-of-must-support-and-obligation-in-profiles">Presentation of Must Support and Obligation in Profiles</h4>
+<p>All elements with <em>Must Support</em> in UK PS are accompanied by an explicit obligation that identifies the expectations for one or more actors. When rendered in an implementation guide, each profile is presented in different formal views under tabs labelled "Differential Table", "Key Elements Table", and "Snapshot Table". Elements labelled with <em>Must Support</em> and stated obligations in these views are represented by <span style="padding-left: 1px; padding-right: 1px; color: white; background-color: red" title="This element must be supported">S</span><span style="padding-left: 1px; padding-right: 1px; color: white; background-color: red" title="This element has obligations">O</span> as shown below.</p>
+
+<div> 
+    <img src="allergyintolerance-keyelementstable.png" alt="UK PS AllergyIntolerance Key Elements Table" style="width:75%"/>
+  </div>
+<p><em>Figure 1: Key Elements Table View</em>
+<br/></p>
+
+<p>Implementers need to refer to the "Key Elements Table" to see the full set of elements that are mandatory or <em>Must Support</em> with obligations, and the full set of terminology requirements.  Implementers need to be aware that the full set of constraints (i.e. invariants) are only presented in the "Detailed Descriptions" tab or the raw representation (e.g. XML or JSON) of the profile.</p>
+
+<h4 id="interpreting-profile-elements-labelled-must-support">Interpreting Profile Elements Labelled Must Support</h4>
+
+<p>The section is provided as additional support in understanding the application of <em>Must Support</em> and Obligations on elements in UK PS. This section does not override the Obligations defined for an actor - implementers are recommended to also read the profile specific implementation guidance for any qualifying requirements placed on the Obligations for a <em>Must Support</em> element.</p>
+
+<p>Profiles defined in this implementation guide flag <em>Must Support</em> on elements (e.g. <code class="language-plaintext highlighter-rouge">Patient.name</code>) and sub-elements of a data type (e.g. <code class="language-plaintext highlighter-rouge">Patient.name.use</code>). The explanation on how to interpret <em>Must Support</em> for an element does not address rules defined in each profile - which may limit or extend what is allowed for each element.</p>
+
+<p>The sub-elements for each supported element in a profile are defined by a combination of the data type from the core specification and any additional rules included in the profile. A profile may include rules that:</p>
+<ul>
+  <li>limit what is considered 'valid'</li>
+  <li>extend the potential sub-elements by including an extension</li>
+</ul>
+
+<p><a name="l1224">​</a>For example, the profile <a href="StructureDefinition-au-ps-patient.html">UK PS Patient</a> limits what is considered valid for the element <code class="language-plaintext highlighter-rouge">Patient.name</code> with the invariant "<strong>au-core-pat-02:</strong> At least one patient name shall have a family name".</p>
+
+<p><a name="l1236">​</a>Typically UK PS profiles will inherit extended sub-elements from the base HL7 UK Core profile (which itself is based on an HL7 UK Base profile), e.g. the element <code class="language-plaintext highlighter-rouge">Medication.code</code> in profile <a href="StructureDefinition-au-ps-medication.html">UK PS Medication</a> is of type CodeableConcept and is extended by inheriting a medicine specific sub-element <code class="language-plaintext highlighter-rouge">Medication.code.coding.extension</code> <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html">Medication Type extension</a> from the source profile <a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medication.html">UK Base Medication</a>.</p>
+
+<p>The full set of sub-elements is visible in the "Key Elements Table" or "Snapshot Table" which shows the sub-elements defined in this profile (shown in the "Differential Table") and the sub-elements inherited from a base profile.</p>
+
+<h5 id="must-support---composition-sections">Must Support - Composition Sections</h5>
+<p>Obligations vary significantly for elements in the UK PS Composition profile, in particular obligations on <code class="language-plaintext highlighter-rouge">Composition.section</code> reflect the expectations of <a href="https://hl7.org/fhir/uv/ips/STU2/Structure-of-the-International-Patient-Summary.html">The "IPS"</a> and  <a href="https://www.iso.org/standard/79491.html">ISO 27269</a>. A summary is provided below:</p>
+<ul>
+  <li>UK PS Consumers <strong>SHALL</strong> handle the Composition section if present and containing any valid value, and <strong>SHOULD</strong> display the content of the section when presenting the data to a human user.</li>
+  <li>For all mandatory sections (<code class="language-plaintext highlighter-rouge">Composition.section</code> minimum cardinality &gt; 0) UK PS Producers <strong>SHALL</strong> correctly populate the section if a value is known, <strong>SHALL</strong> be capable of populating <code class="language-plaintext highlighter-rouge">Composition.section.entry</code> with the referenced profiles, and <strong>SHOULD</strong> correctly populate <code class="language-plaintext highlighter-rouge">Composition.section.entry</code> if a value is known.</li>
+  <li>For all recommended sections UK PS Producers <strong>SHOULD</strong> correctly populate the section if a value is known and <strong>SHOULD</strong> correctly populate <code class="language-plaintext highlighter-rouge">Composition.section.entry</code> if a value is known.</li>
+  <li>For all optional or undefined sections UK PS Producers <strong>MAY</strong> correctly populate the section if a value is known and <strong>MAY</strong> correctly populate <code class="language-plaintext highlighter-rouge">Composition.section.entry</code> if a value is known.</li>
+</ul>
+
+<p><a name="l1329">​</a>See <a href="the-aups.html#structure-of-the-au-ps">Structure of the Australian Patient Summary (UK PS)</a> for information on the mandatory, recommended, and optional sections.</p>
+
+<h5 id="must-support---primitive-elements">Must Support - Primitive Elements</h5>
+<p>Primitive elements are single elements with a primitive value. If a primitive element is labelled as <em>Must Support</em>:</p>
+<ul>
+  <li>UK PS Producers <strong>SHALL</strong> correctly populate the element if a value is known.</li>
+  <li>UK PS Consumers <strong>SHALL</strong> handle the element if present and containing any valid value, and <strong>SHOULD</strong> display the value of this element (if the SHOULD:display Obligation is defined) when presenting the data to a human user.</li>
+</ul>
+
+<p>For example, the UK PS Organization Profile <code class="language-plaintext highlighter-rouge">name</code> element is a primitive string datatype. Therefore, when claiming conformance to this profile:</p>
+<ul>
+  <li>UK PS Producers <strong>SHALL</strong> correctly populate a value in <code class="language-plaintext highlighter-rouge">Organization.name</code> if a value is known.</li>
+  <li>UK PS Consumers <strong>SHALL</strong> handle the <code class="language-plaintext highlighter-rouge">Organization.name</code> if present and containing any valid value, and <strong>SHOULD</strong> display the value of <code class="language-plaintext highlighter-rouge">Organization.name</code> when presenting the data to a human user.</li>
+</ul>
+
+<h5 id="must-support---complex-elements">Must Support - Complex Elements</h5>
+<p>Complex elements are composed of primitive and other complex elements. Elements may have additional rules defined in the profile that also apply, e.g. invariants. Coded elements (<a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="https://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>, and <a href="https://hl7.org/fhir/R4/datatypes.html#code">code</a> datatypes) have additional rules defined by the <a href="https://hl7.org/fhir/R4/terminologies.html#strength">terminology binding</a> in the profile.</p>
+
+<p>If a complex element is labelled as <em>Must Support</em>:</p>
+<ul>
+  <li>UK PS Producers <strong>SHALL</strong> correctly populate the element with at least one of the sub-element values if the value is known.</li>
+  <li>UK PS Consumers <strong>SHALL</strong> handle the element if present and containing any valid sub-element, and <strong>SHOULD</strong> display the value of this element (if the SHOULD:display Obligation is defined) when presenting the data to a human user.</li>
+</ul>
+
+<p>For example, the UK PS AllergyIntolerance Profile <code class="language-plaintext highlighter-rouge">note</code> element is labelled <em>Must Support</em> and has no <em>Must Support</em> sub-elements. When claiming conformance to this profile:</p>
+<ul>
+  <li>UK PS Producers <strong>SHALL</strong> correctly populate a value in any valid <code class="language-plaintext highlighter-rouge">AllergyIntolerance.note</code> sub-element if a value is known e.g. <code class="language-plaintext highlighter-rouge">AllergyIntolerance.note.text</code>.</li>
+  <li>UK PS Consumers <strong>SHALL</strong> handle <code class="language-plaintext highlighter-rouge">AllergyIntolerance.note</code> if present and containing any valid sub-elements, and <strong>SHOULD</strong> display the value of <code class="language-plaintext highlighter-rouge">AllergyIntolerance.note</code> when presenting the data to a human user.</li>
+</ul>
+
+<p>If a sub-element is labelled as <em>Must Support</em>:</p>
+<ul>
+  <li>UK PS Producers <strong>SHALL</strong> correctly populate the element with all <em>Must Support</em> sub-elements for which a value is known.</li>
+  <li>UK PS Consumers <strong>SHALL</strong> handle the element if present and containing any <em>Must Support</em> sub-elements containing any valid value, and <strong>SHOULD</strong> display the value of this element (if the SHOULD:display Obligation is defined) when presenting the data to a human user.</li>
+</ul>
+
+<p>For example, in the UK PS Practitioner Profile, the <code class="language-plaintext highlighter-rouge">name</code> element is labelled <em>Must Support</em> and has <em>Must Support</em> sub-elements <code class="language-plaintext highlighter-rouge">family</code> and <code class="language-plaintext highlighter-rouge">given</code>. When claiming conformance to this profile:</p>
+<ul>
+  <li>UK PS Producers <strong>SHALL</strong> correctly populate a value in <code class="language-plaintext highlighter-rouge">Practitioner.name.family</code> and <code class="language-plaintext highlighter-rouge">Practitioner.name.given</code> if the value for those sub-elements is known.</li>
+  <li>UK PS Consumers <strong>SHALL</strong> handle <code class="language-plaintext highlighter-rouge">Practitioner.name</code> if present and containing valid values in <code class="language-plaintext highlighter-rouge">Practitioner.name.family</code> and <code class="language-plaintext highlighter-rouge">Practitioner.name.given</code> sub-elements, and <strong>SHOULD</strong> display the value of at least the sub elements<code class="language-plaintext highlighter-rouge">Practitioner.name.family</code> and <code class="language-plaintext highlighter-rouge">Practitioner.name.given</code> when presenting the data to a human user.</li>
+</ul>
+
+<h5 id="must-support---resource-references">Must Support - Resource References</h5>
+<p>Some elements labelled as <em>Must Support</em> reference multiple resource types or profiles such as <code class="language-plaintext highlighter-rouge">Observation.performer</code>. In such cases:</p>
+<ul>
+  <li>UK PS Producers <strong>SHALL</strong> correctly populate the element with at least one referenced resource or allowed profile if the value is known.</li>
+  <li>UK PS Consumers <strong>SHALL</strong> handle the element if present and containing any valid referenced resource or profiles, and <strong>SHOULD</strong> display the value of this element (if the SHOULD:display Obligation is defined) when presenting the data to a human user.</li>
+</ul>
+
+<p>The table below provides a list of UK PS profile elements that allow multiple referenced resource types or profiles.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Must Support Element</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a name="l1620">​</a><a href="StructureDefinition-au-ps-composition.html">UK PS Composition</a></td>
+      <td>Composition.author</td>
+      <td>UK PS Practitioner, UK PS PractitionerRole, Device, UK PS Patient, UK PS RelatedPerson, UK PS Organization</td>
+    </tr>
+    <tr>
+      <td><a name="l1633">​</a><a href="StructureDefinition-au-ps-composition.html">UK PS Composition</a></td>
+      <td>Composition.attester.party</td>
+      <td>UK PS Patient, UK PS RelatedPerson, UK PS Practitioner, UK PS PractitionerRole, UK PS Organization</td>
+    </tr>
+    <tr>
+      <td><a name="l1646">​</a><a href="StructureDefinition-au-ps-composition.html">UK PS Composition</a></td>
+      <td>Composition.section.entry:medicationStatementOrRequest</td>
+      <td>UK PS MedicationStatement, UK PS MedicationRequest</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-DiagnosticReport-uv-ips.html">DiagnosticReport (IPS)</a></td>
+      <td>DiagnosticReport.subject</td>
+      <td>UK PS Patient, Group</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-DiagnosticReport-uv-ips.html">DiagnosticReport (IPS)</a></td>
+      <td>DiagnosticReport.performer</td>
+      <td>UK PS Practitioner, UK PS PractitionerRole, UK PS Organization, CareTeam</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-DiagnosticReport-uv-ips.html">DiagnosticReport (IPS)</a></td>
+      <td>DiagnosticReport.result:observation-results</td>
+      <td>UK PS Pathology Result Observation, Observation Results - Radiology (IPS)</td>
+    </tr>
+    <tr>
+      <td><a name="l1698">​</a><a href="StructureDefinition-au-ps-encounter.html">UK PS Encounter</a></td>
+      <td>Encounter.participant.individual</td>
+      <td>UK PS Practitioner, UK PS PractitionerRole, UK PS RelatedPerson</td>
+    </tr>
+    <tr>
+      <td><a name="l1711">​</a><a href="StructureDefinition-au-ps-encounter.html">UK PS Encounter</a></td>
+      <td>Encounter.reasonReference</td>
+      <td>UK PS Condition, Observation, UK PS Procedure</td>
+    </tr>
+    <tr>
+      <td><a name="l1724">​</a><a href="StructureDefinition-au-ps-medicationrequest.html">UK PS MedicationRequest</a></td>
+      <td>MedicationRequest.requester</td>
+      <td>UK PS Practitioner, UK PS PractitionerRole, UK PS Organization, UK PS Patient, UK PS RelatedPerson</td>
+    </tr>
+    <tr>
+      <td><a name="l1737">​</a><a href="StructureDefinition-au-ps-medicationrequest.html">UK PS MedicationRequest</a></td>
+      <td>MedicationRequest.reasonReference</td>
+      <td>UK PS Condition, Observation</td>
+    </tr>
+    <tr>
+      <td><a name="l1750">​</a><a href="StructureDefinition-au-ps-medicationstatement.html">UK PS MedicationStatement</a></td>
+      <td>MedicationStatement.reasonReference</td>
+      <td>UK PS Condition, Observation, DiagnosticReport (IPS)</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Observation-results-radiology-uv-ips.html">Observation Results - Radiology (IPS)</a></td>
+      <td>Observation.performer</td>
+      <td>UK PS Practitioner, UK PS PractitionerRole, UK PS Organization, CareTeam, UK PS Patient, UK PS RelatedPerson</td>
+    </tr>
+    <tr>
+      <td><a name="l1776">​</a><a href="StructureDefinition-au-ps-patient.html">UK PS Patient</a></td>
+      <td>Patient.generalPractitioner</td>
+      <td>UK PS Organization, UK PS Practitioner, UK PS PractitionerRole</td>
+    </tr>
+    <tr>
+      <td><a name="l1789">​</a><a href="StructureDefinition-au-ps-diagnosticresult-path.html">UK PS Pathology Result Observation</a></td>
+      <td>Observation.performer</td>
+      <td>UK PS Practitioner, UK PS PractitionerRole, UK PS Organization, UK PS Patient, UK PS RelatedPerson</td>
+    </tr>
+    <tr>
+      <td><a name="l1802">​</a><a href="StructureDefinition-au-ps-procedure.html">UK PS Procedure</a></td>
+      <td>Procedure.reasonReference</td>
+      <td>UK PS Condition, Observation, UK PS Procedure, DocumentReference</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="must-support---choice-of-data-types">Must Support - Choice of Data Types</h5>
+<p>Some elements labelled as <em>Must Support</em> allow different data types such as <code class="language-plaintext highlighter-rouge">Observation.effective[x]</code>. In such cases:</p>
+<ul>
+  <li>UK PS Producers <strong>SHALL</strong> correctly populate the element with at least one data type allowed by the element definition if the value is known.</li>
+  <li>UK PS Consumers <strong>SHALL</strong> handle the element if present and containing any valid data type allowed by the element definition, and <strong>SHOULD</strong> display the value of this element (if the SHOULD:display Obligation is defined) when presenting the data to a human user.</li>
+</ul>
+
+<p>The table below provides a list of UK PS profile elements that allow multiple data types.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Must Support Element</th>
+      <th>Data Types</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a name="l1869">​</a><a href="StructureDefinition-au-ps-allergyintolerance.html">UK PS AllergyIntolerance</a></td>
+      <td>AllergyIntolerance.onset[x]</td>
+      <td>dateTime, age, Period, Range</td>
+    </tr>
+    <tr>
+      <td><a name="l1882">​</a><a href="StructureDefinition-au-ps-condition.html">UK PS Condition</a></td>
+      <td>Condition.onset[x]</td>
+      <td>dateTime, age, Period, Range</td>
+    </tr>
+    <tr>
+      <td><a name="l1895">​</a><a href="StructureDefinition-au-ps-condition.html">UK PS Condition</a></td>
+      <td>Condition.abatement[x]</td>
+      <td>dateTime, age, Period, Range</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-DeviceUseStatement-uv-ips.html">DeviceUseStatement (IPS)</a></td>
+      <td>DeviceUseStatement.timing[x]</td>
+      <td>Period, dateTime</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-DiagnosticReport-uv-ips.html">DiagnosticReport (IPS)</a></td>
+      <td>DiagnosticReport.effective[x]</td>
+      <td>dateTime, Period</td>
+    </tr>
+    <tr>
+      <td><a name="l1934">​</a><a href="StructureDefinition-au-ps-immunization.html">UK PS Immunization</a></td>
+      <td>Immunization.occurrence[x]</td>
+      <td>dateTime, string</td>
+    </tr>
+    <tr>
+      <td><a name="l1947">​</a><a href="StructureDefinition-au-ps-medicationrequest.html">UK PS MedicationRequest</a></td>
+      <td>MedicationRequest.medication[x]</td>
+      <td>CodeableConcept, Reference</td>
+    </tr>
+    <tr>
+      <td><a name="l1960">​</a><a href="StructureDefinition-au-ps-medicationstatement.html">UK PS MedicationStatement</a></td>
+      <td>MedicationStatement.medication[x]</td>
+      <td>CodeableConcept, Reference</td>
+    </tr>
+    <tr>
+      <td><a name="l1973">​</a><a href="StructureDefinition-au-ps-medicationstatement.html">UK PS MedicationStatement</a></td>
+      <td>MedicationStatement.effective[x]</td>
+      <td>dateTime, Period</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Observation-results-radiology-uv-ips.html">Observation Results - Radiology (IPS)</a></td>
+      <td>Observation.effective[x]</td>
+      <td>dateTime, Period</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Observation-results-radiology-uv-ips.html">Observation Results - Radiology (IPS)</a></td>
+      <td>Observation.value[x]</td>
+      <td>Quantity, CodeableConcept, string, boolean, integer, Range, Ratio, SampledData, time, dateTime, Period</td>
+    </tr>
+    <tr>
+      <td><a name="l2012">​</a><a href="StructureDefinition-au-ps-diagnosticresult-path.html">UK PS Pathology Result Observation</a></td>
+      <td>Observation.effective[x]</td>
+      <td>dateTime, Period,</td>
+    </tr>
+    <tr>
+      <td><a name="l2025">​</a><a href="StructureDefinition-au-ps-diagnosticresult-path.html">UK PS Pathology Result Observation</a></td>
+      <td>Observation.value[x]</td>
+      <td>Quantity, CodeableConcept, string, boolean, integer, Range, Ratio, SampledData, time, dateTime, Period</td>
+    </tr>
+    <tr>
+      <td><a name="l2038">​</a><a href="StructureDefinition-au-ps-diagnosticresult-path.html">UK PS Pathology Result Observation</a></td>
+      <td>Observation.component.value[x]</td>
+      <td>Quantity, CodeableConcept, string, boolean, integer, Range, Ratio, SampledData, time, dateTime, Period</td>
+    </tr>
+    <tr>
+      <td><a name="l2051">​</a><a href="StructureDefinition-au-ps-procedure.html">UK PS Procedure</a></td>
+      <td>Procedure.performed[x]</td>
+      <td>dateTime, Period, string, Age, Range</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-DeviceUseStatement-uv-ips.html">DeviceUseStatement (IPS)</a></td>
+      <td>DeviceUseStatement.timing[x]</td>
+      <td>Period, dateTime</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Some data type choices are labelled as <em>Must Support</em> and apply an additional obligation of <a href="https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-SHOULD.58able-to-populate">SHOULD:able-to-populate</a>. In such cases:</p>
+<ul>
+  <li>UK PS Producers <strong>SHOULD</strong> be capable of correctly populating the element with this data type. Typically, this means that an application needs to demonstrate during some conformance testing process that there are some conditions under which it populates the element with a correct value. (i.e. not a data-absent-reason or equivalent.)</li>
+</ul>
+
+<p>The table below provides a list of UK PS profile elements where a data type choice is labelled <a href="https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-SHOULD.58able-to-populate">SHOULD:able-to-populate</a>.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Must Support Data Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a name="l2119">​</a><a href="StructureDefinition-au-ps-allergyintolerance.html">UK PS AllergyIntolerance</a></td>
+      <td>AllergyIntolerance.onsetDateTime</td>
+    </tr>
+    <tr>
+      <td><a name="l2129">​</a><a href="StructureDefinition-au-ps-condition.html">UK PS Condition</a></td>
+      <td>Condition.onsetDateTime</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-DeviceUseStatement-uv-ips.html">DeviceUseStatement (IPS)</a></td>
+      <td>DeviceUseStatement.timingDateTime</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-DiagnosticReport-uv-ips.html">DiagnosticReport (IPS)</a></td>
+      <td>DiagnosticReport.effectiveDateTime</td>
+    </tr>
+    <tr>
+      <td><a name="l2159">​</a><a href="StructureDefinition-au-ps-immunization.html">UK PS Immunization</a></td>
+      <td>Immunization.occurrenceDateTime</td>
+    </tr>
+    <tr>
+      <td><a name="l2169">​</a><a href="StructureDefinition-au-ps-medicationstatement.html">UK PS MedicationStatement</a></td>
+      <td>MedicationStatement.effectiveDateTime</td>
+    </tr>
+    <tr>
+      <td><a href="https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Observation-results-radiology-uv-ips.html">Observation Results - Radiology (IPS)</a></td>
+      <td>Observation.effectiveDateTime</td>
+    </tr>
+    <tr>
+      <td><a name="l2189">​</a><a href="StructureDefinition-au-ps-diagnosticresult-path.html">UK PS Pathology Result Observation</a></td>
+      <td>Observation.effectiveDateTime</td>
+    </tr>
+    <tr>
+      <td><a name="l2199">​</a><a href="StructureDefinition-au-ps-procedure.html">UK PS Procedure</a></td>
+      <td>Procedure.performedDateTime</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="must-support---identifiers">Must Support - Identifiers</h5>
+<p>A profile may define support for one, none, or many identifier types. Supported identifier types are included in a profile by slicing the identifier element and placing <em>Must Support</em> on each identifier slice.</p>
+
+<p>Where no identifier slice is included in a profile, there is no expectation that a specific identifier type is supported and the section on <a href="general-requirements.html#must-support---complex-elements">Must Support - Complex Elements</a> applies.</p>
+
+<p>Where one or more identifier types are supported:</p>
+<ul>
+  <li>UK PS Producers <strong>SHALL</strong>  correctly populate the element with identifiers from at least one supported identifier type where the identifier is known, or any known identifier when no supported identifier type is known.</li>
+  <li>UK PS Consumers <strong>SHALL</strong> handle the element if present and containing any identifier type allowed by the element definition, and <strong>SHOULD</strong> display the value of each populated identifier when presenting the data to a human user.</li>
+</ul>
+
+<p>The table below provides a list of UK PS profile elements with one or more supported identifier types.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Must Support Element</th>
+      <th>Supported Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a name="l2269">​</a><a href="StructureDefinition-au-ps-organization.html">UK PS Organization</a></td>
+      <td>Organization.identifier</td>
+      <td>HPI-O, Australian Business Number</td>
+    </tr>
+    <tr>
+      <td><a name="l2282">​</a><a href="StructureDefinition-au-ps-patient.html">UK PS Patient</a></td>
+      <td>Patient.identifier</td>
+      <td>IHI, Medicare Card Number, DVA Number</td>
+    </tr>
+    <tr>
+      <td><a name="l2295">​</a><a href="StructureDefinition-au-ps-practitioner.html">UK PS Practitioner</a></td>
+      <td>Practitioner.identifier</td>
+      <td>HPI-I</td>
+    </tr>
+    <tr>
+      <td><a name="l2308">​</a><a href="StructureDefinition-au-ps-practitionerrole.html">UK PS PractitionerRole</a></td>
+      <td>PractitionerRole.identifier</td>
+      <td>Medicare Provider Number</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="l2321">​</a>For example, the profile <a href="StructureDefinition-au-ps-organization.html">UK PS Organization</a> defines support for the Healthcare Provider Identifier - Organisation (HPI-O) and Australian Business Number (ABN) identifier types as slices of <code class="language-plaintext highlighter-rouge">Organization.identifier</code> flagged with <em>Must Support</em>. When claiming conformance to the UK Core Organization Profile:</p>
+<ul>
+  <li>UK PS Producers <strong>SHALL</strong> correctly populate <code class="language-plaintext highlighter-rouge">Organization.identifier</code> with at least one of HPI-O or ABN if known, or any other identifier type when neither HPI-O or ABN are known but some other identifier is known (e.g. NATA Accredication Number).</li>
+  <li>UK PS Consumers <strong>SHALL</strong> handle <code class="language-plaintext highlighter-rouge">Patient.identifier</code> if present and containing any valid value. A valid value may be an HPI-O or ABN, or may be any other valid identifier type allowed by the element definition (e.g. NATA Accredication Number). The UK PS Consumer <strong>SHOULD</strong> display the value of each populated identifier type (IHI, Medicare Number, DVA Number, or some other identifier) when presenting the data to a human user.</li>
+</ul>
+
+<p>Systems <strong>MAY</strong> support populating other identifiers, but this is not a requirement of UK PS.</p>
+
+<h5 id="must-support---choice-of-profile-elements">Must Support - Choice of Profile Elements</h5>
+
+<p><a name="l2366">​</a>A resource may support two elements that are used to indicate a reason, e.g. <code class="language-plaintext highlighter-rouge">Encounter.reasonCode</code> and <code class="language-plaintext highlighter-rouge">Encounter.reasonReference</code> in the profile <a href="StructureDefinition-au-ps-encounter.html">UK PS Encounter</a>. In such cases:</p>
+<ul>
+  <li>UK PS Producers <strong>SHALL</strong> correctly populate at least one element choice if the value is known.</li>
+  <li>UK PS Consumers <strong>SHALL</strong> handle either element choice allowed by the profile if present and containing any valid value.</li>
+</ul>
+
+<p>The table below lists the applicable profiles and elements in UK PS.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Must Support Choice Elements</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a name="l2414">​</a><a href="StructureDefinition-au-ps-encounter.html">UK PS Encounter</a></td>
+      <td>Encounter.reasonCode, Encounter.reasonReference</td>
+    </tr>
+    <tr>
+      <td><a name="l2424">​</a><a href="StructureDefinition-au-ps-medicationrequest.html">UK PS MedicationRequest</a></td>
+      <td>MedicationRequest.reasonCode, MedicationRequest.reasonReference</td>
+    </tr>
+    <tr>
+      <td><a name="l2434">​</a><a href="StructureDefinition-au-ps-medicationstatement.html">UK PS MedicationStatement</a></td>
+      <td>MedicationStatement.reasonCode, MedicationStatement.reasonReference</td>
+    </tr>
+    <tr>
+      <td><a name="l2444">​</a><a href="StructureDefinition-au-ps-procedure.html">UK PS Procedure</a></td>
+      <td>Procedure.reasonCode, Procedure.reasonReference</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="must-support---multiple-terminologies">Must Support - Multiple Terminologies</h5>
+<p>A coded element can have support defined for one or more value sets. Coded elements that define support for more than one value set include them in a profile by slicing the <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a> part of the element and placing <em>Must Support</em> on each value set slice. These value set slices are not intended to prevent systems from supplying only a text value.</p>
+
+<p>Most coded <em>Must Support</em> elements in UK PS define support for one value set, which is bound to the element and no value set slice is present. For these elements, the section on <a href="general-requirements.html#must-support---complex-elements">Must Support - Complex Elements</a> and the terminology binding applies.</p>
+
+<p>Where multiple value sets are supported:</p>
+<ul>
+  <li>UK PS Producers <strong>SHALL</strong> correctly populate the element with concepts from all supported value sets where the applicable concept is known.</li>
+  <li>UK PS Consumers <strong>SHALL</strong> handle the element if present and containing any valid value whether it is from a supported value set or some other value set or text only, and <strong>SHOULD</strong> display the value of this element when presenting the data to a human user.</li>
+</ul>
+
+<p>The table below lists the applicable profiles and elements in UK PS that support multiple value sets; these are inherited from UK Core.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Must Support Sub-Element</th>
+      <th>Terminology Choices</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a name="l2520">​</a><a href="StructureDefinition-au-ps-immunization.html">UK PS Immunization</a></td>
+      <td>Immunization.vaccineCode.coding</td>
+      <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/amt-vaccine-1">Australian Medicines Terminology Vaccine</a>, <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-vaccine-1">Australian Immunisation Register Vaccine</a></td>
+    </tr>
+    <tr>
+      <td><a name="l2537">​</a><a href="StructureDefinition-au-ps-medication.html">UK PS Medication</a></td>
+      <td>Medication.code.coding</td>
+      <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1">Australian Medication</a>, <a href="https://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-pbs-item.html">PBS Item Codes</a></td>
+    </tr>
+    <tr>
+      <td><a name="l2554">​</a><a href="StructureDefinition-au-ps-medicationrequest.html">UK PS MedicationRequest</a></td>
+      <td>MedicationRequest.code.coding</td>
+      <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1">Australian Medication</a>, <a href="https://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-pbs-item.html">PBS Item Codes</a></td>
+    </tr>
+    <tr>
+      <td><a name="l2571">​</a><a href="StructureDefinition-au-ps-medicationstatement.html">UK PS MedicationStatement</a></td>
+      <td>MedicationStatement.code.coding</td>
+      <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1">Australian Medication</a>, <a href="https://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-pbs-item.html">PBS Item Codes</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="l2588">​</a>For example, the profile <a href="StructureDefinition-au-ps-medication.html">UK PS Medication</a> defines support for <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1">Australian Medication</a> and <a href="https://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-pbs-item.html">PBS Item Codes</a> value sets as slices of <code class="language-plaintext highlighter-rouge">Medication.code.coding</code> flagged with <em>Must Support</em>.</p>
+
+<p>When claiming conformance to the UK PS Medication profile:</p>
+<ul>
+  <li>UK PS Producers <strong>SHALL</strong> correctly populate <code class="language-plaintext highlighter-rouge">Medication.code.coding</code> with codes from <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1">Australian Medication</a> and <a href="https://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-pbs-item.html">PBS Item Codes</a> if both coded values are known, or from either if only one is known, or from another terminology if neither is known but a code is available, or text only if no coded value is known.</li>
+  <li>UK PS Consumers <strong>SHALL</strong> handle <code class="language-plaintext highlighter-rouge">Medication.code.coding</code> if present and containing any valid value. A valid value may be text, or may be a code from <a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1">Australian Medication</a> or <a href="https://build.fhir.org/ig/hl7au/au-fhir-base//ValueSet-pbs-item.html">PBS Item Codes</a>, or both, or some other code. UK PS Consumers <strong>SHOULD</strong> display the value of this element when presenting the data to a human user.</li>
+</ul>
+
+<p>Systems <strong>MAY</strong> populate other code systems but this is not a requirement of UK PS.</p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interopen.org">HL7 UK / INTEROPen</a>.  Package interopen.uk.ps#0.1.0-cibuild based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 18, 2026 15:41+0000">2026-02-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

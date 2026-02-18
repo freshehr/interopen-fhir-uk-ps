@@ -1,0 +1,18 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9587f257-2a8f-47de-879c-66c10175f400-95",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9587f257-2a8f-47de-879c-66c10175f400-95",
+  "name" : "UnionProcedurePerformerRoleCodesAndProcedurePerformerRoleCodes",
+  "title" : "Union of Procedure Performer Role Codes And Procedure Performer Role Codes",
+  "status" : "draft",
+  "date" : "2026-02-18T15:43:54+00:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "223366009"
+      }]
+    }]
+  }
+}

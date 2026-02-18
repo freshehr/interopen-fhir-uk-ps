@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="uk-ps-actor-consumer"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActorDefinition uk-ps-actor-consumer</b></p><a name="uk-ps-actor-consumer"> </a><a name="hcuk-ps-actor-consumer"> </a><table class="grid"><tr><td><b>Actor: UKPSConsumer </b></td><td>UK PS Consumer</td><td>Type: system </td></tr><tr><td colspan="3"><div><p>An UK PS Consumer <strong>SHALL</strong> comply with the requirements of the <a href="https://hl7.org/fhir/uv/ips/STU2/ActorDefinition-Consumer.html">Consumer (IPS)</a>, and:</p>
+<ul>
+<li>
+<p><strong>SHALL</strong> implement the UK PS Bundle, UK PS Composition and UK PS Patient profiles</p>
+</li>
+<li>
+<p><strong>SHALL</strong> for each mandatory section in UK PS Composition, implement the UK PS profiles referenced by the section entry (i.e. UK PS AllergyIntolerance, UK PS Condition, UK PS MedicationStatement and UK PS MedicationRequest)</p>
+</li>
+<li>
+<p><strong>SHALL</strong> for each recommended section in UK PS Composition, implement the profiles referenced by the section entry (e.g. UK PS Immunization, Observation Results - Radiology (IPS), UK PS Procedure, and DeviceUseStatement (IPS))</p>
+</li>
+<li>
+<p><strong>SHALL</strong> implement the UK PS Consumer obligations in the implemented profiles. Where an IPS profile is referenced in the UK PS Bundle the obligations of the Consumer (IPS) actor <strong>SHALL</strong> apply</p>
+</li>
+<li>
+<p><strong>SHALL</strong> consume resources with <em>Must Support</em> elements populated in accordance with the requirements for <a href="https://build.fhir.org/ig/hl7au/au-fhir-ps/branches/master/general-requirements.html#missing-data-empty-sections-known-absence-of-data">Missing Data, Empty Sections, Known Absence of Data</a> or <a href="https://build.fhir.org/ig/hl7au/au-fhir-ps/branches/master/general-requirements.html#suppressed-data">Suppressed Data</a></p>
+</li>
+</ul>
+</div></td></tr><tr><td>Derived from:</td><td colspan="2"><a href="http://hl7.org/fhir/uv/ips/STU2/ActorDefinition-Consumer.html">http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://hl7.org.uk/fhir/ps/ImplementationGuide/hl7.fhir.uk.ps"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url">
+    <valueUri value="http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version">
+    <valueString value="0.1.0-cibuild"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name">
+    <valueString value="UKPSConsumer"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title">
+    <valueString value="UK PS Consumer"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status">
+    <valueCode value="active"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date">
+    <valueDateTime value="2026-02-18T15:41:40+00:00"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher">
+    <valueString value="HL7 UK / INTEROPen"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact">
+    <valueContactDetail>
+      <name value="INTEROPen"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://interopen.org"/>
+        <use value="work"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description">
+    <valueMarkdown value="An UK PS Consumer is a system that consumes an UK PS Bundle and uses it to display or process patient summary content. This actor is based on the Consumer (IPS) actor, and describes the additional requirements and documentation applied for the Australian context."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="GB"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.copyright">
+    <valueMarkdown value="Used by permission of HL7 International, all rights reserved Creative Commons License. HL7 UK© 2025+; Licensed Under Creative Commons No Rights Reserved."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type">
+    <valueCode value="system"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.documentation">
+    <valueMarkdown value="An UK PS Consumer **SHALL** comply with the requirements of the [Consumer (IPS)](https://hl7.org/fhir/uv/ips/STU2/ActorDefinition-Consumer.html), and:&#xA;&#xA; - **SHALL** implement the UK PS Bundle, UK PS Composition and UK PS Patient profiles&#xA;&#xA; - **SHALL** for each mandatory section in UK PS Composition, implement the UK PS profiles referenced by the section entry (i.e. UK PS AllergyIntolerance, UK PS Condition, UK PS MedicationStatement and UK PS MedicationRequest)&#xA;&#xA; - **SHALL** for each recommended section in UK PS Composition, implement the profiles referenced by the section entry (e.g. UK PS Immunization, Observation Results - Radiology (IPS), UK PS Procedure, and DeviceUseStatement (IPS))&#xA;&#xA; - **SHALL** implement the UK PS Consumer obligations in the implemented profiles. Where an IPS profile is referenced in the UK PS Bundle the obligations of the Consumer (IPS) actor **SHALL** apply&#xA;&#xA; - **SHALL** consume resources with *Must Support* elements populated in accordance with the requirements for [Missing Data, Empty Sections, Known Absence of Data](https://build.fhir.org/ig/hl7au/au-fhir-ps/branches/master/general-requirements.html#missing-data-empty-sections-known-absence-of-data) or [Suppressed Data](https://build.fhir.org/ig/hl7au/au-fhir-ps/branches/master/general-requirements.html#suppressed-data)&#xA;&#xA;"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.derivedFrom">
+    <valueCanonical value="http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"/>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="ActorDefinition"/>
+    </coding>
+  </code>
+</Basic>

@@ -1,0 +1,989 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medication-statement-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication Status Codes",
+      "title" : "Medication  status  codes",
+      "description" : "Medication Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1379"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-statement-status.html" : "Medication  status  codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medication-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication Status Codes",
+      "title" : "Medication  status  codes",
+      "description" : "Medication Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1380"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-status.html" : "Medication  status  codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Intent",
+      "title" : "Medication request  intent",
+      "description" : "MedicationRequest Intent Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1378"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html" : "Medication request  intent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationrequest Status",
+      "title" : "Medicationrequest  status",
+      "description" : "MedicationRequest Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1377"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-status.html" : "Medicationrequest  status"
+    },
+    {
+      "url" : "http://hl7.org/fhir/address-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "oids" : ["2.16.840.1.113883.4.642.4.70"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-address-type.html" : "AddressType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/address-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "oids" : ["2.16.840.1.113883.4.642.4.68"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-address-use.html" : "AddressUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
+    },
+    {
+      "url" : "http://hl7.org/fhir/allergy-intolerance-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCategory",
+      "title" : "AllergyIntoleranceCategory",
+      "description" : "Category of an identified substance associated with allergies or intolerances.",
+      "oids" : ["2.16.840.1.113883.4.642.4.134"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-allergy-intolerance-category.html" : "AllergyIntoleranceCategory"
+    },
+    {
+      "url" : "http://hl7.org/fhir/allergy-intolerance-criticality",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCriticality",
+      "title" : "AllergyIntoleranceCriticality",
+      "description" : "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance.",
+      "oids" : ["2.16.840.1.113883.4.642.4.130"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-allergy-intolerance-criticality.html" : "AllergyIntoleranceCriticality"
+    },
+    {
+      "url" : "http://hl7.org/fhir/allergy-intolerance-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceType",
+      "title" : "AllergyIntoleranceType",
+      "description" : "Identification of the underlying physiological mechanism for a Reaction Risk.",
+      "oids" : ["2.16.840.1.113883.4.642.4.132"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-allergy-intolerance-type.html" : "AllergyIntoleranceType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/bundle-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "BundleType",
+      "title" : "BundleType",
+      "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+      "oids" : ["2.16.840.1.113883.4.642.4.621"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-bundle-type.html" : "BundleType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/composition-attestation-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionAttestationMode",
+      "title" : "CompositionAttestationMode",
+      "description" : "The way in which a person authenticated a composition.",
+      "oids" : ["2.16.840.1.113883.4.642.4.239"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-composition-attestation-mode.html" : "CompositionAttestationMode"
+    },
+    {
+      "url" : "http://hl7.org/fhir/composition-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionStatus",
+      "title" : "CompositionStatus",
+      "description" : "The workflow/clinical status of the composition.",
+      "oids" : ["2.16.840.1.113883.4.642.4.242"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-composition-status.html" : "CompositionStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "oids" : ["2.16.840.1.113883.4.642.4.72"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-contact-point-system.html" : "ContactPointSystem"
+    },
+    {
+      "url" : "http://hl7.org/fhir/contact-point-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "oids" : ["2.16.840.1.113883.4.642.4.74"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-contact-point-use.html" : "ContactPointUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "oids" : ["2.16.840.1.113883.4.642.4.513"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-days-of-week.html" : "DaysOfWeek"
+    },
+    {
+      "url" : "http://hl7.org/fhir/document-relationship-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentRelationshipType",
+      "title" : "DocumentRelationshipType",
+      "description" : "The type of relationship between documents.",
+      "oids" : ["2.16.840.1.113883.4.642.4.245"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-document-relationship-type.html" : "DocumentRelationshipType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/encounter-location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterLocationStatus",
+      "title" : "EncounterLocationStatus",
+      "description" : "The status of the location.",
+      "oids" : ["2.16.840.1.113883.4.642.4.263"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-encounter-location-status.html" : "EncounterLocationStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/encounter-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterStatus",
+      "title" : "EncounterStatus",
+      "description" : "Current state of the encounter.",
+      "oids" : ["2.16.840.1.113883.4.642.4.247"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-encounter-status.html" : "EncounterStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/http-verb",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "HTTPVerb",
+      "title" : "HTTPVerb",
+      "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+      "oids" : ["2.16.840.1.113883.4.642.4.625"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-http-verb.html" : "HTTPVerb"
+    },
+    {
+      "url" : "http://hl7.org/fhir/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "oids" : ["2.16.840.1.113883.4.642.4.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "oids" : ["2.16.840.1.113883.4.642.4.424"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/list-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ListMode",
+      "title" : "ListMode",
+      "description" : "The processing mode that applies to this list.",
+      "oids" : ["2.16.840.1.113883.4.642.4.319"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-list-mode.html" : "ListMode"
+    },
+    {
+      "url" : "http://hl7.org/fhir/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "oids" : ["2.16.840.1.113883.4.642.4.66"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-name-use.html" : "NameUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/reaction-event-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceSeverity",
+      "title" : "AllergyIntoleranceSeverity",
+      "description" : "Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations.",
+      "oids" : ["2.16.840.1.113883.4.642.4.136"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-reaction-event-severity.html" : "AllergyIntoleranceSeverity"
+    },
+    {
+      "url" : "http://hl7.org/fhir/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "RequestPriority",
+      "description" : "Identifies the level of importance to be assigned to actioning the request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.116"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
+    },
+    {
+      "url" : "http://hl7.org/fhir/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/search-entry-mode",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "SearchEntryMode",
+      "title" : "SearchEntryMode",
+      "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+      "oids" : ["2.16.840.1.113883.4.642.4.623"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-search-entry-mode.html" : "SearchEntryMode"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" : "UK Core Medication Code",
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+      "http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html" : "SNOMED CT Drug Therapy Status codes ",
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationForm" : "UK Core Medication Form",
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageMethod" : "UK Core Medication Dosage Method",
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyManifestation" : "UK Core Allergy Manifestation",
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-DocumentType" : "UK Core Document Type",
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" : "UK Core Body Site",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html" : "SNOMED CT Additional Dosage Instructions",
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-CareSettingType" : "UK Core Care Setting Type",
+      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute" : "UK Core Substance Or Product Administration Route",
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode" : "UK Core Condition Code",
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-CompositionCategory" : "UK Core Composition Category",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyCode" : "UK Core Allergy Code",
+      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-AllergySubstance" : "UK Core Allergy Substance",
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-EncounterType" : "UK Core Encounter Type",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AllergyIntoleranceClinicalStatusCodes",
+      "title" : "AllergyIntolerance Clinical Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Clinical Status.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1373"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-allergyintolerance-clinical.html" : "AllergyIntolerance Clinical Status Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AllergyIntoleranceVerificationStatus",
+      "title" : "AllergyIntolerance Verification Status",
+      "description" : "The verification status to support or decline the clinical status of the allergy or intolerance.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1371"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-allergyintolerance-verification.html" : "AllergyIntolerance Verification Status Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "CommonTags",
+      "title" : "Common Tags",
+      "description" : "Common Tag Codes defined by FHIR project",
+      "oids" : ["2.16.840.1.113883.4.642.1.1067"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-common-tags.html" : "Common Tags"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Preferred value set for Condition Categories.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1073"],
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCategory" : "UK Core Condition Category"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1074"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-condition-clinical.html" : "Condition Clinical Status Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1075"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-condition-ver-status.html" : "ConditionVerificationStatus"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1129"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-contactentity-type.html" : "Contact entity type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+      "version" : "1.1.1",
+      "status" : "active",
+      "name" : "DiagnosisRole",
+      "title" : "Diagnosis Role",
+      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1054"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-diagnosis-role.html" : "DiagnosisRole"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/diet",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "Diet",
+      "title" : "Diet",
+      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1091"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-encounter-diet.html" : "Diet"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "DoseAndRateType",
+      "title" : "DoseAndRateType",
+      "description" : "The kind of dose or rate specified.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1069"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-dose-rate-type.html" : "DoseAndRateType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "SpecialArrangements",
+      "title" : "Special arrangements",
+      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1090"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-encounter-special-arrangements.html" : "Special arrangements"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ListEmptyReasons",
+      "title" : "List Empty Reasons",
+      "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+      "oids" : ["2.16.840.1.113883.4.642.1.1106"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-list-empty-reason.html" : "List Empty Reasons"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/list-order",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ListOrderCodes",
+      "title" : "List Order Codes",
+      "description" : "Base values for the order of item lists in resources.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1107"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-list-order.html" : "List Order Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication usage category codes",
+      "title" : "Medication usage category codes",
+      "description" : "Medication Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1120"],
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationStatementCategory" : "UK Core Medication Statement Category"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestCategoryCodes",
+      "title" : "MedicationRequest Category Codes",
+      "description" : "MedicationRequest Category Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1323"],
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCategory" : "UK Core Medication Request Category"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "MedicationRequestCourseOfTherapyCodes",
+      "title" : "MedicationRequest Course of Therapy Codes",
+      "description" : "MedicationRequest Course of Therapy Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1327"],
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCourseOfTherapy" : "UK Core Medication Request Course Of Therapy"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "MedicationRequestStatusReasonCodes",
+      "title" : "MedicationRequest Status Reason Codes",
+      "description" : "MedicationRequest Status Reason Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1325"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-status-reason.html" : "Medication request  status  reason  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1128"],
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType" : "UK Core Organization Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/participant-type",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ParticipantType",
+      "title" : "Participant type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1089"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "PractitionerRole",
+      "title" : "Practitioner role",
+      "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1132"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0092",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ReAdmissionIndicator",
+      "title" : "re-admissionIndicator",
+      "description" : "Code system of concepts which are used to specify that a patient is being re admitted to a healthcare facilityin from which they were discharged, and indicates the circumstances around such re-admission.  Used in HL7 Version 2.x messagine in the PV1 segment.",
+      "oids" : ["2.16.840.1.113883.18.36"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/7.0.1/ValueSet-v2-0092.html" : "hl7VS-re-admissionIndicator"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ContactRole2",
+      "title" : "contactRole2",
+      "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
+      "oids" : ["2.16.840.1.113883.18.58"],
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" : "UK Core Person Relationship Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierType",
+      "title" : "identifierType",
+      "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+      "oids" : ["2.16.840.1.113883.18.108"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "9.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.\r\n\r\n*Constraints:* The kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems. The coding system will depend on the class of Act, such as LOINC for observations, etc.\r\n\r\nConceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure.\r\n\r\nAct.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "oids" : ["2.16.840.1.113883.5.4"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A set of codes (e.g., for routine, emergency), specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.",
+      "oids" : ["2.16.840.1.113883.5.7"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActPriority.html" : "ActPriority"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "ActReason",
+      "title" : "ActReason",
+      "description" : "A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.\r\n\r\n*Examples:* Example reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
+      "oids" : ["2.16.840.1.113883.5.8"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "Confidentiality",
+      "title" : "Confidentiality",
+      "description" : "A set of codes specifying the security classification of acts and roles in accordance with the definition for concept domain \"Confidentiality\".",
+      "oids" : ["2.16.840.1.113883.5.25"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/v3/ConfidentialityClassification/vs.html" : "V3 Value SetConfidentialityClassification"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "EncounterSpecialCourtesy",
+      "title" : "EncounterSpecialCourtesy",
+      "description" : "**** MISSING DESCRIPTION ****",
+      "oids" : ["2.16.840.1.113883.5.40"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "LanguageAbilityMode",
+      "title" : "LanguageAbilityMode",
+      "description" : "A value representing the method of expression of the language.\r\n\r\n*Example:*Expressed spoken, expressed written, expressed signed, received spoken, received written, received signed.\r\n\r\n*OpenIssue:* Description copied from Concept Domain of same name. Must be verified.",
+      "oids" : ["2.16.840.1.113883.5.60"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-LanguageAbilityMode.html" : "LanguageAbilityMode"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityProficiency",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "LanguageAbilityProficiency",
+      "title" : "LanguageAbilityProficiency",
+      "description" : "A value representing the level of proficiency in a language.\r\n\r\n*Example:*Excellent, good, fair, poor.\r\n\r\n*OpenIssue:* Description copied from Concept Domain of same name. Must be verified.",
+      "oids" : ["2.16.840.1.113883.5.61"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-LanguageAbilityProficiency.html" : "LanguageAbilityProficiency"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "MaritalStatus",
+      "title" : "MaritalStatus",
+      "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
+      "oids" : ["2.16.840.1.113883.5.2"],
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode" : "UK Core Person Marital Status Code"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "NullFlavor",
+      "title" : "NullFlavor",
+      "description" : "A collection of codes specifying why a valid value is not present.",
+      "oids" : ["2.16.840.1.113883.5.1008"],
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyCode" : "UK Core Allergy Code",
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-AllergySubstance" : "UK Core Allergy Substance",
+      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode" : "UK Core Person Marital Status Code",
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyManifestation" : "UK Core Allergy Manifestation"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ParticipationType",
+      "title" : "ParticipationType",
+      "description" : "A code specifying the meaning and purpose of every Participation instance. Each of its values implies specific constraints on the Roles undertaking the participation.",
+      "oids" : ["2.16.840.1.113883.5.90"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "RoleCode",
+      "title" : "RoleCode",
+      "description" : "A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
+      "oids" : ["2.16.840.1.113883.5.111"],
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" : "UK Core Person Relationship Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "SubstanceAdminSubstitution",
+      "title" : "Substance Admin Substitution",
+      "description" : "Identifies what sort of change is permitted or has occurred between the therapy that was ordered and the therapy that was/will be provided.",
+      "oids" : ["2.16.840.1.113883.5.1070"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html" : "ActSubstanceAdminSubstitutionCode"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "UKCoreAdditionalPersonRelationshipRole",
+      "title" : "UK Core Additional Person Relationship Role",
+      "description" : "A CodeSystem to identify additional person relationship roles.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" : "UK Core Person Relationship Type"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-ConditionCategory",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "UKCoreConditionCategory",
+      "title" : "UK Core Condition Category",
+      "description" : "A set of codes that define the category assigned to a condition.  This CodeSystem contains concepts not covered by the FHIR standard ConditionCategoryCodes CodeSystem.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCategory" : "UK Core Condition Category"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeDestinationEngland",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "UKCoreDischargeDestinationEngland",
+      "title" : "UK Core Discharge Destination England",
+      "description" : "A set of codes that define the destination of a patient on completion of a hospital provider spell, or a note that the patient died or was a still birth.  These codes and their descriptions represent concepts used in England and are copied from the content of the [NHS Data Dictionary Discharge Destination](https://datadictionary.nhs.uk/data_elements/discharge_destination_code__hospital_provider_spell_.html?hl=discharge%2Cdestination) web page on 18/11/2021.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-DischargeDestination" : "UK Core Discharge Destination"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeDestinationWales",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "UKCoreDischargeDestinationWales",
+      "title" : "UK Core Discharge Destination Wales",
+      "description" : "A set of codes that define the classification of where a patient is sent on completion of a hospital provider spell, or a note that the patient died or was a still birth.  These codes and their descriptions represent concepts used in Wales and are copied from the content of the [NHS Wales Data Dictionary Discharge Destination](http://www.datadictionary.wales.nhs.uk/index.html#!WordDocuments/dischargedestination.htm) web page on 18/11/2021.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-DischargeDestination" : "UK Core Discharge Destination"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-EncounterLocationTypeEngland",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "UKCoreEncounterLocationTypeEngland",
+      "title" : "UK Core Encounter Location Type England",
+      "description" : "A set of codes that define the physical type of location where an encounter takes place.  These codes and their descriptions represent concepts used in England and are copied from the content of the [NHS Data Dictionary Activity Location Type Code](https://datadictionary.nhs.uk/data_elements/activity_location_type_code.html?hl=activity%2Clocation%2Ctype%2Ccode) web page on 18/11/2021.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-EncounterLocationType" : "UK Core Encounter Location Type"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-EncounterLocationTypeWales",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "UKCoreEncounterLocationTypeWales",
+      "title" : "UK Core Encounter Location Type Wales",
+      "description" : "A set of codes that define the classification of location type.  These codes and their descriptions represent concepts used in Wales and are copied from the content of the [NHS Wales Data Dictionary Location Type Code](http://www.datadictionary.wales.nhs.uk/index.html#!WordDocuments/locationtypecode.htm) web page on 18/11/2021.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-EncounterLocationType" : "UK Core Encounter Location Type"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCategory",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "UKCoreMedicationRequestCategory",
+      "title" : "UK Core Medication Request Category",
+      "description" : "A set of codes to define additional category concepts for a medication request.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCategory" : "UK Core Medication Request Category"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCourseOfTherapy",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "UKCoreMedicationRequestCourseOfTherapy",
+      "title" : "UK Core Medication Request Course Of Therapy",
+      "description" : "A set of codes to define additional course of therapy concepts for a medication request.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCourseOfTherapy" : "UK Core Medication Request Course Of Therapy"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationStatementCategory",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "UKCoreMedicationStatementCategory",
+      "title" : "UK Core Medication Statement Category",
+      "description" : "A set of codes to define additional category concepts for a medication statement.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationStatementCategory" : "UK Core Medication Statement Category"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-OrganizationTypeGenomics",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "UKCoreOrganizationTypeGenomics",
+      "title" : "UK Core Organization Type Genomics",
+      "description" : "A set of codes to define additional genomic lab concepts for an organisation type.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType" : "UK Core Organization Type"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusEngland",
+      "version" : "1.1.1",
+      "status" : "active",
+      "name" : "UKCorePersonMaritalStatusEngland",
+      "title" : "UK Core Person Marital Status England",
+      "description" : "A set of codes that define the marital status of a person, as specified by the person. These codes and their descriptions represent concepts used in England and are copied from the content of the [NHS Data Dictionary Person Marital Status](https://www.datadictionary.nhs.uk/data_elements/person_marital_status.html) web page on 16/12/2022.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode" : "UK Core Person Marital Status Code"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "UKCorePersonMaritalStatusWales",
+      "title" : "UK Core Person Marital Status Wales",
+      "description" : "A set of codes that define the marital status of a person, as specified by the person. These codes and their descriptions represent concepts used in Wales and are copied from the content of the [Digital Health and Care Wales](https://dhcw.nhs.wales/information-services/information-standards/data-standards/data-standards-files/data-standard-change-notices-docs/dscns-2020/20200622-dscn-2020-06-core-reference-data-d2-3-pdf) web page on 17/11/2022.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode" : "UK Core Person Marital Status Code"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "UKCorePracticeSettingCode",
+      "title" : "UKCore Practice Setting Code",
+      "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. These codes and their descriptions represent concepts used in England and Wales and are copied from the content of the [NHS Data Dictionary](https://www.datadictionary.nhs.uk/attributes/main_specialty_code.html) web page and [NHS Wales Data Dictionary](http://www.datadictionary.wales.nhs.uk/#!WordDocuments/mainspecialtyconsultant.htm) page on 20/10/2022.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode" : "UK Core Practice Setting Code"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "UKCoreRecordStandardHeadings",
+      "title" : "UK Core Record Standard Headings",
+      "description" : "A set of codes that define record standard headings for the exchange of data.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-CompositionSectionCode" : "UK Core Composition Section Code"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-SourceOfAdmissionEngland",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "UKCoreSourceOfAdmissionEngland",
+      "title" : "UK Core Source Of Admission England",
+      "description" : "A set of codes that define the source of admission to a Hospital Provider Spell or a Nursing Episode when the Patient is in a Hospital Site or a Care Home. These codes and their descriptions represent concepts used in England and are copied from the content of the [NHS Data Dictionary Source Of Admission Code (Hospital Provider Spell)](https://datadictionary.nhs.uk/data_elements/source_of_admission_code__hospital_provider_spell_.html) web page on 18/11/2021.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-SourceOfAdmission" : "UK Core Source Of Admission"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-SourceOfAdmissionWales",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "UKCoreSourceOfAdmissionWales",
+      "title" : "UK Core Source Of Admission Wales",
+      "description" : "A set of codes that define the source of admission to a hospital. These codes and their descriptions represent concepts used in Wales and are copied from the content of the [NHS Wales Data Dictionary Source Of Admission](http://www.datadictionary.wales.nhs.uk/#!WordDocuments/sourceofadmission.htm) web page on 18/11/2021.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu2@2.0.2&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-SourceOfAdmission" : "UK Core Source Of Admission"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages",
+      "http://hl7.org/fhir/R4/valueset-all-languages.html" : "All Languages"
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "package": "interopen.uk.ps",
+  "version": "0.1.0-cibuild",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "GB",
+  "extensions": [],
+  "profiles": {
+    "AllergyIntolerance": [
+      {
+        "url": "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-allergyintolerance",
+        "title": "UK PS AllergyIntolerance"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-bundle",
+        "title": "UK PS Bundle"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-composition",
+        "title": "UK PS Composition"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-condition",
+        "title": "UK PS Condition"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-encounter",
+        "title": "UK PS Encounter"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-medication",
+        "title": "UK PS Medication"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-medicationrequest",
+        "title": "UK PS MedicationRequest"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-medicationstatement",
+        "title": "UK PS MedicationStatement"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-organization",
+        "title": "UK PS Organization"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-patient",
+        "title": "UK PS Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-practitioner",
+        "title": "UK PS Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-practitionerrole",
+        "title": "UK PS PractitionerRole"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.copyright": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.derivedFrom": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.documentation": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/note": [
+      "Composition.section"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/obligation": [
+      "StructureDefinition.differential.element",
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/organization-period": [
+      "Organization"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthTime": [
+      "Patient.birthDate"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-proficiency": [
+      "Patient.communication"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "Basic",
+      "ImplementationGuide",
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "Basic",
+      "ImplementationGuide",
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page",
+      "ImplementationGuide.definition.page.page.page",
+      "StructureDefinition",
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/translation|5.3.0-ballot-tc1": [
+      "Medication.code.text",
+      "MedicationRequest.medication[x].text",
+      "MedicationStatement.medication[x].text"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page",
+      "ImplementationGuide.definition.page.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey": [
+      "Patient.address"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionMethod": [
+      "Encounter.hospitalization"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AllergyIntoleranceEnd": [
+      "AllergyIntolerance.clinicalStatus"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex": [
+      "Patient"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CareSettingType": [
+      "Composition"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ConditionEpisode": [
+      "Condition"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference": [
+      "Patient"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank": [
+      "Patient.contact"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator": [
+      "Patient.contact"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus": [
+      "Patient"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DischargeMethod": [
+      "Encounter"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EmergencyCareDischargeStatus": [
+      "Encounter"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory": [
+      "Patient"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-Evidence": [
+      "AllergyIntolerance"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-LegalStatus": [
+      "Encounter"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MainLocation": [
+      "Organization"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationPrescribingOrganizationType": [
+      "MedicationStatement"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation": [
+      "MedicationRequest"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationStatementLastIssueDate": [
+      "MedicationStatement"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationTradeFamily": [
+      "Medication"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberUnavailableReason": [
+      "Patient"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus": [
+      "Patient.identifier"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem": [
+      "Patient.contact.telecom.system",
+      "Patient.telecom.system"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OutcomeOfAttendance": [
+      "Encounter"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PharmacistVerifiedIndicator": [
+      "MedicationStatement"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus": [
+      "Patient"
+    ]
+  }
+}

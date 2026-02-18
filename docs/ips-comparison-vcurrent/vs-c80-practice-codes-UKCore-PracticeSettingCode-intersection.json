@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9587f257-2a8f-47de-879c-66c10175f400-147",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9587f257-2a8f-47de-879c-66c10175f400-147",
+  "name" : "IntersectionPracticeSettingCodeValueSetAndUKCorePracticeSettingCode",
+  "title" : "Intersection of Practice Setting Code Value Set And UK Core Practice Setting Code",
+  "status" : "active",
+  "date" : "2026-02-18T15:43:54+00:00"
+}

@@ -1,0 +1,70 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9587f257-2a8f-47de-879c-66c10175f400-20",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9587f257-2a8f-47de-879c-66c10175f400-20",
+  "name" : "UnionMarital Status CodesAndUKCorePersonMaritalStatusCode",
+  "title" : "Union of MaritalStatus And UK Core Person Marital Status Code",
+  "status" : "active",
+  "date" : "2026-02-18T15:43:53+00:00",
+  "compose" : {
+    "include" : [{
+      
+    },
+    {
+      "concept" : [{
+        "code" : "UNK",
+        "display" : "unknown"
+      }]
+    },
+    {
+      "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusEngland",
+      "concept" : [{
+        "code" : "M",
+        "display" : "Married/Civil Partner"
+      },
+      {
+        "code" : "D",
+        "display" : "Divorced/Person whose Civil Partnership has been dissolved"
+      },
+      {
+        "code" : "W",
+        "display" : "Widowed/Surviving Civil Partner"
+      },
+      {
+        "code" : "N",
+        "display" : "Not disclosed"
+      },
+      {
+        "code" : "P",
+        "display" : "Separated"
+      },
+      {
+        "code" : "8",
+        "display" : "Not applicable"
+      }]
+    },
+    {
+      "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales",
+      "concept" : [{
+        "code" : "22",
+        "display" : "Civil Partner"
+      },
+      {
+        "code" : "32",
+        "display" : "Person whose Civil Partnership has been dissolved"
+      },
+      {
+        "code" : "42",
+        "display" : "Surviving Civil Partner"
+      },
+      {
+        "code" : "51",
+        "display" : "Separated"
+      },
+      {
+        "code" : "91",
+        "display" : "Not disclosed or unknown"
+      }]
+    }]
+  }
+}

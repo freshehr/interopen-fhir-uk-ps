@@ -1,0 +1,66 @@
+# interopen.uk.ps#0.1.0-cibuild: UK Patient Summary Implementation Guide
+
+## Pages
+
+* [Home](index.md)
+* [Artefacts Summary](artifacts.md)
+* [Guidance](guidance.md)
+* [UK PS Producer - Testing](ActorDefinition-uk-ps-actor-producer-testing.md)
+* [Conformance](conformance.md)
+* [Interstate GP Visit](uc-interstate.md)
+* [UK Variance Statement](variance.md)
+* [Actor Definitions](actors.md)
+* [Declaring Conformance](declaring-conformance.md)
+* [Change Log](changes.md)
+* [License and Legal](license.md)
+* [Support](support.md)
+* [FHIR artefacts](artefacts.md)
+* [UK PS Consumer - JSON Representation](ActorDefinition-uk-ps-actor-consumer.json.md)
+* [UK PS Consumer - TTL Representation](ActorDefinition-uk-ps-actor-consumer.ttl.md)
+* [](ActorDefinition-uk-ps-actor-consumer.change.history.md)
+* [UK PS Producer - TTL Representation](ActorDefinition-uk-ps-actor-producer.ttl.md)
+* [UK PS Producer - XML Representation](ActorDefinition-uk-ps-actor-producer.xml.md)
+* [UK PS Consumer - Testing](ActorDefinition-uk-ps-actor-consumer-testing.md)
+* [UK PS Consumer - XML Representation](ActorDefinition-uk-ps-actor-consumer.xml.md)
+* [Downloads](downloads.md)
+* [UK PS Producer - JSON Representation](ActorDefinition-uk-ps-actor-producer.json.md)
+* [Comparison With Other National and International IGs](comparison.md)
+* [General Requirements](general-requirements.md)
+* [Security and Privacy](security.md)
+* [General Guidance](general-guidance.md)
+* [Examples](examples.md)
+* [Use Cases](usecase.md)
+* [](ActorDefinition-uk-ps-actor-producer.change.history.md)
+* [UK PS Consumer](ActorDefinition-uk-ps-actor-consumer.md)
+* [Relationship With Other IGs](relationship.md)
+* [Terminology](terminology.md)
+* [Profiles and Extensions](profiles-and-extensions.md)
+* [Generation and Access](generation-and-access.md)
+* [UK PS Producer](ActorDefinition-uk-ps-actor-producer.md)
+* [The UK PS](the-ukps.md)
+
+## Resources
+
+### Resource Profiles
+
+* [UK PS AllergyIntolerance](StructureDefinition-uk-ps-allergyintolerance.md)
+* [UK PS Bundle](StructureDefinition-uk-ps-bundle.md)
+* [UK PS Composition](StructureDefinition-uk-ps-composition.md)
+* [UK PS Condition](StructureDefinition-uk-ps-condition.md)
+* [UK PS Encounter](StructureDefinition-uk-ps-encounter.md)
+* [UK PS Medication](StructureDefinition-uk-ps-medication.md)
+* [UK PS MedicationRequest](StructureDefinition-uk-ps-medicationrequest.md)
+* [UK PS MedicationStatement](StructureDefinition-uk-ps-medicationstatement.md)
+* [UK PS Organization](StructureDefinition-uk-ps-organization.md)
+* [UK PS Patient](StructureDefinition-uk-ps-patient.md)
+* [UK PS Practitioner](StructureDefinition-uk-ps-practitioner.md)
+* [UK PS PractitionerRole](StructureDefinition-uk-ps-practitionerrole.md)
+
+### Basics
+
+* [uk-ps-actor-consumer](Basic-uk-ps-actor-consumer.md)
+* [uk-ps-actor-producer](Basic-uk-ps-actor-producer.md)
+
+### ImplementationGuides
+
+* [UK Patient Summary Implementation Guide](index.md)

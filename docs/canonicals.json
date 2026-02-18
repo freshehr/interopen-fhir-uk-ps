@@ -1,0 +1,107 @@
+[
+  {
+    "id" : "uk-ps-actor-consumer",
+    "type" : "ActorDefinition",
+    "url" : "http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer",
+    "version" : "0.1.0-cibuild",
+    "name" : "UKPSConsumer"
+  },
+  {
+    "id" : "uk-ps-actor-producer",
+    "type" : "ActorDefinition",
+    "url" : "http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-producer",
+    "version" : "0.1.0-cibuild",
+    "name" : "UKPSProducer"
+  },
+  {
+    "id" : "interopen.uk.ps",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.org.uk/fhir/ps/ImplementationGuide/hl7.fhir.uk.ps",
+    "version" : "0.1.0-cibuild",
+    "name" : "UKPatientSummaryImplementationGuide"
+  },
+  {
+    "id" : "uk-ps-allergyintolerance",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-allergyintolerance",
+    "version" : "0.1.0-cibuild",
+    "name" : "UKPSAllergyIntolerance"
+  },
+  {
+    "id" : "uk-ps-bundle",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-bundle",
+    "version" : "0.1.0-cibuild",
+    "name" : "UKPSBundle"
+  },
+  {
+    "id" : "uk-ps-composition",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-composition",
+    "version" : "0.1.0-cibuild",
+    "name" : "UKPSComposition"
+  },
+  {
+    "id" : "uk-ps-condition",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-condition",
+    "version" : "0.1.0-cibuild",
+    "name" : "UKPSCondition"
+  },
+  {
+    "id" : "uk-ps-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-encounter",
+    "version" : "0.1.0-cibuild",
+    "name" : "UKPSEncounter"
+  },
+  {
+    "id" : "uk-ps-medication",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-medication",
+    "version" : "0.1.0-cibuild",
+    "name" : "UKPSMedication"
+  },
+  {
+    "id" : "uk-ps-medicationrequest",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-medicationrequest",
+    "version" : "0.1.0-cibuild",
+    "name" : "UKPSMedicationRequest"
+  },
+  {
+    "id" : "uk-ps-medicationstatement",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-medicationstatement",
+    "version" : "0.1.0-cibuild",
+    "name" : "UKPSMedicationStatement"
+  },
+  {
+    "id" : "uk-ps-organization",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-organization",
+    "version" : "0.1.0-cibuild",
+    "name" : "UKPSOrganization"
+  },
+  {
+    "id" : "uk-ps-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-patient",
+    "version" : "0.1.0-cibuild",
+    "name" : "UKPSPatient"
+  },
+  {
+    "id" : "uk-ps-practitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-practitioner",
+    "version" : "0.1.0-cibuild",
+    "name" : "UKPSPractitioner"
+  },
+  {
+    "id" : "uk-ps-practitionerrole",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-practitionerrole",
+    "version" : "0.1.0-cibuild",
+    "name" : "UKPSPractitionerRole"
+  }
+]

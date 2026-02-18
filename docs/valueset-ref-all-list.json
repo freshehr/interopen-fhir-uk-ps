@@ -1,0 +1,1383 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/additional-instruction-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTAdditionalDosageInstructions",
+      "title" : "SNOMED CT Additional Dosage Instructions",
+      "description" : "This value set includes all SNOMED CT Additional Dosage Instructions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.95"],
+      "sources" : ["2.16.840.1.113883.4.642.3.95"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationstatement.html" : "UK PS MedicationStatement",
+      "StructureDefinition-uk-ps-medicationrequest.html" : "UK PS MedicationRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "systems" : ["http://hl7.org/fhir/address-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.69"],
+      "sources" : ["2.16.840.1.113883.4.642.3.69"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-patient.html" : "UK PS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "systems" : ["http://hl7.org/fhir/address-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.67"],
+      "sources" : ["2.16.840.1.113883.4.642.3.67"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-patient.html" : "UK PS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-practitioner.html" : "UK PS Practitioner",
+      "StructureDefinition-uk-ps-patient.html" : "UK PS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/all-languages",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AllLanguages",
+      "title" : "All Languages",
+      "description" : "This value set includes all possible codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.21"],
+      "sources" : ["2.16.840.1.113883.4.642.3.21"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-practitioner.html" : "UK PS Practitioner",
+      "StructureDefinition-uk-ps-patient.html" : "UK PS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCategory",
+      "title" : "AllergyIntoleranceCategory",
+      "description" : "Category of an identified substance associated with allergies or intolerances.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.133"],
+      "sources" : ["2.16.840.1.113883.4.642.3.133"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-allergyintolerance.html" : "UK PS AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCriticality",
+      "title" : "AllergyIntoleranceCriticality",
+      "description" : "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-criticality"],
+      "oids" : ["2.16.840.1.113883.4.642.3.129"],
+      "sources" : ["2.16.840.1.113883.4.642.3.129"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-allergyintolerance.html" : "UK PS AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceType",
+      "title" : "AllergyIntoleranceType",
+      "description" : "Identification of the underlying physiological mechanism for a Reaction Risk.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.131"],
+      "sources" : ["2.16.840.1.113883.4.642.3.131"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-allergyintolerance.html" : "UK PS AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceClinicalStatusCodes",
+      "title" : "AllergyIntolerance Clinical Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Clinical Status.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1372"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1372"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-allergyintolerance.html" : "UK PS AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceVerificationStatusCodes",
+      "title" : "AllergyIntolerance Verification Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Verification Status.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1370"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1370"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-allergyintolerance.html" : "UK PS AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-condition.html" : "UK PS Condition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "BundleType",
+      "title" : "BundleType",
+      "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+      "systems" : ["http://hl7.org/fhir/bundle-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.620"],
+      "sources" : ["2.16.840.1.113883.4.642.3.620"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-bundle.html" : "UK PS Bundle"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/common-tags",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonTags",
+      "title" : "Common Tags",
+      "description" : "Common Tag Codes defined by FHIR project",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/common-tags"],
+      "oids" : ["2.16.840.1.113883.4.642.3.79"],
+      "sources" : ["2.16.840.1.113883.4.642.3.79"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-composition.html" : "UK PS Composition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionAttestationMode",
+      "title" : "CompositionAttestationMode",
+      "description" : "The way in which a person authenticated a composition.",
+      "systems" : ["http://hl7.org/fhir/composition-attestation-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.238"],
+      "sources" : ["2.16.840.1.113883.4.642.3.238"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-composition.html" : "UK PS Composition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composition-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionStatus",
+      "title" : "CompositionStatus",
+      "description" : "The workflow/clinical status of the composition.",
+      "systems" : ["http://hl7.org/fhir/composition-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.241"],
+      "sources" : ["2.16.840.1.113883.4.642.3.241"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-composition.html" : "UK PS Composition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+      "oids" : ["2.16.840.1.113883.4.642.3.164"],
+      "sources" : ["2.16.840.1.113883.4.642.3.164"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-condition.html" : "UK PS Condition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/Problem/DiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.161"],
+      "sources" : ["2.16.840.1.113883.4.642.3.161"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationstatement.html" : "UK PS MedicationStatement",
+      "StructureDefinition-uk-ps-medicationrequest.html" : "UK PS MedicationRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/DiagnosisSeverity",
+      "title" : "Condition/Diagnosis Severity",
+      "description" : "Preferred value set for Condition/Diagnosis severity grading.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.168"],
+      "sources" : ["2.16.840.1.113883.4.642.3.168"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-condition.html" : "UK PS Condition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStage",
+      "title" : "Condition Stage",
+      "description" : "Example value set for stages of cancer and other conditions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.170"],
+      "sources" : ["2.16.840.1.113883.4.642.3.170"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-condition.html" : "UK PS Condition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStageType",
+      "title" : "Condition Stage Type",
+      "description" : "Example value set for the type of stages of cancer and other conditions",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.171"],
+      "sources" : ["2.16.840.1.113883.4.642.3.171"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-condition.html" : "UK PS Condition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.166"],
+      "sources" : ["2.16.840.1.113883.4.642.3.166"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-condition.html" : "UK PS Condition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-system"],
+      "oids" : ["2.16.840.1.113883.4.642.3.71"],
+      "sources" : ["2.16.840.1.113883.4.642.3.71"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-practitioner.html" : "UK PS Practitioner",
+      "StructureDefinition-uk-ps-patient.html" : "UK PS Patient",
+      "StructureDefinition-uk-ps-organization.html" : "UK PS Organization",
+      "StructureDefinition-uk-ps-practitionerrole.html" : "UK PS PractitionerRole"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.73"],
+      "sources" : ["2.16.840.1.113883.4.642.3.73"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-practitioner.html" : "UK PS Practitioner",
+      "StructureDefinition-uk-ps-patient.html" : "UK PS Patient",
+      "StructureDefinition-uk-ps-organization.html" : "UK PS Organization",
+      "StructureDefinition-uk-ps-practitionerrole.html" : "UK PS PractitionerRole"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/contactentity-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.416"],
+      "sources" : ["2.16.840.1.113883.4.642.3.416"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-organization.html" : "UK PS Organization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "systems" : ["http://hl7.org/fhir/days-of-week"],
+      "oids" : ["2.16.840.1.113883.4.642.3.512"],
+      "sources" : ["2.16.840.1.113883.4.642.3.512"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-practitionerrole.html" : "UK PS PractitionerRole"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosisRole",
+      "title" : "DiagnosisRole",
+      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.49"],
+      "sources" : ["2.16.840.1.113883.4.642.3.49"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-encounter.html" : "UK PS Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentRelationshipType",
+      "title" : "DocumentRelationshipType",
+      "description" : "The type of relationship between documents.",
+      "systems" : ["http://hl7.org/fhir/document-relationship-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.244"],
+      "sources" : ["2.16.840.1.113883.4.642.3.244"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-composition.html" : "UK PS Composition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/dose-rate-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DoseAndRateType",
+      "title" : "DoseAndRateType",
+      "description" : "The kind of dose or rate specified.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/dose-rate-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.981"],
+      "sources" : ["2.16.840.1.113883.4.642.3.981"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationstatement.html" : "UK PS MedicationStatement",
+      "StructureDefinition-uk-ps-medicationrequest.html" : "UK PS MedicationRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Diet",
+      "title" : "Diet",
+      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diet"],
+      "oids" : ["2.16.840.1.113883.4.642.3.255"],
+      "sources" : ["2.16.840.1.113883.4.642.3.255"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-encounter.html" : "UK PS Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterLocationStatus",
+      "title" : "EncounterLocationStatus",
+      "description" : "The status of the location.",
+      "systems" : ["http://hl7.org/fhir/encounter-location-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.262"],
+      "sources" : ["2.16.840.1.113883.4.642.3.262"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-encounter.html" : "UK PS Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantType",
+      "title" : "Participant type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/participant-type",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.250"],
+      "sources" : ["2.16.840.1.113883.4.642.3.250"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-encounter.html" : "UK PS Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterReasonCodes",
+      "title" : "Encounter Reason Codes",
+      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.261"],
+      "sources" : ["2.16.840.1.113883.4.642.3.261"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-encounter.html" : "UK PS Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialArrangements",
+      "title" : "Special arrangements",
+      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.253"],
+      "sources" : ["2.16.840.1.113883.4.642.3.253"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-encounter.html" : "UK PS Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialCourtesy",
+      "title" : "Special courtesy",
+      "description" : "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.252"],
+      "sources" : ["2.16.840.1.113883.4.642.3.252"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-encounter.html" : "UK PS Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterStatus",
+      "title" : "EncounterStatus",
+      "description" : "Current state of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.246"],
+      "sources" : ["2.16.840.1.113883.4.642.3.246"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-encounter.html" : "UK PS Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/http-verb",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "HTTPVerb",
+      "title" : "HTTPVerb",
+      "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+      "systems" : ["http://hl7.org/fhir/http-verb"],
+      "oids" : ["2.16.840.1.113883.4.642.3.624"],
+      "sources" : ["2.16.840.1.113883.4.642.3.624"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-bundle.html" : "UK PS Bundle"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationstatement.html" : "UK PS MedicationStatement",
+      "StructureDefinition-uk-ps-practitioner.html" : "UK PS Practitioner",
+      "StructureDefinition-uk-ps-patient.html" : "UK PS Patient",
+      "StructureDefinition-uk-ps-organization.html" : "UK PS Organization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationstatement.html" : "UK PS MedicationStatement",
+      "StructureDefinition-uk-ps-practitioner.html" : "UK PS Practitioner",
+      "StructureDefinition-uk-ps-patient.html" : "UK PS Patient",
+      "StructureDefinition-uk-ps-organization.html" : "UK PS Organization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-encounter.html" : "UK PS Encounter",
+      "StructureDefinition-uk-ps-medicationstatement.html" : "UK PS MedicationStatement",
+      "StructureDefinition-uk-ps-allergyintolerance.html" : "UK PS AllergyIntolerance",
+      "StructureDefinition-uk-ps-medication.html" : "UK PS Medication",
+      "StructureDefinition-uk-ps-composition.html" : "UK PS Composition",
+      "StructureDefinition-uk-ps-practitioner.html" : "UK PS Practitioner",
+      "StructureDefinition-uk-ps-patient.html" : "UK PS Patient",
+      "StructureDefinition-uk-ps-bundle.html" : "UK PS Bundle",
+      "StructureDefinition-uk-ps-condition.html" : "UK PS Condition",
+      "StructureDefinition-uk-ps-medicationrequest.html" : "UK PS MedicationRequest",
+      "StructureDefinition-uk-ps-organization.html" : "UK PS Organization",
+      "StructureDefinition-uk-ps-practitionerrole.html" : "UK PS PractitionerRole"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-patient.html" : "UK PS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ListEmptyReasons",
+      "title" : "List Empty Reasons",
+      "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/list-empty-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.322"],
+      "sources" : ["2.16.840.1.113883.4.642.3.322"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-composition.html" : "UK PS Composition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/list-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ListMode",
+      "title" : "ListMode",
+      "description" : "The processing mode that applies to this list.",
+      "systems" : ["http://hl7.org/fhir/list-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.318"],
+      "sources" : ["2.16.840.1.113883.4.642.3.318"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-composition.html" : "UK PS Composition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/list-order",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ListOrderCodes",
+      "title" : "List Order Codes",
+      "description" : "Base values for the order of the items in a list resource.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/list-order"],
+      "oids" : ["2.16.840.1.113883.4.642.3.324"],
+      "sources" : ["2.16.840.1.113883.4.642.3.324"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-composition.html" : "UK PS Composition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ManifestationAndSymptomCodes",
+      "title" : "Manifestation and Symptom Codes",
+      "description" : "Example value set for Manifestation and Symptom codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.169"],
+      "sources" : ["2.16.840.1.113883.4.642.3.169"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-condition.html" : "UK PS Condition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
+      "title" : "SNOMED CT Medication As Needed Reason Codes",
+      "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.96"],
+      "sources" : ["2.16.840.1.113883.4.642.3.96"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationstatement.html" : "UK PS MedicationStatement",
+      "StructureDefinition-uk-ps-medicationrequest.html" : "UK PS MedicationRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-statement-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication Status Codes",
+      "title" : "Medication  status  codes",
+      "description" : "Medication Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-statement-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.367"],
+      "sources" : ["2.16.840.1.113883.4.642.3.367"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationstatement.html" : "UK PS MedicationStatement"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication Status Codes",
+      "title" : "Medication  status  codes",
+      "description" : "Medication Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.376"],
+      "sources" : ["2.16.840.1.113883.4.642.3.376"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medication.html" : "UK PS Medication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Intent",
+      "title" : "Medication request  intent",
+      "description" : "MedicationRequest Intent Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1321"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1321"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationrequest.html" : "UK PS MedicationRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationrequest Status",
+      "title" : "Medicationrequest  status",
+      "description" : "MedicationRequest Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1320"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1320"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationrequest.html" : "UK PS MedicationRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Status Reason Codes",
+      "title" : "Medication request  status  reason  codes",
+      "description" : "MedicationRequest Status Reason Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1324"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1324"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationrequest.html" : "UK PS MedicationRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "systems" : ["http://hl7.org/fhir/name-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.65"],
+      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-practitioner.html" : "UK PS Practitioner",
+      "StructureDefinition-uk-ps-patient.html" : "UK PS Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/performer-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedurePerformerRoleCodes",
+      "title" : "Procedure Performer Role Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a role of a procedure performer.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.433"],
+      "sources" : ["2.16.840.1.113883.4.642.3.433"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationrequest.html" : "UK PS MedicationRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "PractitionerRole",
+      "title" : "Practitioner role",
+      "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/practitioner-role",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.439"],
+      "sources" : ["2.16.840.1.113883.4.642.3.439"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-practitionerrole.html" : "UK PS PractitionerRole"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/reaction-event-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceSeverity",
+      "title" : "AllergyIntoleranceSeverity",
+      "description" : "Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations.",
+      "systems" : ["http://hl7.org/fhir/reaction-event-severity"],
+      "oids" : ["2.16.840.1.113883.4.642.3.135"],
+      "sources" : ["2.16.840.1.113883.4.642.3.135"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-allergyintolerance.html" : "UK PS AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/reason-medication-status-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTDrugTherapyStatusCodes",
+      "title" : "SNOMED CT Drug Therapy Status codes ",
+      "description" : "This value set includes some taken and not taken reason codes from SNOMED CT - provided as an exemplar",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.369"],
+      "sources" : ["2.16.840.1.113883.4.642.3.369"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationstatement.html" : "UK PS MedicationStatement"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "Request priority",
+      "description" : "The clinical priority of a diagnostic order.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationrequest.html" : "UK PS MedicationRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationstatement.html" : "UK PS MedicationStatement",
+      "StructureDefinition-uk-ps-allergyintolerance.html" : "UK PS AllergyIntolerance",
+      "StructureDefinition-uk-ps-composition.html" : "UK PS Composition",
+      "StructureDefinition-uk-ps-condition.html" : "UK PS Condition",
+      "StructureDefinition-uk-ps-medicationrequest.html" : "UK PS MedicationRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "SearchEntryMode",
+      "title" : "SearchEntryMode",
+      "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+      "systems" : ["http://hl7.org/fhir/search-entry-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.622"],
+      "sources" : ["2.16.840.1.113883.4.642.3.622"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-bundle.html" : "UK PS Bundle"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/security-labels",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "All Security Labels",
+      "title" : "SecurityLabels",
+      "description" : "A single value set for all security labels defined by FHIR.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw",
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.47"],
+      "sources" : ["2.16.840.1.113883.4.642.3.47"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-composition.html" : "UK PS Composition"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSReAdmissionIndicator",
+      "title" : "hl7VS-re-admissionIndicator",
+      "description" : "Value Set of codes which are used to specify that a patient is being re-admitted to a healthcare facility from which they were discharged, and indicates the circumstances around such re-admission.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"],
+      "oids" : ["2.16.840.1.113883.21.40"],
+      "sources" : ["2.16.840.1.113883.21.40"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-encounter.html" : "UK PS Encounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
+      "version" : "0360",
+      "status" : "active",
+      "name" : "v2.0360.2.7",
+      "title" : "v2 table 0360, Version 2.7",
+      "description" : "FHIR Value set/code system definition for HL7 v2 table 0360 ver 2.9 ( Degree/License/Certificate)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360|2.7"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-practitioner.html" : "UK PS Practitioner"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "v3 Code System ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.  Constraints:\r\nThe kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems.  The coding system will depend on the class of Act, such as LOINC for observations, etc. Conceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure. Act.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-composition.html" : "UK PS Composition"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActEncounterCode",
+      "title" : "ActEncounterCode",
+      "description" : "Domain provides codes that qualify the ActEncounterClass (ENC)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.13955"],
+      "sources" : ["2.16.840.1.113883.1.11.13955"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-encounter.html" : "UK PS Encounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A code or set of codes (e.g., for routine, emergency,) specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.\r\n\r\n*Discussion:* This attribute is used in orders to indicate the ordered priority, and in event documentation it indicates the actual priority used to perform the act. In definition mood it indicates the available priorities.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+      "oids" : ["2.16.840.1.113883.1.11.16866"],
+      "sources" : ["2.16.840.1.113883.1.11.16866"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-encounter.html" : "UK PS Encounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActSubstanceAdminSubstitutionCode",
+      "title" : "ActSubstanceAdminSubstitutionCode",
+      "description" : "***No description***",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"
+      ],
+      "oids" : ["2.16.840.1.113883.1.11.16621"],
+      "sources" : ["2.16.840.1.113883.1.11.16621"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationrequest.html" : "UK PS MedicationRequest"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification",
+      "version" : "2014-03-26",
+      "status" : "active",
+      "name" : "v3.ConfidentialityClassification",
+      "title" : "V3 Value SetConfidentialityClassification",
+      "description" : " Set of codes used to value Act.Confidentiality and Role.Confidentiality attribute in accordance with the definition for concept domain \"Confidentiality\".",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-Confidentiality"],
+      "oids" : ["2.16.840.1.113883.1.11.10228"],
+      "sources" : ["2.16.840.1.113883.1.11.10228"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-composition.html" : "UK PS Composition"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-LanguageAbilityMode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "LanguageAbilityMode",
+      "title" : "LanguageAbilityMode",
+      "description" : "A value representing the method of expression of the language.\r\n\r\n*Example:*Expressed spoken, expressed written, expressed signed, received spoken, received written, received signed.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode"
+      ],
+      "oids" : ["2.16.840.1.113883.1.11.12249"],
+      "sources" : ["2.16.840.1.113883.1.11.12249"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-patient.html" : "UK PS Patient"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-LanguageAbilityProficiency",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "LanguageAbilityProficiency",
+      "title" : "LanguageAbilityProficiency",
+      "description" : "A value representing the level of proficiency in a language.\r\n\r\n*Example:*Excellent, good, fair, poor.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityProficiency"
+      ],
+      "oids" : ["2.16.840.1.113883.1.11.12199"],
+      "sources" : ["2.16.840.1.113883.1.11.12199"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-patient.html" : "UK PS Patient"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "SubstanceAdminSubstitutionReason",
+      "title" : "SubstanceAdminSubstitutionReason",
+      "description" : "***No description***",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason"],
+      "oids" : ["2.16.840.1.113883.1.11.19377"],
+      "sources" : ["2.16.840.1.113883.1.11.19377"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationrequest.html" : "UK PS MedicationRequest"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyCode",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "UKCoreAllergyCode",
+      "title" : "UK Core Allergy Code",
+      "description" : "A set of codes from the following dm+d (dictionary of medicines and devices) concept classes that define a medication or medication ingredient that the patient has an allergy or intolerance to: \r - VTM – Virtual Therapeutic Moiety \r - VMP – Virtual Medicinal Product \r - AMP – Actual Medicinal Product \r - Ingredient \r\r A set of codes from the SNOMED CT UK coding system that:   \r - identify a substance or pharmaceutical or biologic product that the patient has an allergy or intolerance to  \r - state that the patient has no known allergy or does not have a specific allergy  \r - provide a degrade of information about a drug or non-drug allergy  \r\r Where no dm+d or SNOMED CT coded information is available, a specific code from the nullFlavor Code System can be used instead to indicate this.",
+      "systems" : [
+        "https://dmd.nhs.uk",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-allergyintolerance.html" : "UK PS AllergyIntolerance"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-AllergyManifestation",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "UKCoreAllergyManifestation",
+      "title" : "UK Core Allergy Manifestation",
+      "description" : "A set of codes that describe how a patient's allergy was manifested. Selected from the 'Health issues' simple reference set of the SNOMED CT UK coding system.\r\r Alternatively provides a code indicating a degrade of information about a clinical record entry.\r\r Where no SNOMED CT coded information is available, a specific code from the nullFlavor Code System can be used instead to indicate this.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-allergyintolerance.html" : "UK PS AllergyIntolerance"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-AllergySubstance",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "UKCoreAllergySubstance",
+      "title" : "UK Core Allergy Substance",
+      "description" : "A set of codes from the following dm+d (dictionary of medicines and devices) concept classes that define a medication or medication ingredient that the patient has an allergy or intolerance to:   \r - VTM – Virtual Therapeutic Moiety \r - VMP – Virtual Medicinal Product \r - AMP – Actual Medicinal Product \r - Ingredient \r\r  A set of codes from the SNOMED CT UK coding system that:   \r - identify a substance or pharmaceutical or biologic product that the patient has an allergy or intolerance to  \r - provide a degrade of information about a drug or non-drug allergy  \r\r  Where no dm+d or SNOMED CT coded information is available, a specific code from the nullFlavor Code System can be used instead to indicate this.",
+      "systems" : [
+        "https://dmd.nhs.uk",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-allergyintolerance.html" : "UK PS AllergyIntolerance"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "UKCoreBodySite",
+      "title" : "UK Core Body Site",
+      "description" : "A set of codes that define an anatomical or acquired body structure site. Selected from the SNOMED CT UK coding system.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationstatement.html" : "UK PS MedicationStatement",
+      "StructureDefinition-uk-ps-medicationrequest.html" : "UK PS MedicationRequest"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-CareSettingType",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "UKCoreCareSettingType",
+      "title" : "UK Core Care Setting Type",
+      "description" : "A set of codes that describe a type of care setting. Selected from the 'Services' simple reference set of the SNOMED CT UK coding system.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-encounter.html" : "UK PS Encounter"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-CompositionCategory",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "UKCoreCompositionCategory",
+      "title" : "UK Core Composition Category",
+      "description" : "A set of codes that categorise the type of composition.  Selected from the SNOMED CT UK coding system.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-composition.html" : "UK PS Composition"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-CompositionSectionCode",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "UKCoreCompositionSectionCode",
+      "title" : "UK Core Composition Section Code",
+      "description" : "A set of codes that define standard record headings for the exchange of data.",
+      "systems" : [
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-RecordStandardHeadings"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-composition.html" : "UK PS Composition"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCategory",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "UKCoreConditionCategory",
+      "title" : "UK Core Condition Category",
+      "description" : "A set of codes that define the category of a condition.",
+      "systems" : [
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-ConditionCategory",
+        "http://terminology.hl7.org/CodeSystem/condition-category"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-condition.html" : "UK PS Condition"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-ConditionCode",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "UKCoreConditionCode",
+      "title" : "UK Core Condition Code",
+      "description" : "A set of codes that define a clinical finding or a finding with explicit context or an event. Selected from the SNOMED CT UK coding system.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-condition.html" : "UK PS Condition"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-DischargeDestination",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "UKCoreDischargeDestination",
+      "title" : "UK Core Discharge Destination",
+      "description" : "A set of codes that define where a patient is sent on completion of a hospital provider spell, or a note that the patient died or was a still birth.",
+      "systems" : [
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeDestinationWales",
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeDestinationEngland"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-encounter.html" : "UK PS Encounter"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-DocumentType",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "UKCoreDocumentType",
+      "title" : "UK Core Document Type",
+      "description" : "A set of codes that describe a type of document. Selected from the 'Record composition type' simple reference set of the SNOMED CT UK coding system.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-composition.html" : "UK PS Composition"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-EncounterLocationType",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "UKCoreEncounterLocationType",
+      "title" : "UK Core Encounter Location Type",
+      "description" : "A set of codes that define the physical type of location where an encounter takes place.",
+      "systems" : [
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-EncounterLocationTypeWales",
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-EncounterLocationTypeEngland"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-encounter.html" : "UK PS Encounter"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-EncounterType",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "UKCoreEncounterType",
+      "title" : "UK Core Encounter Type",
+      "description" : "A set of codes that describe an encounter between a care professional and the patient (or patient's record). \r\r Selected from codes from the SNOMED CT UK coding system that define: \r - an indirect encounter \r - the establishment seen in \r -  the site of the encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-encounter.html" : "UK PS Encounter"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode",
+      "version" : "2.3.0",
+      "status" : "active",
+      "name" : "UKCoreMedicationCode",
+      "title" : "UK Core Medication Code",
+      "description" : "A set of codes from the following dm+d (dictionary of medicines and devices) concept classes that define a medication:  \r - VTM – Virtual Therapeutic Moiety \r - VMP – Virtual Medicinal Product \r - AMP – Actual Medicinal Product \r - VMPP – Virtual Medicinal Product Pack \r - AMPP – Actual Medicinal Product Pack  \rA Clinical trial medication code. Selected from the SNOMED CT UK coding system.",
+      "systems" : ["https://dmd.nhs.uk", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationstatement.html" : "UK PS MedicationStatement",
+      "StructureDefinition-uk-ps-medication.html" : "UK PS Medication",
+      "StructureDefinition-uk-ps-medicationrequest.html" : "UK PS MedicationRequest"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageMethod",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "UKCoreMedicationDosageMethod",
+      "title" : "UK Core Medication Dosage Method",
+      "description" : "A set of codes that define a medication dosage method. Selected from the 'ePrescribing method' simple reference set of the SNOMED CT UK coding system.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationstatement.html" : "UK PS MedicationStatement",
+      "StructureDefinition-uk-ps-medicationrequest.html" : "UK PS MedicationRequest"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationForm",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "UKCoreMedicationForm",
+      "title" : "UK Core Medication Form",
+      "description" : "A set of codes from that define a medication dose form. Selected from the 'NHS dm+d (dictionary of medicines and devices) dose form' simple reference set of the SNOMED CT UK coding system.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medication.html" : "UK PS Medication"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCategory",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "UKCoreMedicationRequestCategory",
+      "title" : "UK Core Medication Request Category",
+      "description" : "A set of codes to define a category for a medication request.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCategory"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationrequest.html" : "UK PS MedicationRequest"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCourseOfTherapy",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "UKCoreMedicationRequestCourseOfTherapy",
+      "title" : "UK Core Medication Request Course Of Therapy",
+      "description" : "A set of codes to define a course of therapy for a medication request.",
+      "systems" : [
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationRequestCourseOfTherapy",
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationrequest.html" : "UK PS MedicationRequest"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationStatementCategory",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "UKCoreMedicationStatementCategory",
+      "title" : "UK Core Medication Statement Category",
+      "description" : "A set of codes to define a category for a medication statement.",
+      "systems" : [
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-MedicationStatementCategory",
+        "http://terminology.hl7.org/CodeSystem/medication-statement-category"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationstatement.html" : "UK PS MedicationStatement"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "UKCoreOrganizationType",
+      "title" : "UK Core Organization Type",
+      "description" : "A set of codes that can be used to indicate a type of organization.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/organization-type",
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-OrganizationTypeGenomics"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-organization.html" : "UK PS Organization"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode",
+      "version" : "2.3.0",
+      "status" : "active",
+      "name" : "UKCorePersonMaritalStatusCode",
+      "title" : "UK Core Person Marital Status Code",
+      "description" : "A set of codes that define the legal marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusEngland"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-patient.html" : "UK PS Patient"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "UKCorePersonRelationshipType",
+      "title" : "UK Core Person Relationship Type",
+      "description" : "A set of codes that define the type of relationship a person has to a patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://terminology.hl7.org/CodeSystem/v2-0131",
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-patient.html" : "UK PS Patient"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "UKCorePracticeSettingCode",
+      "title" : "UK Core Practice Setting Code",
+      "description" : "A set of codes that define the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient.",
+      "systems" : [
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-practitionerrole.html" : "UK PS PractitionerRole"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-SourceOfAdmission",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "UKCoreSourceOfAdmission",
+      "title" : "UK Core Source Of Admission",
+      "description" : "A set of codes that define the source of admission to a hospital provider spell or a nursing episode when the patient is in a hospital site or a care home.",
+      "systems" : [
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-SourceOfAdmissionEngland",
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-SourceOfAdmissionWales"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-encounter.html" : "UK PS Encounter"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "UKCoreSubstanceOrProductAdministrationRoute",
+      "title" : "UK Core Substance Or Product Administration Route",
+      "description" : "A set of codes that describe the route:  \r - with which a medication was or should be administered to a patient; \r - by which a vaccine product is taken into the body; \r - by which a patient was exposed to a substance or product causing an allergy or intolerance.\r\r  Selected from the 'ePrescribing route of administration' simple reference set of the SNOMED CT UK coding system.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-uk-ps-medicationstatement.html" : "UK PS MedicationStatement",
+      "StructureDefinition-uk-ps-allergyintolerance.html" : "UK PS AllergyIntolerance",
+      "StructureDefinition-uk-ps-medicationrequest.html" : "UK PS MedicationRequest"
+    }
+  ]
+}

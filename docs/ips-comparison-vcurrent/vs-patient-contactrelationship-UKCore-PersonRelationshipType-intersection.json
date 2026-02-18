@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9587f257-2a8f-47de-879c-66c10175f400-24",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9587f257-2a8f-47de-879c-66c10175f400-24",
+  "name" : "IntersectionPatientContactRelationshipAndUKCorePersonRelationshipType",
+  "title" : "Intersection of Patient Contact Relationship  And UK Core Person Relationship Type",
+  "status" : "active",
+  "date" : "2026-02-18T15:43:53+00:00"
+}

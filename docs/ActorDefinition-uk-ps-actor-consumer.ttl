@@ -1,0 +1,196 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org.uk/fhir/ps/Basic/uk-ps-actor-consumer> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "uk-ps-actor-consumer"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActorDefinition uk-ps-actor-consumer</b></p><a name=\"uk-ps-actor-consumer\"> </a><a name=\"hcuk-ps-actor-consumer\"> </a><table class=\"grid\"><tr><td><b>Actor: UKPSConsumer </b></td><td>UK PS Consumer</td><td>Type: system </td></tr><tr><td colspan=\"3\"><div><p>An UK PS Consumer <strong>SHALL</strong> comply with the requirements of the <a href=\"https://hl7.org/fhir/uv/ips/STU2/ActorDefinition-Consumer.html\">Consumer (IPS)</a>, and:</p>\n<ul>\n<li>\n<p><strong>SHALL</strong> implement the UK PS Bundle, UK PS Composition and UK PS Patient profiles</p>\n</li>\n<li>\n<p><strong>SHALL</strong> for each mandatory section in UK PS Composition, implement the UK PS profiles referenced by the section entry (i.e. UK PS AllergyIntolerance, UK PS Condition, UK PS MedicationStatement and UK PS MedicationRequest)</p>\n</li>\n<li>\n<p><strong>SHALL</strong> for each recommended section in UK PS Composition, implement the profiles referenced by the section entry (e.g. UK PS Immunization, Observation Results - Radiology (IPS), UK PS Procedure, and DeviceUseStatement (IPS))</p>\n</li>\n<li>\n<p><strong>SHALL</strong> implement the UK PS Consumer obligations in the implemented profiles. Where an IPS profile is referenced in the UK PS Bundle the obligations of the Consumer (IPS) actor <strong>SHALL</strong> apply</p>\n</li>\n<li>\n<p><strong>SHALL</strong> consume resources with <em>Must Support</em> elements populated in accordance with the requirements for <a href=\"https://build.fhir.org/ig/hl7au/au-fhir-ps/branches/master/general-requirements.html#missing-data-empty-sections-known-absence-of-data\">Missing Data, Empty Sections, Known Absence of Data</a> or <a href=\"https://build.fhir.org/ig/hl7au/au-fhir-ps/branches/master/general-requirements.html#suppressed-data\">Suppressed Data</a></p>\n</li>\n</ul>\n</div></td></tr><tr><td>Derived from:</td><td colspan=\"2\"><a href=\"http://hl7.org/fhir/uv/ips/STU2/ActorDefinition-Consumer.html\">http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 1
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "http://hl7.org.uk/fhir/ps/ImplementationGuide/hl7.fhir.uk.ps"^^xsd:anyURI ;
+           fhir:l <http://hl7.org.uk/fhir/ps/ImplementationGuide/hl7.fhir.uk.ps>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url>
+     ] ;
+     fhir:value [
+       a fhir:Uri ;
+       fhir:v "http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer"^^xsd:anyURI ;
+       fhir:l <http://hl7.org.uk/fhir/ps/ActorDefinition/uk-ps-actor-consumer>
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "0.1.0-cibuild"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "UKPSConsumer"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "UK PS Consumer"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "active"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date>
+     ] ;
+     fhir:value [
+       a fhir:DateTime ;
+       fhir:v "2026-02-18T15:41:40+00:00"^^xsd:dateTime
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "HL7 UK / INTEROPen"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact>
+     ] ;
+     fhir:value [
+       a fhir:ContactDetail ;
+       fhir:name [ fhir:v "INTEROPen" ] ;
+       fhir:telecom ( [
+         fhir:system [ fhir:v "url" ] ;
+         fhir:value [ fhir:v "https://interopen.org" ] ;
+         fhir:use [ fhir:v "work" ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description>
+     ] ;
+     fhir:value [
+       a fhir:Markdown ;
+       fhir:v "An UK PS Consumer is a system that consumes an UK PS Bundle and uses it to display or process patient summary content. This actor is based on the Consumer (IPS) actor, and describes the additional requirements and documentation applied for the Australian context."
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+           fhir:l <urn:iso:std:iso:3166>
+         ] ;
+         fhir:code [ fhir:v "GB" ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.copyright"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.copyright>
+     ] ;
+     fhir:value [
+       a fhir:Markdown ;
+       fhir:v "Used by permission of HL7 International, all rights reserved Creative Commons License. HL7 UK© 2025+; Licensed Under Creative Commons No Rights Reserved."
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "system"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.documentation"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.documentation>
+     ] ;
+     fhir:value [
+       a fhir:Markdown ;
+       fhir:v "An UK PS Consumer **SHALL** comply with the requirements of the [Consumer (IPS)](https://hl7.org/fhir/uv/ips/STU2/ActorDefinition-Consumer.html), and:\n\n - **SHALL** implement the UK PS Bundle, UK PS Composition and UK PS Patient profiles\n\n - **SHALL** for each mandatory section in UK PS Composition, implement the UK PS profiles referenced by the section entry (i.e. UK PS AllergyIntolerance, UK PS Condition, UK PS MedicationStatement and UK PS MedicationRequest)\n\n - **SHALL** for each recommended section in UK PS Composition, implement the profiles referenced by the section entry (e.g. UK PS Immunization, Observation Results - Radiology (IPS), UK PS Procedure, and DeviceUseStatement (IPS))\n\n - **SHALL** implement the UK PS Consumer obligations in the implemented profiles. Where an IPS profile is referenced in the UK PS Bundle the obligations of the Consumer (IPS) actor **SHALL** apply\n\n - **SHALL** consume resources with *Must Support* elements populated in accordance with the requirements for [Missing Data, Empty Sections, Known Absence of Data](https://build.fhir.org/ig/hl7au/au-fhir-ps/branches/master/general-requirements.html#missing-data-empty-sections-known-absence-of-data) or [Suppressed Data](https://build.fhir.org/ig/hl7au/au-fhir-ps/branches/master/general-requirements.html#suppressed-data)\n\n"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.derivedFrom"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.derivedFrom>
+     ] ;
+     fhir:value [
+       a fhir:Canonical ;
+       fhir:v "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer>
+     ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/fhir-types>
+       ] ;
+       fhir:code [ fhir:v "ActorDefinition" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

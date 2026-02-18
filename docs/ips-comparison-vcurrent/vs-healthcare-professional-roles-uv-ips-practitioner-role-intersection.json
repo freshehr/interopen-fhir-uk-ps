@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9587f257-2a8f-47de-879c-66c10175f400-144",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9587f257-2a8f-47de-879c-66c10175f400-144",
+  "name" : "IntersectionHealthcareProfessionalRolesUvIpsAndPractitionerRole",
+  "title" : "Intersection of Healthcare Professional Roles - IPS And Practitioner role",
+  "status" : "active",
+  "date" : "2026-02-18T15:43:54+00:00"
+}

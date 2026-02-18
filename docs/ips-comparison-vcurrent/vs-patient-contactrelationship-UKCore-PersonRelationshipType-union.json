@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9587f257-2a8f-47de-879c-66c10175f400-23",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9587f257-2a8f-47de-879c-66c10175f400-23",
+  "name" : "UnionPatientContactRelationshipAndUKCorePersonRelationshipType",
+  "title" : "Union of Patient Contact Relationship  And UK Core Person Relationship Type",
+  "status" : "active",
+  "date" : "2026-02-18T15:43:53+00:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-not-a",
+        "value" : "O"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "_PersonalRelationshipRoleType"
+      }]
+    },
+    {
+      "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole"
+    }],
+    "exclude" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "concept" : [{
+        "code" : "O",
+        "display" : "Other"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "concept" : [{
+        "code" : "_PersonalRelationshipRoleType",
+        "display" : "PersonalRelationshipRoleType"
+      }]
+    }]
+  }
+}
