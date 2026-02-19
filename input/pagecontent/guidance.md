@@ -1,5 +1,0 @@
-- [General Guidance](general-guidance.html)
-- [Generation and Access](generation-and-access.html)
-- [Relationship With Other IGs](relationship.html)
-- [UK Variance Statement](variance.html)
-- [Comparison With Other National and International IGs](comparison.html)
