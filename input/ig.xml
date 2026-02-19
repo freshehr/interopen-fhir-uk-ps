@@ -7,7 +7,7 @@
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
 		<valueInteger value="1"/>
 	</extension>
-	<url value="http://hl7.org.uk/fhir/ps/ImplementationGuide/hl7.fhir.uk.ps"/>
+	<url value="http://hl7.org.uk/fhir/ps/ImplementationGuide/interopen.uk.ps"/>
 	<version value="0.1.0-cibuild"/>
 	<name value="UKPatientSummaryImplementationGuide"/>
 	<title value="UK Patient Summary Implementation Guide"/>
@@ -39,8 +39,8 @@
 		<version value="2.0.0"/>
 	</dependsOn>
 	<dependsOn>
-		<uri value="https://fhir.hl7.org.uk/ImplementationGuide/hl7.fhir.r4.ukcore.stu2"/>
-		<packageId value="fhir.r4.ukcore.stu2"/>
+		<uri value="http://hl7.org.uk/fhir/core/ImplementationGuide/hl7.fhir.r4.ukcore.stu3.currentbuild"/>
+		<packageId value="fhir.r4.ukcore.stu3.currentbuild"/>
 	</dependsOn>
 	<definition>
 		<resource>

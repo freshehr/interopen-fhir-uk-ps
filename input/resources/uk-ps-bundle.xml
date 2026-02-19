@@ -16,7 +16,7 @@
   </jurisdiction>
   <name value="UKPSBundle"/>
   <title value="UK PS Bundle"/>
-  <status value="active"/>
+  <status value="draft"/>
   <description value="This profile sets minimum expectations for a Bundle resource in the context of a patient summary in a UK context. It is based on FHIR [Bundle](http://hl7.org/fhir/StructureDefinition/Bundle), and applies the constraints of [Bundle (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips) and UK Patient Summary (UK PS).&#xD;&#xA;UK PS is specified in this guide as a HL7 FHIR document (a Bundle including a Composition), composed by a set of potentially reusable 'minimal' data blocks (the UK PS profiles)."/>
   <kind value="resource"/>
   <abstract value="false"/>
