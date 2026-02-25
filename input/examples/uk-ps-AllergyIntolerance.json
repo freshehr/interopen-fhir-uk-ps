@@ -1,6 +1,12 @@
 {
   "resourceType": "AllergyIntolerance",
   "id": "7d770ee9-8973-4d7c-af4a-2209753fd1fe",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance",
+      "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"
+    ]
+  },
   "identifier": [
     {
       "system": "http://test-nhs-scr-ips.com/allergy",
@@ -36,7 +42,7 @@
     "text": "Adverse reaction to tetanus vaccine"
   },
   "patient": {
-    "reference": "urn:uuid:92bf81ec-eed1-4105-ab1b-4e9ae84e4443"
+    "reference": "82e870c6-2127-4615-9539-4fe46d059074"
   },
   "onsetDateTime": "2025-06-21T15:50:12.5321757+01:00",
   "recordedDate": "2025-08-10T15:50:12.5321796+01:00",

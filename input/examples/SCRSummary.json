@@ -1,0 +1,1138 @@
+{
+  "resourceType": "Bundle",
+  "id": "df6d8a1e-87d8-4a39-9eb9-f6cd57e9edfc",
+  "identifier": {
+    "system": "http://test-nhs-scr-ips.com",
+    "value": "604d90a6-4683-4d0f-ac38-bafda31b56d8"
+  },
+  "type": "document",
+  "timestamp": "2025-09-10T16:10:57.6953875+01:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:63da28cb-5d99-45ac-859d-0c656b7426da",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "63da28cb-5d99-45ac-859d-0c656b7426da",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Title:</b> Shared Care Record Patient Summary as at 10/09/2025 16:10:57</p><p><b>Document Type:</b> Patient summary Document</p><p><b>Date:</b> 10/09/2025 16:10:57</p><p><b>Author:</b> Acme Inc. Shared Care Record</p></div>"
+        },
+        "identifier": {
+          "system": "http://test-nhs-scr-ips.com",
+          "value": "bb1925cd-7df4-4a69-8259-a6b60085ca62"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "60591-5",
+              "display": "Patient summary Document"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "date": "2025-09-10T16:10:57.7297157+01:00",
+        "author": [
+          {
+            "reference": "urn:uuid:88501501-895c-4bd4-a03e-e8d7cce6a4df"
+          }
+        ],
+        "title": "Shared Care Record Patient Summary as at 10/09/2025 16:10:57",
+        "event": [
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActClass",
+                    "code": "PCPR",
+                    "display": "care provision"
+                  }
+                ],
+                "text": "care provision"
+              }
+            ],
+            "period": {
+              "end": "2025-09-10T16:10:58.0007542+01:00"
+            }
+          }
+        ],
+        "section": [
+          {
+            "title": "Problems",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11450-4"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><th>Problem</th><th>Category</th><th>Onset Date</th><th>Recorded Date</th></tr><tr><td>Unable to chew</td><td>Problem List Item</td><td>31/08/2025 16:10:58</td><td>08/09/2025 16:10:58</td></tr><tr><td>Chronic erythema</td><td>Encounter Diagnosis</td><td>22/07/2025 16:10:58</td><td>27/07/2025 16:10:58</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:1e5c4e06-4f0b-4c63-9714-71f84f2446bb"
+              },
+              {
+                "reference": "urn:uuid:c3caf654-7547-400f-b8a0-70937905628e"
+              }
+            ]
+          },
+          {
+            "title": "Allergies and Intolerances",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48765-2"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><th>Allergy</th><th>Verification Status</th><th>Reaction Manifestation</th><th>Reaction Severity</th><th>Onset Date</th><th>Recorded Date</th></tr><tr><td>Adverse reaction to tetanus vaccine</td><td>Confirmed</td><td>Generalised rash</td><td>Moderate</td><td>22/06/2025 16:10:58</td><td>11/08/2025 16:10:58</td></tr><tr><td>Allergy to dexamethasone</td><td>Confirmed</td><td>NoInformation</td><td>Moderate</td><td>03/01/2025 16:10:58</td><td>13/01/2025 16:10:58</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:6e345394-8779-402c-a24d-8abe5d9e27e0"
+              },
+              {
+                "reference": "urn:uuid:a4a8ee9e-3c26-467c-bce2-bdaa07c5eeff"
+              }
+            ]
+          },
+          {
+            "title": "Medication Summary",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "10160-0"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><th>Medication</th><th>Category</th><th>Source</th><th>Dosage</th><th>Dose Unit</th><th>Dose Value</th><th>Effective Date</th><th>Asserted Date</th></tr><tr><td>Paracetamol 500mg tablets</td><td>Outpatient</td><td></td><td>Take as needed</td><td>milligram</td><td>500</td><td>22/06/2025 16:10:58</td><td>11/08/2025 16:10:58</td></tr><tr><td>Amoxicillin 250mg chewable tablet</td><td>Outpatient</td><td></td><td>Take twice a day</td><td>milligram</td><td>250</td><td>03/01/2025 16:10:58</td><td>13/01/2025 16:10:58</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:cce7950a-11dc-4e95-aeaa-6ec5a6a0988f"
+              },
+              {
+                "reference": "urn:uuid:76a98281-9d32-4ce6-a941-db0ea0c576df"
+              }
+            ]
+          },
+          {
+            "title": "Immunisations",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11369-6"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><th>Immunisation</th><th>Procedure</th><th>Manufacturer</th><th>Effective Date</th><th>Recorded Date</th></tr><tr><td>COVID-19 Vaccine AstraZeneca (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose solution for injection multidose vials (AstraZeneca)</td><td>Administration of first dose of severe acute respiratory syndrome coronavirus 2 vaccine</td><td>AstraZeneca</td><td>22/02/2025 16:10:58</td><td>04/03/2025 16:10:58</td></tr><tr><td>COVID-19 mRNA Vaccine BNT162b2 30micrograms/0.3ml dose concentrate for suspension for injection multidose vials (Pfizer-BioNTech)</td><td>Administration of second dose of severe acute respiratory syndrome coronavirus 2 vaccine</td><td>Pfizer-BioNTech</td><td>02/06/2025 16:10:58</td><td>03/06/2025 16:10:58</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:a0878b6c-6da2-414a-bf69-c495e1ee81d5"
+              },
+              {
+                "reference": "urn:uuid:eb8d315f-bd69-4c0d-94dc-a69d1e597f0c"
+              }
+            ]
+          },
+          {
+            "title": "Results",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "30954-2"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><th>Category</th><th>Report Type</th><th>Status</th><th>Specimen Type</th><th>Result Interpreter</th><th>Effective Date</th></tr><tr><td>Pathology</td><td>IRON STUDIES</td><td>Final</td><td>Serum</td><td>JENNIFER ATHERTON</td><td>21/08/2025 16:10:58</td></tr><tr><td colspan='6'><table><tr><th>Item</th><th>Value</th><th>Units</th><th>High</th><th>Low</th><th>Abnormal</th></tr><tr><td>Ferritin</td><td>538</td><td>%</td><td>300</td><td>15</td><td>High</td></tr><tr><td>Iron</td><td>20.5</td><td>umol/L</td><td>31.3</td><td>11.6</td><td></td></tr></table></td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:adda4fd9-c9f5-4fb1-9867-fe04dde16cd5"
+              }
+            ]
+          },
+          {
+            "title": "History of Procedures",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "47519-4"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><th>Procedure</th><th>Status</th><th>Performer</th><th>Performed Date</th></tr><tr><td>Monitoring of cardiac output using continuous oesophageal Doppler</td><td>Completed</td><td>Dr Josephine Smith (ACME Hospital)</td><td>11/08/2025 16:10:58</td></tr><tr><td>Removal of foreign body from bladder by incision</td><td>Completed</td><td>Dr Josephine Smith (ACME Hospital)</td><td>07/06/2025 16:10:58</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:e9b15438-40ed-41fd-af16-d7bdb6d7e326"
+              },
+              {
+                "reference": "urn:uuid:8425d8c5-6538-43a3-af68-2c84dbdaea78"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:88501501-895c-4bd4-a03e-e8d7cce6a4df",
+      "resource": {
+        "resourceType": "Device",
+        "id": "88501501-895c-4bd4-a03e-e8d7cce6a4df",
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com",
+            "value": "21f85818-8dea-4e13-b6ec-bbf821d1aad6"
+          }
+        ],
+        "manufacturer": "Acme Inc",
+        "deviceName": [
+          {
+            "name": "Acme Inc. Shared Care Record",
+            "type": "user-friendly-name"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "77cd9578-4f71-4348-a613-203dcff4f213",
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "1234567890"
+          }
+        ],
+        "name": [
+          {
+            "family": "Smith",
+            "given": [
+              "John"
+            ],
+            "prefix": [
+              "Mr"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1970-01-01",
+        "address": [
+          {
+            "line": [
+              "123 The Street",
+              "The Town"
+            ],
+            "postalCode": "AB12 34C"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1e5c4e06-4f0b-4c63-9714-71f84f2446bb",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "1e5c4e06-4f0b-4c63-9714-71f84f2446bb",
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/condition",
+            "value": "8522d5d2-0c8f-45c2-995f-5c8578dca8c5"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "288920002",
+              "display": "Unable to chew"
+            }
+          ],
+          "text": "Unable to chew"
+        },
+        "subject": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "onsetDateTime": "2025-08-31T16:10:58.0012313+01:00",
+        "recordedDate": "2025-09-08T16:10:58.0012495+01:00"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c3caf654-7547-400f-b8a0-70937905628e",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "c3caf654-7547-400f-b8a0-70937905628e",
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/condition",
+            "value": "e06e2542-10db-4a85-82ae-214ecbed2eb1"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis",
+                "display": "Encounter Diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "125116007",
+              "display": "Chronic erythema"
+            }
+          ],
+          "text": "Chronic erythema"
+        },
+        "subject": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "onsetDateTime": "2025-07-22T16:10:58.002096+01:00",
+        "recordedDate": "2025-07-27T16:10:58.0021085+01:00"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6e345394-8779-402c-a24d-8abe5d9e27e0",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "6e345394-8779-402c-a24d-8abe5d9e27e0",
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/allergy",
+            "value": "f5818899-80d0-4d65-b539-1cd350f6df59"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "219084006",
+              "display": "Adverse reaction to tetanus vaccine"
+            }
+          ],
+          "text": "Adverse reaction to tetanus vaccine"
+        },
+        "patient": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "onsetDateTime": "2025-06-22T16:10:58.0083408+01:00",
+        "recordedDate": "2025-08-11T16:10:58.0083468+01:00",
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "725119006",
+                    "display": "Generalised rash"
+                  }
+                ],
+                "text": "Generalised rash"
+              }
+            ],
+            "severity": "moderate"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a4a8ee9e-3c26-467c-bce2-bdaa07c5eeff",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "a4a8ee9e-3c26-467c-bce2-bdaa07c5eeff",
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/allergy",
+            "value": "c37ee097-664c-4f47-ba01-bbb8c50d05a4"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "294702008",
+              "display": "Allergy to dexamethasone"
+            }
+          ],
+          "text": "Allergy to dexamethasone"
+        },
+        "patient": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "onsetDateTime": "2025-01-03T16:10:58.0140171+00:00",
+        "recordedDate": "2025-01-13T16:10:58.0140228+00:00",
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+                    "code": "NI",
+                    "display": "NoInformation"
+                  }
+                ],
+                "text": "NoInformation"
+              }
+            ],
+            "severity": "moderate"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cce7950a-11dc-4e95-aeaa-6ec5a6a0988f",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "cce7950a-11dc-4e95-aeaa-6ec5a6a0988f",
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "med",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "42109611000001109",
+                  "display": "Paracetamol 500mg tablets"
+                }
+              ],
+              "text": "Paracetamol 500mg tablets"
+            }
+          },
+          {
+            "resourceType": "Organization",
+            "id": "source",
+            "identifier": [
+              {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "G7185214"
+              }
+            ],
+            "name": "The Greenway Practice"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/allergy",
+            "value": "032520cc-5375-4a68-8c2b-538567c0a950"
+          }
+        ],
+        "status": "active",
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+              "code": "outpatient",
+              "display": "Outpatient"
+            }
+          ],
+          "text": "Outpatient"
+        },
+        "medicationReference": {
+          "reference": "#med"
+        },
+        "subject": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "effectiveDateTime": "2025-06-22T16:10:58.0168177+01:00",
+        "dateAsserted": "2025-08-11T16:10:58.01682+01:00",
+        "informationSource": {
+          "reference": "#source"
+        },
+        "dosage": [
+          {
+            "text": "Take as needed",
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 500,
+                  "unit": "milligram",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:76a98281-9d32-4ce6-a941-db0ea0c576df",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "76a98281-9d32-4ce6-a941-db0ea0c576df",
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "med",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "370407003",
+                  "display": "Amoxicillin 250mg chewable tablet"
+                }
+              ],
+              "text": "Amoxicillin 250mg chewable tablet"
+            }
+          },
+          {
+            "resourceType": "Organization",
+            "id": "source",
+            "identifier": [
+              {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "G7185214"
+              }
+            ],
+            "name": "The Greenway Practice"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/allergy",
+            "value": "4625b706-124e-4a0e-9bba-12759d7c14f3"
+          }
+        ],
+        "status": "active",
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+              "code": "outpatient",
+              "display": "Outpatient"
+            }
+          ],
+          "text": "Outpatient"
+        },
+        "medicationReference": {
+          "reference": "#med"
+        },
+        "subject": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "effectiveDateTime": "2025-01-03T16:10:58.0266088+00:00",
+        "dateAsserted": "2025-01-13T16:10:58.0266144+00:00",
+        "informationSource": {
+          "reference": "#source"
+        },
+        "dosage": [
+          {
+            "text": "Take twice a day",
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 250,
+                  "unit": "milligram",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a0878b6c-6da2-414a-bf69-c495e1ee81d5",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "a0878b6c-6da2-414a-bf69-c495e1ee81d5",
+        "contained": [
+          {
+            "resourceType": "Organization",
+            "id": "manufacturer",
+            "name": "AstraZeneca"
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1324681000000101",
+                  "display": "Administration of first dose of severe acute respiratory syndrome coronavirus 2 vaccine"
+                }
+              ],
+              "text": "Administration of first dose of severe acute respiratory syndrome coronavirus 2 vaccine"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/immunisation",
+            "value": "a35c2d0d-bfc3-4656-9a0b-9639b5626ebb"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39114911000001105",
+              "display": "COVID-19 Vaccine AstraZeneca (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose solution for injection multidose vials (AstraZeneca)"
+            }
+          ],
+          "text": "COVID-19 Vaccine AstraZeneca (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose solution for injection multidose vials (AstraZeneca)"
+        },
+        "patient": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "occurrenceDateTime": "2025-02-22T16:10:58.0302065+00:00",
+        "recorded": "2025-03-04T16:10:58.0302094+00:00",
+        "manufacturer": {
+          "reference": "#manufacturer"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:eb8d315f-bd69-4c0d-94dc-a69d1e597f0c",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "eb8d315f-bd69-4c0d-94dc-a69d1e597f0c",
+        "contained": [
+          {
+            "resourceType": "Organization",
+            "id": "manufacturer",
+            "name": "Pfizer-BioNTech"
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1324691000000104",
+                  "display": "Administration of second dose of severe acute respiratory syndrome coronavirus 2 vaccine"
+                }
+              ],
+              "text": "Administration of second dose of severe acute respiratory syndrome coronavirus 2 vaccine"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/immunisation",
+            "value": "8ff4a931-cba3-434c-b403-c47e7c0126ea"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39115611000001103",
+              "display": "COVID-19 mRNA Vaccine BNT162b2 30micrograms/0.3ml dose concentrate for suspension for injection multidose vials (Pfizer-BioNTech)"
+            }
+          ],
+          "text": "COVID-19 mRNA Vaccine BNT162b2 30micrograms/0.3ml dose concentrate for suspension for injection multidose vials (Pfizer-BioNTech)"
+        },
+        "patient": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "occurrenceDateTime": "2025-06-02T16:10:58.0362534+01:00",
+        "recorded": "2025-06-03T16:10:58.0362554+01:00",
+        "manufacturer": {
+          "reference": "#manufacturer"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:adda4fd9-c9f5-4fb1-9867-fe04dde16cd5",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "adda4fd9-c9f5-4fb1-9867-fe04dde16cd5",
+        "contained": [
+          {
+            "resourceType": "Specimen",
+            "id": "specimen",
+            "identifier": [
+              {
+                "system": "http://api.graphnethealth.com/ID/Pathology-T-123",
+                "value": "P,24.3253590.H"
+              }
+            ],
+            "type": {
+              "coding": [
+                {
+                  "system": "https://fhir.graphnethealth.com/CodeSystem-LocalSpecimenCodes-1233",
+                  "code": "S",
+                  "display": "Serum"
+                }
+              ],
+              "text": "Serum"
+            },
+            "receivedTime": "2025-08-13T16:10:58.0444708+01:00",
+            "collection": {
+              "collectedDateTime": "2025-08-11T16:10:58.0443594+01:00"
+            }
+          },
+          {
+            "resourceType": "Practitioner",
+            "id": "resultsInterpreter",
+            "name": [
+              {
+                "text": "JENNIFER ATHERTON"
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://api.graphnethealth.com/ID/Pathology-T-123",
+            "value": "P,24.3253590.H-CHM_SET_ISTUD2"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.graphnethealth.com/CodeSystem-DiagnosticReportCategory",
+                "code": "PATH",
+                "display": "Pathology"
+              }
+            ],
+            "text": "Pathology"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.graphnethealth.com/CodeSystem-LocalResultCodes-1233",
+              "code": "CHM_SET_ISTUD2",
+              "display": "IRON STUDIES"
+            }
+          ],
+          "text": "IRON STUDIES"
+        },
+        "subject": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "effectiveDateTime": "2025-08-21T16:10:58.0435331+01:00",
+        "resultsInterpreter": [
+          {
+            "reference": "#resultsInterpreter"
+          }
+        ],
+        "specimen": [
+          {
+            "reference": "#specimen"
+          }
+        ],
+        "result": [
+          {
+            "reference": "urn:uuid:ac28a53a-eef9-4076-a6f0-1b9856c69ed7"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ac28a53a-eef9-4076-a6f0-1b9856c69ed7",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ac28a53a-eef9-4076-a6f0-1b9856c69ed7",
+        "identifier": [
+          {
+            "system": "http://api.graphnethealth.com/ID/Pathology-T-123",
+            "value": "P,24.3253590.H-CHM_SET_ISTUD2"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.graphnethealth.com/CodeSystem-DiagnosticReportCategory",
+                "code": "PATH",
+                "display": "Pathology"
+              }
+            ],
+            "text": "Pathology"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.graphnethealth.com/CodeSystem-LocalResultCodes-1233",
+              "code": "CHM_SET_ISTUD2",
+              "display": "IRON STUDIES"
+            }
+          ],
+          "text": "IRON STUDIES"
+        },
+        "subject": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "effectiveDateTime": "2025-08-21T16:10:58.0532376+01:00",
+        "hasMember": [
+          {
+            "reference": "urn:uuid:8afbbf54-d7f6-488c-983f-d5261b093c12"
+          },
+          {
+            "reference": "urn:uuid:296533da-dba6-439a-8452-ed6fc61cec42"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8afbbf54-d7f6-488c-983f-d5261b093c12",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8afbbf54-d7f6-488c-983f-d5261b093c12",
+        "identifier": [
+          {
+            "system": "http://api.graphnethealth.com/ID/Pathology-T-123",
+            "value": "P,24.3253590.H-CHM_SET_ISTUD2-CHM_TEST_FERR"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.graphnethealth.com/CodeSystem-DiagnosticReportCategory",
+                "code": "PATH",
+                "display": "Pathology"
+              }
+            ],
+            "text": "Pathology"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.graphnethealth.com/CodeSystem-LocalResultCodes-1233",
+              "code": "CHM_TEST_FERR",
+              "display": "Ferritin"
+            }
+          ],
+          "text": "Ferritin"
+        },
+        "subject": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "effectiveDateTime": "2025-08-21T16:10:58.0448927+01:00",
+        "valueQuantity": {
+          "value": 538,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ],
+            "text": "High"
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 15,
+              "unit": "%",
+              "system": "http://unitsofmeasure.org",
+              "code": "%"
+            },
+            "high": {
+              "value": 300,
+              "unit": "%",
+              "system": "http://unitsofmeasure.org",
+              "code": "%"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:296533da-dba6-439a-8452-ed6fc61cec42",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "296533da-dba6-439a-8452-ed6fc61cec42",
+        "identifier": [
+          {
+            "system": "http://api.graphnethealth.com/ID/Pathology-T-123",
+            "value": "P,24.3253590.H-CHM_SET_ISTUD2-CHM_TEST_IRON"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.graphnethealth.com/CodeSystem-DiagnosticReportCategory",
+                "code": "PATH",
+                "display": "Pathology"
+              }
+            ],
+            "text": "Pathology"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.graphnethealth.com/CodeSystem-LocalResultCodes-1233",
+              "code": "CHM_TEST_IRON",
+              "display": "Iron"
+            }
+          ],
+          "text": "Iron"
+        },
+        "subject": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "effectiveDateTime": "2025-08-21T16:10:58.0531734+01:00",
+        "valueQuantity": {
+          "value": 20.5,
+          "unit": "umol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "umol/L"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 11.6,
+              "unit": "umol/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "umol/L"
+            },
+            "high": {
+              "value": 31.3,
+              "unit": "umol/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "umol/L"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e9b15438-40ed-41fd-af16-d7bdb6d7e326",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "e9b15438-40ed-41fd-af16-d7bdb6d7e326",
+        "contained": [
+          {
+            "resourceType": "Practitioner",
+            "id": "prac1",
+            "name": [
+              {
+                "text": "Dr Josephine Smith"
+              }
+            ]
+          },
+          {
+            "resourceType": "Organization",
+            "id": "org1",
+            "name": "ACME Hospital"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/procedure",
+            "value": "da7b221e-15a9-49e2-b9ab-1099c6b0e821"
+          }
+        ],
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "442232002",
+              "display": "Monitoring of cardiac output using continuous oesophageal Doppler"
+            }
+          ],
+          "text": "Monitoring of cardiac output using continuous oesophageal Doppler"
+        },
+        "subject": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "performedDateTime": "2025-08-11T16:10:58.0574844+01:00",
+        "performer": [
+          {
+            "actor": {
+              "reference": "#prac1"
+            },
+            "onBehalfOf": {
+              "reference": "#org1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8425d8c5-6538-43a3-af68-2c84dbdaea78",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "8425d8c5-6538-43a3-af68-2c84dbdaea78",
+        "contained": [
+          {
+            "resourceType": "Practitioner",
+            "id": "prac1",
+            "name": [
+              {
+                "text": "Dr Josephine Smith"
+              }
+            ]
+          },
+          {
+            "resourceType": "Organization",
+            "id": "org1",
+            "name": "ACME Hospital"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/procedure",
+            "value": "a2fb6d9a-9ccc-4c05-9eda-b9cf557fc528"
+          }
+        ],
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "49006001",
+              "display": "Removal of foreign body from bladder by incision"
+            }
+          ],
+          "text": "Removal of foreign body from bladder by incision"
+        },
+        "subject": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "performedDateTime": "2025-06-07T16:10:58.0644364+01:00",
+        "performer": [
+          {
+            "actor": {
+              "reference": "#prac1"
+            },
+            "onBehalfOf": {
+              "reference": "#org1"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

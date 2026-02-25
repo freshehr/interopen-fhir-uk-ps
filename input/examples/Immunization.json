@@ -1,0 +1,51 @@
+{
+    "resourceType": "Immunization",
+    "id": "72ecd48d-d647-41fa-8e03-08a254d0a7db",
+    "contained": [
+        {
+            "resourceType": "Organization",
+            "id": "manufacturer",
+            "name": "AstraZeneca"
+        }
+    ],
+    "extension": [
+        {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "1324681000000101",
+                        "display": "Administration of first dose of severe acute respiratory syndrome coronavirus 2 vaccine"
+                    }
+                ],
+                "text": "Administration of first dose of severe acute respiratory syndrome coronavirus 2 vaccine"
+            }
+        }
+    ],
+    "identifier": [
+        {
+            "system": "http://test-nhs-scr-ips.com/immunisation",
+            "value": "dcf651b9-8763-424a-bea0-b4c29416049b"
+        }
+    ],
+    "status": "completed",
+    "vaccineCode": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "39114911000001105",
+                "display": "COVID-19 Vaccine AstraZeneca (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose solution for injection multidose vials (AstraZeneca)"
+            }
+        ],
+        "text": "COVID-19 Vaccine AstraZeneca (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose solution for injection multidose vials (AstraZeneca)"
+    },
+    "patient": {
+        "reference": "urn:uuid:92bf81ec-eed1-4105-ab1b-4e9ae84e4443"
+    },
+    "occurrenceDateTime": "2025-02-21T15:50:12.5621066+00:00",
+    "recorded": "2025-03-03T15:50:12.5621089+00:00",
+    "manufacturer": {
+        "reference": "#manufacturer"
+    }
+}

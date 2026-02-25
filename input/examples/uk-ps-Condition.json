@@ -1,0 +1,45 @@
+{
+    "resourceType": "Condition",
+    "id": "234a8a63-c312-4145-a06c-dc2844262c58",
+    "identifier": [
+        {
+            "system": "http://test-nhs-scr-ips.com/condition",
+            "value": "d72d7f08-e856-412e-a7ba-894a1ede5d82"
+        }
+    ],
+    "clinicalStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+            }
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                    "code": "problem-list-item",
+                    "display": "Problem List Item"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "288920002",
+                "display": "Unable to chew"
+            }
+        ],
+        "text": "Unable to chew"
+    },
+    "subject": {
+        "reference": "urn:uuid:92bf81ec-eed1-4105-ab1b-4e9ae84e4443"
+    },
+    "onsetDateTime": "2025-08-30T15:50:12.5221662+01:00",
+    "recordedDate": "2025-09-07T15:50:12.5221796+01:00"
+}
