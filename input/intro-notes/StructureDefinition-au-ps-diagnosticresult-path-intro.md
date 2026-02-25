@@ -12,4 +12,5 @@
 
 </div><!-- stu-note -->
 
-**Examples for this Profile**: [Bundle/aups-gpvisit-retrieval](Bundle-aups-gpvisit-retrieval.html) and [Bundle/aups-referral-endoconsult-autogen](Bundle-aups-referral-endoconsult-autogen.html)
+<!-- **Examples for this Profile**: [Bundle/aups-gpvisit-retrieval](Bundle-aups-gpvisit-retrieval.html) and [Bundle/aups-referral-endoconsult-autogen](Bundle-aups-referral-endoconsult-autogen.html)
+-->

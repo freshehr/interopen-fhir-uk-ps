@@ -13,4 +13,5 @@ This additional obligation is present in the underlying structure but due to a t
 
 </div><!-- stu-note -->
 
-**Examples for this Profile**: [Bundle/aups-gpvisit-retrieval](Bundle-aups-gpvisit-retrieval.html), [Bundle/aups-referral-endoconsult-autogen](Bundle-aups-referral-endoconsult-autogen.html) and [Bundle/aups-referral-endoconsult-curated](Bundle-aups-referral-endoconsult-curated.html)
+<!-- **Examples for this Profile**: [Bundle/aups-gpvisit-retrieval](Bundle-aups-gpvisit-retrieval.html), [Bundle/aups-referral-endoconsult-autogen](Bundle-aups-referral-endoconsult-autogen.html) and [Bundle/aups-referral-endoconsult-curated](Bundle-aups-referral-endoconsult-curated.html)
+-->

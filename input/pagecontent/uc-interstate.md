@@ -78,7 +78,7 @@ The use of Smart Health Links in this scenario reflects an emerging standard for
 
 ### Examples
 
-The following example demonstrates both technical and clinical aspects of the use case, conforming to the AU Patient Summary requirements. Data within this example, e.g. medications, is provided by the [Sparked Patient Summary Clinical Focus Group](https://sparked.csiro.au/index.php/design-groups/):
+<!-- The following example demonstrates both technical and clinical aspects of the use case, conforming to the AU Patient Summary requirements. Data within this example, e.g. medications, is provided by the [Sparked Patient Summary Clinical Focus Group](https://sparked.csiro.au/index.php/design-groups/):
 * Patient Summary from Usual GP CIS: [Jeramy's Patient Summary as of 27 May 2025 (Bundle)](Bundle-aups-gpvisit-retrieval.html)
-
+-->
 
