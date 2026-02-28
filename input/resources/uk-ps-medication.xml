@@ -10,7 +10,7 @@
   <url value="http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-medication"/>
   <name value="UKPSMedication"/>
   <title value="UK PS Medication"/>
-  <status value="active"/>
+  <status value="draft"/>
   <description value="This profile sets minimum expectations for a Medication resource in the context of a patient summary in a UK context. It is based on the [UKCore Medication](https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication) profile, and applies the additional requirements from [Medication (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips)."/>
   <kind value="resource"/>
   <abstract value="false"/>
