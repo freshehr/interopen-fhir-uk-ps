@@ -367,6 +367,7 @@
       <path value="Patient.gender"/>
     </element>
     <element id="Patient.birthDate">
+
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
         <extension url="code">
           <valueCode value="SHALL:populate-if-known"/>

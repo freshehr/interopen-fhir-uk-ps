@@ -1,6 +1,13 @@
 {
   "resourceType": "Bundle",
   "id": "df6d8a1e-87d8-4a39-9eb9-f6cd57e9edfc",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/StructureDefinition/uk-ps-bundle",
+      "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"
+    ]
+  },
+
   "identifier": {
     "system": "http://test-nhs-scr-ips.com",
     "value": "604d90a6-4683-4d0f-ac38-bafda31b56d8"
