@@ -1,0 +1,66 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "7d770ee9-8973-4d7c-af4a-2209753fd1fe",
+  "meta": {
+    "profile": [
+      "https://fhir.hl7.org.uk/StructureDefinition/uk-ps-AllergyIntolerance",
+      "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://test-nhs-scr-ips.com/allergy",
+      "value": "71059e0b-f5bf-4edc-8426-be5c813d3b90"
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+        "code": "active",
+        "display": "Active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+        "code": "confirmed",
+        "display": "Confirmed"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "219084006",
+        "display": "Adverse reaction to tetanus vaccine"
+      }
+    ],
+    "text": "Adverse reaction to tetanus vaccine"
+  },
+  "patient": {
+    "reference": "Patient/82e870c6-2127-4615-9539-4fe46d059074"
+  },
+  "onsetDateTime": "2025-06-21T15:50:12.5321757+01:00",
+  "recordedDate": "2025-08-10T15:50:12.5321796+01:00",
+  "reaction": [
+    {
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "725119006",
+              "display": "Generalised rash"
+            }
+          ],
+          "text": "Generalised rash"
+        }
+      ],
+      "severity": "moderate"
+    }
+  ]
+}
