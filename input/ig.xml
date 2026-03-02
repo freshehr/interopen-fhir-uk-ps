@@ -41,6 +41,12 @@
 	<dependsOn>
 		<uri value="http://hl7.org.uk/fhir/core/ImplementationGuide/hl7.fhir.r4.ukcore.stu3.currentbuild"/>
 		<packageId value="fhir.r4.ukcore.stu3.currentbuild"/>
+		<version value="0.27.0-pre-release"/>
+	</dependsOn>
+	<dependsOn>
+		<uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+		<packageId value="hl7.fhir.uv.extensions"/>
+		<version value="5.2.0"/>
 	</dependsOn>
 	<definition>
 		<resource>

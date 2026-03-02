@@ -3,10 +3,11 @@
   "id": "df6d8a1e-87d8-4a39-9eb9-f6cd57e9edfc",
   "meta": {
     "profile": [
-      "http://hl7.org.uk/fhir/ps/StructureDefinition/uk-ps-bundle",
+      "https://fhir.hl7.org.uk/StructureDefinition/uk-ps-bundle",
       "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"
     ]
   },
+
   "identifier": {
     "system": "http://test-nhs-scr-ips.com",
     "value": "604d90a6-4683-4d0f-ac38-bafda31b56d8"
@@ -201,6 +202,26 @@
                 "reference": "urn:uuid:8425d8c5-6538-43a3-af68-2c84dbdaea78"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:88501501-895c-4bd4-a03e-e8d7cce6a4df",
+      "resource": {
+        "resourceType": "Device",
+        "id": "88501501-895c-4bd4-a03e-e8d7cce6a4df",
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com",
+            "value": "21f85818-8dea-4e13-b6ec-bbf821d1aad6"
+          }
+        ],
+        "manufacturer": "Acme Inc",
+        "deviceName": [
+          {
+            "name": "Acme Inc. Shared Care Record",
+            "type": "user-friendly-name"
           }
         ]
       }
@@ -552,6 +573,573 @@
           }
         ]
       }
+    },
+    {
+      "fullUrl": "urn:uuid:76a98281-9d32-4ce6-a941-db0ea0c576df",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "76a98281-9d32-4ce6-a941-db0ea0c576df",
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "med",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "370407003",
+                  "display": "Amoxicillin 250mg chewable tablet"
+                }
+              ],
+              "text": "Amoxicillin 250mg chewable tablet"
+            }
+          },
+          {
+            "resourceType": "Organization",
+            "id": "source",
+            "identifier": [
+              {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "G7185214"
+              }
+            ],
+            "name": "The Greenway Practice"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/allergy",
+            "value": "4625b706-124e-4a0e-9bba-12759d7c14f3"
+          }
+        ],
+        "status": "active",
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+              "code": "outpatient",
+              "display": "Outpatient"
+            }
+          ],
+          "text": "Outpatient"
+        },
+        "medicationReference": {
+          "reference": "#med"
+        },
+        "subject": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "effectiveDateTime": "2025-01-03T16:10:58.0266088+00:00",
+        "dateAsserted": "2025-01-13T16:10:58.0266144+00:00",
+        "informationSource": {
+          "reference": "#source"
+        },
+        "dosage": [
+          {
+            "text": "Take twice a day",
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 250,
+                  "unit": "milligram",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a0878b6c-6da2-414a-bf69-c495e1ee81d5",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "a0878b6c-6da2-414a-bf69-c495e1ee81d5",
+        "contained": [
+          {
+            "resourceType": "Organization",
+            "id": "manufacturer",
+            "name": "AstraZeneca"
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1324681000000101",
+                  "display": "Administration of first dose of severe acute respiratory syndrome coronavirus 2 vaccine"
+                }
+              ],
+              "text": "Administration of first dose of severe acute respiratory syndrome coronavirus 2 vaccine"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/immunisation",
+            "value": "a35c2d0d-bfc3-4656-9a0b-9639b5626ebb"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39114911000001105",
+              "display": "COVID-19 Vaccine AstraZeneca (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose solution for injection multidose vials (AstraZeneca)"
+            }
+          ],
+          "text": "COVID-19 Vaccine AstraZeneca (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose solution for injection multidose vials (AstraZeneca)"
+        },
+        "patient": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "occurrenceDateTime": "2025-02-22T16:10:58.0302065+00:00",
+        "recorded": "2025-03-04T16:10:58.0302094+00:00",
+        "manufacturer": {
+          "reference": "#manufacturer"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:eb8d315f-bd69-4c0d-94dc-a69d1e597f0c",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "eb8d315f-bd69-4c0d-94dc-a69d1e597f0c",
+        "contained": [
+          {
+            "resourceType": "Organization",
+            "id": "manufacturer",
+            "name": "Pfizer-BioNTech"
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1324691000000104",
+                  "display": "Administration of second dose of severe acute respiratory syndrome coronavirus 2 vaccine"
+                }
+              ],
+              "text": "Administration of second dose of severe acute respiratory syndrome coronavirus 2 vaccine"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/immunisation",
+            "value": "8ff4a931-cba3-434c-b403-c47e7c0126ea"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39115611000001103",
+              "display": "COVID-19 mRNA Vaccine BNT162b2 30micrograms/0.3ml dose concentrate for suspension for injection multidose vials (Pfizer-BioNTech)"
+            }
+          ],
+          "text": "COVID-19 mRNA Vaccine BNT162b2 30micrograms/0.3ml dose concentrate for suspension for injection multidose vials (Pfizer-BioNTech)"
+        },
+        "patient": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "occurrenceDateTime": "2025-06-02T16:10:58.0362534+01:00",
+        "recorded": "2025-06-03T16:10:58.0362554+01:00",
+        "manufacturer": {
+          "reference": "#manufacturer"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:adda4fd9-c9f5-4fb1-9867-fe04dde16cd5",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "adda4fd9-c9f5-4fb1-9867-fe04dde16cd5",
+        "contained": [
+          {
+            "resourceType": "Specimen",
+            "id": "specimen",
+            "identifier": [
+              {
+                "system": "http://api.graphnethealth.com/ID/Pathology-T-123",
+                "value": "P,24.3253590.H"
+              }
+            ],
+            "type": {
+              "coding": [
+                {
+                  "system": "https://fhir.graphnethealth.com/CodeSystem-LocalSpecimenCodes-1233",
+                  "code": "S",
+                  "display": "Serum"
+                }
+              ],
+              "text": "Serum"
+            },
+            "receivedTime": "2025-08-13T16:10:58.0444708+01:00",
+            "collection": {
+              "collectedDateTime": "2025-08-11T16:10:58.0443594+01:00"
+            }
+          },
+          {
+            "resourceType": "Practitioner",
+            "id": "resultsInterpreter",
+            "name": [
+              {
+                "text": "JENNIFER ATHERTON"
+              }
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://api.graphnethealth.com/ID/Pathology-T-123",
+            "value": "P,24.3253590.H-CHM_SET_ISTUD2"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.graphnethealth.com/CodeSystem-DiagnosticReportCategory",
+                "code": "PATH",
+                "display": "Pathology"
+              }
+            ],
+            "text": "Pathology"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.graphnethealth.com/CodeSystem-LocalResultCodes-1233",
+              "code": "CHM_SET_ISTUD2",
+              "display": "IRON STUDIES"
+            }
+          ],
+          "text": "IRON STUDIES"
+        },
+        "subject": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "effectiveDateTime": "2025-08-21T16:10:58.0435331+01:00",
+        "resultsInterpreter": [
+          {
+            "reference": "#resultsInterpreter"
+          }
+        ],
+        "specimen": [
+          {
+            "reference": "#specimen"
+          }
+        ],
+        "result": [
+          {
+            "reference": "urn:uuid:ac28a53a-eef9-4076-a6f0-1b9856c69ed7"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ac28a53a-eef9-4076-a6f0-1b9856c69ed7",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ac28a53a-eef9-4076-a6f0-1b9856c69ed7",
+        "identifier": [
+          {
+            "system": "http://api.graphnethealth.com/ID/Pathology-T-123",
+            "value": "P,24.3253590.H-CHM_SET_ISTUD2"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.graphnethealth.com/CodeSystem-DiagnosticReportCategory",
+                "code": "PATH",
+                "display": "Pathology"
+              }
+            ],
+            "text": "Pathology"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.graphnethealth.com/CodeSystem-LocalResultCodes-1233",
+              "code": "CHM_SET_ISTUD2",
+              "display": "IRON STUDIES"
+            }
+          ],
+          "text": "IRON STUDIES"
+        },
+        "subject": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "effectiveDateTime": "2025-08-21T16:10:58.0532376+01:00",
+        "hasMember": [
+          {
+            "reference": "urn:uuid:8afbbf54-d7f6-488c-983f-d5261b093c12"
+          },
+          {
+            "reference": "urn:uuid:296533da-dba6-439a-8452-ed6fc61cec42"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8afbbf54-d7f6-488c-983f-d5261b093c12",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8afbbf54-d7f6-488c-983f-d5261b093c12",
+        "identifier": [
+          {
+            "system": "http://api.graphnethealth.com/ID/Pathology-T-123",
+            "value": "P,24.3253590.H-CHM_SET_ISTUD2-CHM_TEST_FERR"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.graphnethealth.com/CodeSystem-DiagnosticReportCategory",
+                "code": "PATH",
+                "display": "Pathology"
+              }
+            ],
+            "text": "Pathology"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.graphnethealth.com/CodeSystem-LocalResultCodes-1233",
+              "code": "CHM_TEST_FERR",
+              "display": "Ferritin"
+            }
+          ],
+          "text": "Ferritin"
+        },
+        "subject": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "effectiveDateTime": "2025-08-21T16:10:58.0448927+01:00",
+        "valueQuantity": {
+          "value": 538,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ],
+            "text": "High"
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 15,
+              "unit": "%",
+              "system": "http://unitsofmeasure.org",
+              "code": "%"
+            },
+            "high": {
+              "value": 300,
+              "unit": "%",
+              "system": "http://unitsofmeasure.org",
+              "code": "%"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:296533da-dba6-439a-8452-ed6fc61cec42",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "296533da-dba6-439a-8452-ed6fc61cec42",
+        "identifier": [
+          {
+            "system": "http://api.graphnethealth.com/ID/Pathology-T-123",
+            "value": "P,24.3253590.H-CHM_SET_ISTUD2-CHM_TEST_IRON"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.graphnethealth.com/CodeSystem-DiagnosticReportCategory",
+                "code": "PATH",
+                "display": "Pathology"
+              }
+            ],
+            "text": "Pathology"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.graphnethealth.com/CodeSystem-LocalResultCodes-1233",
+              "code": "CHM_TEST_IRON",
+              "display": "Iron"
+            }
+          ],
+          "text": "Iron"
+        },
+        "subject": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "effectiveDateTime": "2025-08-21T16:10:58.0531734+01:00",
+        "valueQuantity": {
+          "value": 20.5,
+          "unit": "umol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "umol/L"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 11.6,
+              "unit": "umol/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "umol/L"
+            },
+            "high": {
+              "value": 31.3,
+              "unit": "umol/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "umol/L"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e9b15438-40ed-41fd-af16-d7bdb6d7e326",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "e9b15438-40ed-41fd-af16-d7bdb6d7e326",
+        "contained": [
+          {
+            "resourceType": "Practitioner",
+            "id": "prac1",
+            "name": [
+              {
+                "text": "Dr Josephine Smith"
+              }
+            ]
+          },
+          {
+            "resourceType": "Organization",
+            "id": "org1",
+            "name": "ACME Hospital"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/procedure",
+            "value": "da7b221e-15a9-49e2-b9ab-1099c6b0e821"
+          }
+        ],
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "442232002",
+              "display": "Monitoring of cardiac output using continuous oesophageal Doppler"
+            }
+          ],
+          "text": "Monitoring of cardiac output using continuous oesophageal Doppler"
+        },
+        "subject": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "performedDateTime": "2025-08-11T16:10:58.0574844+01:00",
+        "performer": [
+          {
+            "actor": {
+              "reference": "#prac1"
+            },
+            "onBehalfOf": {
+              "reference": "#org1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8425d8c5-6538-43a3-af68-2c84dbdaea78",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "8425d8c5-6538-43a3-af68-2c84dbdaea78",
+        "contained": [
+          {
+            "resourceType": "Practitioner",
+            "id": "prac1",
+            "name": [
+              {
+                "text": "Dr Josephine Smith"
+              }
+            ]
+          },
+          {
+            "resourceType": "Organization",
+            "id": "org1",
+            "name": "ACME Hospital"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/procedure",
+            "value": "a2fb6d9a-9ccc-4c05-9eda-b9cf557fc528"
+          }
+        ],
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "49006001",
+              "display": "Removal of foreign body from bladder by incision"
+            }
+          ],
+          "text": "Removal of foreign body from bladder by incision"
+        },
+        "subject": {
+          "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+        },
+        "performedDateTime": "2025-06-07T16:10:58.0644364+01:00",
+        "performer": [
+          {
+            "actor": {
+              "reference": "#prac1"
+            },
+            "onBehalfOf": {
+              "reference": "#org1"
+            }
+          }
+        ]
+      }
     }
-    ]
+  ]
 }

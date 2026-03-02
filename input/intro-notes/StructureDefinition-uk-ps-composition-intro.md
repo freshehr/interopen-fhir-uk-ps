@@ -13,6 +13,5 @@
    - The distinction between the two types of IPS, human-curated or software-assembled, is based on the authors recorded in the composition: the author will be a human (e.g. Practitioner), if the IPS provenance type is "human-curated", or a device if the IPS provenance type is "software-assembled". In the case of a software-assembled IPS that is then verified by a human, the document provenance type will be "software-assembled" and the author will be the device or system that constructed the IPS document, but an additional attester identity will name the human who performed this check.
    - Additional provenance information below the document level is optional. There are no Provenance profiles currently defined by this guide, IPS or AU Core.
 
-<!-- **Examples for this Profile**: [Bundle/ukps-basicsummary](Bundle-ukps-basicsummary.html), [Bundle/ukps-gpvisit-retrieval](Bundle-ukps-gpvisit-retrieval.html), [Bundle/ukps-noknownx](Bundle-ukps-noknownx.html), [Bundle/ukps-referral-endoconsult-autogen](Bundle-ukps-referral-endoconsult-autogen.html), [Bundle/ukps-referral-endoconsult-curated](Bundle-ukps-referral-endoconsult-curated.html) and [Bundle/ukps-section-emptyreason](Bundle-ukps-section-emptyreason.html)
--->
+**Examples for this Profile**: [Examples/uk-ps-bundle](Bundle-ukps-bundle.html)
 

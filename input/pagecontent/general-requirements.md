@@ -243,9 +243,9 @@ In UK PS, the meaning of *Must Support* is specified in terms of [Obligation Cod
 
 Actor | Code | Definition | Notes
 --- | --- | --- | ---
-[UK PS Consumer actor](ActorDefinition-au-ps-actor-consumer.html) | [SHALL:handle](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-SHALL.58handle) | Conformant applications SHALL handle the meaning of this element correctly. |  This rule is vague in that doesn't specify any particular handling of the element. But it's important because an application that ignores this element is non-conformant. A good example would be a status code of 'entered-in-error' - how exactly a Resource Consumer handles this depends on the use case etc., but the application can never simply ignore such a status code. Note that whether the resource or information from it is stored for later use is irrelevant - when the resource or information in it is processed, the consequences of the element are considered. In UK PS, all elements marked as _Must Support_ have this obligation applied.
+[UK PS Consumer actor](ActorDefinition-uk-ps-actor-consumer.html) | [SHALL:handle](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-SHALL.58handle) | Conformant applications SHALL handle the meaning of this element correctly. |  This rule is vague in that doesn't specify any particular handling of the element. But it's important because an application that ignores this element is non-conformant. A good example would be a status code of 'entered-in-error' - how exactly a Resource Consumer handles this depends on the use case etc., but the application can never simply ignore such a status code. Note that whether the resource or information from it is stored for later use is irrelevant - when the resource or information in it is processed, the consequences of the element are considered. In UK PS, all elements marked as _Must Support_ have this obligation applied.
 | [SHOULD:display](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-SHOULD.58display) | Conformant applications SHOULD display the value of this element when presenting the data to a human user. | Exactly how it is displayed is not specified, but it means that a human looking at the content of the resource is made aware of the value of the element so that they can consider the meaning of the resource. In UK PS, most elements marked as _Must Support_ have this obligation applied.
-[UK PS Producer actor](ActorDefinition-au-ps-actor-producer.html) |[SHALL:populate](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-SHALL.58populate)|Conformant applications producing resources SHALL include this element if a value is known and allowed to be shared| This implementation obligation means that whenever the producer knows the correct value for an element, it populates it. This is NOT the same as cardinality, as a 'populate' element can be omitted if no data exists or the data that exists is prohibited from being shared. SHALL:populate combines able-to-populate and populate-if-known for the element. 
+[UK PS Producer actor](ActorDefinition-uk-ps-actor-producer.html) |[SHALL:populate](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-SHALL.58populate)|Conformant applications producing resources SHALL include this element if a value is known and allowed to be shared| This implementation obligation means that whenever the producer knows the correct value for an element, it populates it. This is NOT the same as cardinality, as a 'populate' element can be omitted if no data exists or the data that exists is prohibited from being shared. SHALL:populate combines able-to-populate and populate-if-known for the element. 
 | [SHALL:able-to-populate](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-SHALL.58able-to-populate) | Conformant applications producing resources SHALL be able to correctly populate this element. | Typically, this means that an application needs to demonstrate during some conformance testing process that there are some conditions under which it populates the element with a correct value. (i.e. not a data-absent-reason or equivalent.) This obligation does not impose expectations on the circumstances in which the element will be sent, only that it can be in at least some situations.
 | [SHALL:populate-if-known](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-SHALL.58populate-if-known) | Conformant applications producing resources SHALL correctly populate this element if they know a value for the element, but it is acceptable if the system is unable to ever know a value for the element. | This obligation does not impose a requirement to be able to know a value, unlike populate and able-to-populate which do. 'Knowing' an element means that a value for the element is available in memory, persistent store, or is otherwise available within the system claiming conformance. With the exception of UK PS Composition, all profiles referenced by UK PS Bundle have this obligation applied to elements marked as _Must Support_.
 | [SHOULD:able-to-populate](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-SHOULD.58able-to-populate) | Conformant applications producing resources SHOULD be able to correctly populate this element. | Typically, this means that an application needs to demonstrate during some conformance testing process that there are some conditions under which it populates the element with a correct value. (i.e. not a data-absent-reason or equivalent.) This obligation does not impose expectations on the circumstances in which the element will be sent, only that it can be in at least some situations.
@@ -253,7 +253,7 @@ Actor | Code | Definition | Notes
 |  [MAY:able-to-populate](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-MAY.58able-to-populate)| Conformant applications producing resources MAY be able to correctly populate this element. | Typically, this means that an application needs to demonstrate during some conformance testing process that there are some conditions under which it populates the element with a correct value. (i.e. not a data-absent-reason or equivalent.)  
 {:.grid}
 
-*Must Support* elements are treated differently between [UK PS Consumer](ActorDefinition-au-ps-actor-consumer.html) and [UK PS Producer](ActorDefinition-au-ps-actor-producer.html) actors. *Must Support* on a profile element **SHALL** be interpreted as follows.
+*Must Support* elements are treated differently between [UK PS Consumer](ActorDefinition-uk-ps-actor-consumer.html) and [UK PS Producer](ActorDefinition-uk-ps-actor-producer.html) actors. *Must Support* on a profile element **SHALL** be interpreted as follows.
 
 #### Presentation of Must Support and Obligation in Profiles
 All elements with *Must Support* in UK PS are accompanied by an explicit obligation that identifies the expectations for one or more actors. When rendered in an implementation guide, each profile is presented in different formal views under tabs labelled "Differential Table", "Key Elements Table", and "Snapshot Table". Elements labelled with *Must Support* and stated obligations in these views are represented by <span style="padding-left: 1px; padding-right: 1px; color: white; background-color: red" title="This element must be supported">S</span><span style="padding-left: 1px; padding-right: 1px; color: white; background-color: red" title="This element has obligations">O</span> as shown below. 
@@ -277,9 +277,9 @@ The sub-elements for each supported element in a profile are defined by a combin
 - limit what is considered 'valid'
 - extend the potential sub-elements by including an extension
 
-For example, the profile [UK PS Patient](StructureDefinition-au-ps-patient.html) limits what is considered valid for the element `Patient.name` with the invariant "**au-core-pat-02:** At least one patient name shall have a family name".
+For example, the profile [UK PS Patient](StructureDefinition-uk-ps-patient.html) limits what is considered valid for the element `Patient.name` with the invariant "**au-core-pat-02:** At least one patient name shall have a family name".
 
-Typically UK PS profiles will inherit extended sub-elements from the base HL7 UK Core profile (which itself is based on an HL7 UK Base profile), e.g. the element `Medication.code` in profile [UK PS Medication](StructureDefinition-au-ps-medication.html) is of type CodeableConcept and is extended by inheriting a medicine specific sub-element `Medication.code.coding.extension` [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) from the source profile [UK Base Medication](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medication.html). 
+Typically UK PS profiles will inherit extended sub-elements from the base HL7 UK Core profile (which itself is based on an HL7 UK Base profile), e.g. the element `Medication.code` in profile [UK PS Medication](StructureDefinition-uk-ps-medication.html) is of type CodeableConcept and is extended by inheriting a medicine specific sub-element `Medication.code.coding.extension` [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) from the source profile [UK Base Medication](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medication.html). 
 
 The full set of sub-elements is visible in the "Key Elements Table" or "Snapshot Table" which shows the sub-elements defined in this profile (shown in the "Differential Table") and the sub-elements inherited from a base profile.
 
@@ -290,7 +290,7 @@ Obligations vary significantly for elements in the UK PS Composition profile, in
 - For all recommended sections UK PS Producers **SHOULD** correctly populate the section if a value is known and **SHOULD** correctly populate `Composition.section.entry` if a value is known. 
 - For all optional or undefined sections UK PS Producers **MAY** correctly populate the section if a value is known and **MAY** correctly populate `Composition.section.entry` if a value is known. 
 
-See [Structure of the Australian Patient Summary (UK PS)](the-aups.html#structure-of-the-au-ps) for information on the mandatory, recommended, and optional sections.
+See [Structure of the Australian Patient Summary (UK PS)](the-ukps.html#structure-of-the-uk-ps) for information on the mandatory, recommended, and optional sections.
 
 ##### Must Support - Primitive Elements
 Primitive elements are single elements with a primitive value. If a primitive element is labelled as *Must Support*: 
@@ -329,21 +329,21 @@ The table below provides a list of UK PS profile elements that allow multiple re
 
 Profile |Must Support Element|Reference
 ---|---|---
-[UK PS Composition](StructureDefinition-au-ps-composition.html)|Composition.author|UK PS Practitioner, UK PS PractitionerRole, Device, UK PS Patient, UK PS RelatedPerson, UK PS Organization
-[UK PS Composition](StructureDefinition-au-ps-composition.html)|Composition.attester.party|UK PS Patient, UK PS RelatedPerson, UK PS Practitioner, UK PS PractitionerRole, UK PS Organization
-[UK PS Composition](StructureDefinition-au-ps-composition.html)|Composition.section.entry:medicationStatementOrRequest|UK PS MedicationStatement, UK PS MedicationRequest
+[UK PS Composition](StructureDefinition-uk-ps-composition.html)|Composition.author|UK PS Practitioner, UK PS PractitionerRole, Device, UK PS Patient, UK PS RelatedPerson, UK PS Organization
+[UK PS Composition](StructureDefinition-uk-ps-composition.html)|Composition.attester.party|UK PS Patient, UK PS RelatedPerson, UK PS Practitioner, UK PS PractitionerRole, UK PS Organization
+[UK PS Composition](StructureDefinition-uk-ps-composition.html)|Composition.section.entry:medicationStatementOrRequest|UK PS MedicationStatement, UK PS MedicationRequest
 [DiagnosticReport (IPS)](https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-DiagnosticReport-uv-ips.html)|DiagnosticReport.subject|UK PS Patient, Group
 [DiagnosticReport (IPS)](https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-DiagnosticReport-uv-ips.html)|DiagnosticReport.performer|UK PS Practitioner, UK PS PractitionerRole, UK PS Organization, CareTeam
 [DiagnosticReport (IPS)](https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-DiagnosticReport-uv-ips.html)|DiagnosticReport.result:observation-results|UK PS Pathology Result Observation, Observation Results - Radiology (IPS)
-[UK PS Encounter](StructureDefinition-au-ps-encounter.html)|Encounter.participant.individual|UK PS Practitioner, UK PS PractitionerRole, UK PS RelatedPerson
-[UK PS Encounter](StructureDefinition-au-ps-encounter.html)|Encounter.reasonReference|UK PS Condition, Observation, UK PS Procedure
-[UK PS MedicationRequest](StructureDefinition-au-ps-medicationrequest.html)|MedicationRequest.requester|UK PS Practitioner, UK PS PractitionerRole, UK PS Organization, UK PS Patient, UK PS RelatedPerson
-[UK PS MedicationRequest](StructureDefinition-au-ps-medicationrequest.html)|MedicationRequest.reasonReference|UK PS Condition, Observation
-[UK PS MedicationStatement](StructureDefinition-au-ps-medicationstatement.html)|MedicationStatement.reasonReference|UK PS Condition, Observation, DiagnosticReport (IPS)
+[UK PS Encounter](StructureDefinition-uk-ps-encounter.html)|Encounter.participant.individual|UK PS Practitioner, UK PS PractitionerRole, UK PS RelatedPerson
+[UK PS Encounter](StructureDefinition-uk-ps-encounter.html)|Encounter.reasonReference|UK PS Condition, Observation, UK PS Procedure
+[UK PS MedicationRequest](StructureDefinition-uk-ps-medicationrequest.html)|MedicationRequest.requester|UK PS Practitioner, UK PS PractitionerRole, UK PS Organization, UK PS Patient, UK PS RelatedPerson
+[UK PS MedicationRequest](StructureDefinition-uk-ps-medicationrequest.html)|MedicationRequest.reasonReference|UK PS Condition, Observation
+[UK PS MedicationStatement](StructureDefinition-uk-ps-medicationstatement.html)|MedicationStatement.reasonReference|UK PS Condition, Observation, DiagnosticReport (IPS)
 [Observation Results - Radiology (IPS)](https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Observation-results-radiology-uv-ips.html)|Observation.performer|UK PS Practitioner, UK PS PractitionerRole, UK PS Organization, CareTeam, UK PS Patient, UK PS RelatedPerson
-[UK PS Patient](StructureDefinition-au-ps-patient.html)|Patient.generalPractitioner|UK PS Organization, UK PS Practitioner, UK PS PractitionerRole
-[UK PS Pathology Result Observation](StructureDefinition-au-ps-diagnosticresult-path.html)|Observation.performer|UK PS Practitioner, UK PS PractitionerRole, UK PS Organization, UK PS Patient, UK PS RelatedPerson
-[UK PS Procedure](StructureDefinition-au-ps-procedure.html)|Procedure.reasonReference|UK PS Condition, Observation, UK PS Procedure, DocumentReference
+[UK PS Patient](StructureDefinition-uk-ps-patient.html)|Patient.generalPractitioner|UK PS Organization, UK PS Practitioner, UK PS PractitionerRole
+[UK PS Pathology Result Observation](StructureDefinition-uk-ps-diagnosticresult-path.html)|Observation.performer|UK PS Practitioner, UK PS PractitionerRole, UK PS Organization, UK PS Patient, UK PS RelatedPerson
+[UK PS Procedure](StructureDefinition-uk-ps-procedure.html)|Procedure.reasonReference|UK PS Condition, Observation, UK PS Procedure, DocumentReference
 {:.grid}
 
 
@@ -356,21 +356,21 @@ The table below provides a list of UK PS profile elements that allow multiple da
 
 Profile |Must Support Element|Data Types
 ---|---|---
-[UK PS AllergyIntolerance](StructureDefinition-au-ps-allergyintolerance.html)|AllergyIntolerance.onset[x]|dateTime, age, Period, Range
-[UK PS Condition](StructureDefinition-au-ps-condition.html)|Condition.onset[x]|dateTime, age, Period, Range
-[UK PS Condition](StructureDefinition-au-ps-condition.html)|Condition.abatement[x]|dateTime, age, Period, Range
+[UK PS AllergyIntolerance](StructureDefinition-uk-ps-allergyintolerance.html)|AllergyIntolerance.onset[x]|dateTime, age, Period, Range
+[UK PS Condition](StructureDefinition-uk-ps-condition.html)|Condition.onset[x]|dateTime, age, Period, Range
+[UK PS Condition](StructureDefinition-uk-ps-condition.html)|Condition.abatement[x]|dateTime, age, Period, Range
 [DeviceUseStatement (IPS)](https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-DeviceUseStatement-uv-ips.html)|DeviceUseStatement.timing[x]|Period, dateTime
 [DiagnosticReport (IPS)](https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-DiagnosticReport-uv-ips.html)|DiagnosticReport.effective[x]|dateTime, Period
-[UK PS Immunization](StructureDefinition-au-ps-immunization.html)|Immunization.occurrence[x]|dateTime, string
-[UK PS MedicationRequest](StructureDefinition-au-ps-medicationrequest.html)|MedicationRequest.medication[x]|CodeableConcept, Reference
-[UK PS MedicationStatement](StructureDefinition-au-ps-medicationstatement.html)|MedicationStatement.medication[x]|CodeableConcept, Reference
-[UK PS MedicationStatement](StructureDefinition-au-ps-medicationstatement.html)|MedicationStatement.effective[x]|dateTime, Period
+[UK PS Immunization](StructureDefinition-uk-ps-immunization.html)|Immunization.occurrence[x]|dateTime, string
+[UK PS MedicationRequest](StructureDefinition-uk-ps-medicationrequest.html)|MedicationRequest.medication[x]|CodeableConcept, Reference
+[UK PS MedicationStatement](StructureDefinition-uk-ps-medicationstatement.html)|MedicationStatement.medication[x]|CodeableConcept, Reference
+[UK PS MedicationStatement](StructureDefinition-uk-ps-medicationstatement.html)|MedicationStatement.effective[x]|dateTime, Period
 [Observation Results - Radiology (IPS)](https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Observation-results-radiology-uv-ips.html)|Observation.effective[x]|dateTime, Period
 [Observation Results - Radiology (IPS)](https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Observation-results-radiology-uv-ips.html)|Observation.value[x]|Quantity, CodeableConcept, string, boolean, integer, Range, Ratio, SampledData, time, dateTime, Period
-[UK PS Pathology Result Observation](StructureDefinition-au-ps-diagnosticresult-path.html)|Observation.effective[x]|dateTime, Period,
-[UK PS Pathology Result Observation](StructureDefinition-au-ps-diagnosticresult-path.html)|Observation.value[x]|Quantity, CodeableConcept, string, boolean, integer, Range, Ratio, SampledData, time, dateTime, Period
-[UK PS Pathology Result Observation](StructureDefinition-au-ps-diagnosticresult-path.html)|Observation.component.value[x]|Quantity, CodeableConcept, string, boolean, integer, Range, Ratio, SampledData, time, dateTime, Period
-[UK PS Procedure](StructureDefinition-au-ps-procedure.html)|Procedure.performed[x]|dateTime, Period, string, Age, Range
+[UK PS Pathology Result Observation](StructureDefinition-uk-ps-diagnosticresult-path.html)|Observation.effective[x]|dateTime, Period,
+[UK PS Pathology Result Observation](StructureDefinition-uk-ps-diagnosticresult-path.html)|Observation.value[x]|Quantity, CodeableConcept, string, boolean, integer, Range, Ratio, SampledData, time, dateTime, Period
+[UK PS Pathology Result Observation](StructureDefinition-uk-ps-diagnosticresult-path.html)|Observation.component.value[x]|Quantity, CodeableConcept, string, boolean, integer, Range, Ratio, SampledData, time, dateTime, Period
+[UK PS Procedure](StructureDefinition-uk-ps-procedure.html)|Procedure.performed[x]|dateTime, Period, string, Age, Range
 [DeviceUseStatement (IPS)](https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-DeviceUseStatement-uv-ips.html)|DeviceUseStatement.timing[x]|Period, dateTime
 {:.grid}
 
@@ -381,15 +381,15 @@ The table below provides a list of UK PS profile elements where a data type choi
 
 Profile |Must Support Data Type
 ---|---
-[UK PS AllergyIntolerance](StructureDefinition-au-ps-allergyintolerance.html)|AllergyIntolerance.onsetDateTime
-[UK PS Condition](StructureDefinition-au-ps-condition.html)|Condition.onsetDateTime
+[UK PS AllergyIntolerance](StructureDefinition-uk-ps-allergyintolerance.html)|AllergyIntolerance.onsetDateTime
+[UK PS Condition](StructureDefinition-uk-ps-condition.html)|Condition.onsetDateTime
 [DeviceUseStatement (IPS)](https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-DeviceUseStatement-uv-ips.html)|DeviceUseStatement.timingDateTime
 [DiagnosticReport (IPS)](https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-DiagnosticReport-uv-ips.html)|DiagnosticReport.effectiveDateTime
-[UK PS Immunization](StructureDefinition-au-ps-immunization.html)|Immunization.occurrenceDateTime
-[UK PS MedicationStatement](StructureDefinition-au-ps-medicationstatement.html)|MedicationStatement.effectiveDateTime
+[UK PS Immunization](StructureDefinition-uk-ps-immunization.html)|Immunization.occurrenceDateTime
+[UK PS MedicationStatement](StructureDefinition-uk-ps-medicationstatement.html)|MedicationStatement.effectiveDateTime
 [Observation Results - Radiology (IPS)](https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Observation-results-radiology-uv-ips.html)|Observation.effectiveDateTime
-[UK PS Pathology Result Observation](StructureDefinition-au-ps-diagnosticresult-path.html)|Observation.effectiveDateTime
-[UK PS Procedure](StructureDefinition-au-ps-procedure.html)|Procedure.performedDateTime
+[UK PS Pathology Result Observation](StructureDefinition-uk-ps-diagnosticresult-path.html)|Observation.effectiveDateTime
+[UK PS Procedure](StructureDefinition-uk-ps-procedure.html)|Procedure.performedDateTime
 {:.grid}
 
 ##### Must Support - Identifiers 
@@ -405,13 +405,13 @@ The table below provides a list of UK PS profile elements with one or more suppo
 
 Profile |Must Support Element|Supported Identifiers
 ---|---|---
-[UK PS Organization](StructureDefinition-au-ps-organization.html)|Organization.identifier|HPI-O, Australian Business Number
-[UK PS Patient](StructureDefinition-au-ps-patient.html)|Patient.identifier|IHI, Medicare Card Number, DVA Number
-[UK PS Practitioner](StructureDefinition-au-ps-practitioner.html)|Practitioner.identifier|HPI-I
-[UK PS PractitionerRole](StructureDefinition-au-ps-practitionerrole.html)|PractitionerRole.identifier|Medicare Provider Number
+[UK PS Organization](StructureDefinition-uk-ps-organization.html)|Organization.identifier|HPI-O, Australian Business Number
+[UK PS Patient](StructureDefinition-uk-ps-patient.html)|Patient.identifier|IHI, Medicare Card Number, DVA Number
+[UK PS Practitioner](StructureDefinition-uk-ps-practitioner.html)|Practitioner.identifier|HPI-I
+[UK PS PractitionerRole](StructureDefinition-uk-ps-practitionerrole.html)|PractitionerRole.identifier|Medicare Provider Number
 {:.grid}
 
-For example, the profile [UK PS Organization](StructureDefinition-au-ps-organization.html) defines support for the Healthcare Provider Identifier - Organisation (HPI-O) and Australian Business Number (ABN) identifier types as slices of `Organization.identifier` flagged with *Must Support*. When claiming conformance to the UK Core Organization Profile:
+For example, the profile [UK PS Organization](StructureDefinition-uk-ps-organization.html) defines support for the Healthcare Provider Identifier - Organisation (HPI-O) and Australian Business Number (ABN) identifier types as slices of `Organization.identifier` flagged with *Must Support*. When claiming conformance to the UK Core Organization Profile:
 - UK PS Producers **SHALL** correctly populate `Organization.identifier` with at least one of HPI-O or ABN if known, or any other identifier type when neither HPI-O or ABN are known but some other identifier is known (e.g. NATA Accredication Number).
 - UK PS Consumers **SHALL** handle `Patient.identifier` if present and containing any valid value. A valid value may be an HPI-O or ABN, or may be any other valid identifier type allowed by the element definition (e.g. NATA Accredication Number). The UK PS Consumer **SHOULD** display the value of each populated identifier type (IHI, Medicare Number, DVA Number, or some other identifier) when presenting the data to a human user.
 
@@ -419,7 +419,7 @@ Systems **MAY** support populating other identifiers, but this is not a requirem
 
 ##### Must Support - Choice of Profile Elements
 
-A resource may support two elements that are used to indicate a reason, e.g. `Encounter.reasonCode` and `Encounter.reasonReference` in the profile [UK PS Encounter](StructureDefinition-au-ps-encounter.html). In such cases:
+A resource may support two elements that are used to indicate a reason, e.g. `Encounter.reasonCode` and `Encounter.reasonReference` in the profile [UK PS Encounter](StructureDefinition-uk-ps-encounter.html). In such cases:
 - UK PS Producers **SHALL** correctly populate at least one element choice if the value is known.
 - UK PS Consumers **SHALL** handle either element choice allowed by the profile if present and containing any valid value. 
 
@@ -427,10 +427,10 @@ The table below lists the applicable profiles and elements in UK PS.
 
 Profile |Must Support Choice Elements
 ---|---
-[UK PS Encounter](StructureDefinition-au-ps-encounter.html)|Encounter.reasonCode, Encounter.reasonReference
-[UK PS MedicationRequest](StructureDefinition-au-ps-medicationrequest.html)|MedicationRequest.reasonCode, MedicationRequest.reasonReference
-[UK PS MedicationStatement](StructureDefinition-au-ps-medicationstatement.html)|MedicationStatement.reasonCode, MedicationStatement.reasonReference
-[UK PS Procedure](StructureDefinition-au-ps-procedure.html)|Procedure.reasonCode, Procedure.reasonReference
+[UK PS Encounter](StructureDefinition-uk-ps-encounter.html)|Encounter.reasonCode, Encounter.reasonReference
+[UK PS MedicationRequest](StructureDefinition-uk-ps-medicationrequest.html)|MedicationRequest.reasonCode, MedicationRequest.reasonReference
+[UK PS MedicationStatement](StructureDefinition-uk-ps-medicationstatement.html)|MedicationStatement.reasonCode, MedicationStatement.reasonReference
+[UK PS Procedure](StructureDefinition-uk-ps-procedure.html)|Procedure.reasonCode, Procedure.reasonReference
 {:.grid}
 
 
@@ -447,13 +447,13 @@ The table below lists the applicable profiles and elements in UK PS that support
 
 Profile |Must Support Sub-Element|Terminology Choices
 ---|---
-[UK PS Immunization](StructureDefinition-au-ps-immunization.html)|Immunization.vaccineCode.coding|[Australian Medicines Terminology Vaccine](https://healthterminologies.gov.au/fhir/ValueSet/amt-vaccine-1), [Australian Immunisation Register Vaccine](https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-vaccine-1)
-[UK PS Medication](StructureDefinition-au-ps-medication.html)|Medication.code.coding|[Australian Medication](https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1), [PBS Item Codes](https://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-pbs-item.html)
-[UK PS MedicationRequest](StructureDefinition-au-ps-medicationrequest.html)|MedicationRequest.code.coding|[Australian Medication](https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1), [PBS Item Codes](https://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-pbs-item.html)
-[UK PS MedicationStatement](StructureDefinition-au-ps-medicationstatement.html)|MedicationStatement.code.coding|[Australian Medication](https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1), [PBS Item Codes](https://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-pbs-item.html)
+[UK PS Immunization](StructureDefinition-uk-ps-immunization.html)|Immunization.vaccineCode.coding|[Australian Medicines Terminology Vaccine](https://healthterminologies.gov.au/fhir/ValueSet/amt-vaccine-1), [Australian Immunisation Register Vaccine](https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-vaccine-1)
+[UK PS Medication](StructureDefinition-uk-ps-medication.html)|Medication.code.coding|[Australian Medication](https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1), [PBS Item Codes](https://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-pbs-item.html)
+[UK PS MedicationRequest](StructureDefinition-uk-ps-medicationrequest.html)|MedicationRequest.code.coding|[Australian Medication](https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1), [PBS Item Codes](https://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-pbs-item.html)
+[UK PS MedicationStatement](StructureDefinition-uk-ps-medicationstatement.html)|MedicationStatement.code.coding|[Australian Medication](https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1), [PBS Item Codes](https://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-pbs-item.html)
 {:.grid}
 
-For example, the profile [UK PS Medication](StructureDefinition-au-ps-medication.html) defines support for [Australian Medication](https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1) and [PBS Item Codes](https://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-pbs-item.html) value sets as slices of `Medication.code.coding` flagged with *Must Support*.
+For example, the profile [UK PS Medication](StructureDefinition-uk-ps-medication.html) defines support for [Australian Medication](https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1) and [PBS Item Codes](https://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-pbs-item.html) value sets as slices of `Medication.code.coding` flagged with *Must Support*.
 
 When claiming conformance to the UK PS Medication profile: 
 - UK PS Producers **SHALL** correctly populate `Medication.code.coding` with codes from [Australian Medication](https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1) and [PBS Item Codes](https://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-pbs-item.html) if both coded values are known, or from either if only one is known, or from another terminology if neither is known but a code is available, or text only if no coded value is known.

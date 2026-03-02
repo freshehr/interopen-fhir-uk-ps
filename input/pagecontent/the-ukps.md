@@ -23,7 +23,7 @@ A UK PS is intended to:<a name="aupintendedto">
 *Figure 1: Context of UK PS across a Consumer's Healthcare Journey in UK*
 <br/>
 
-A sample set of [Consumer Journeys](https://sparked.csiro.au/index.php/products-resources/au-ps-consumer-journeys/), developed by the Sparked UK Patient Summary Clinical Focus Group, help illustrate the interactions and use of a patient summary during a consumer’s healthcare journey in the UK healthcare context. These Consumer Journeys have been used to develop [two example use cases](usecase.html) to assist implementers in understanding how UK PS could be implemented.
+A sample set of [Consumer Journeys](https://sparked.csiro.au/index.php/products-resources/uk-ps-consumer-journeys/), developed by the Sparked UK Patient Summary Clinical Focus Group, help illustrate the interactions and use of a patient summary during a consumer’s healthcare journey in the UK healthcare context. These Consumer Journeys have been used to develop [two example use cases](usecase.html) to assist implementers in understanding how UK PS could be implemented.
 
 ### Structure of the UK PS
 UK PS is specified in this guide as an HL7 FHIR document (a Bundle including a Composition), composed by a set of potentially reusable "minimal" data blocks (the UK PS profiles).

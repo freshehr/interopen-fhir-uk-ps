@@ -1,7 +1,7 @@
 A system declaring conformance to UK Patient Summary (UK PS) **SHALL** implement the conformance requirements as defined for one or both of the following actors:
 
-- [UK PS Consumer](ActorDefinition-au-ps-actor-consumer.html)
-- [UK PS Producer](ActorDefinition-au-ps-actor-producer.html)
+- [UK PS Consumer](ActorDefinition-uk-ps-actor-consumer.html)
+- [UK PS Producer](ActorDefinition-uk-ps-actor-producer.html)
 
 AU PS does not define any FHIR-specific interactions and therefore does not include a CapabilityStatement.
 

@@ -1,7 +1,7 @@
 {::options toc_levels="1..4"/}
 
 ### Generating & Accessing AU Patient Summary (AU PS) Documents
-AU PS is specified in this guide as a HL7 FHIR document (a Bundle including a Composition), composed by a set of potentially reusable "minimal" data blocks (the AU PS profiles). See [Structure of the AU PS](the-aups.html#structure-of-the-au-ps).
+AU PS is specified in this guide as a HL7 FHIR document (a Bundle including a Composition), composed by a set of potentially reusable "minimal" data blocks (the AU PS profiles). See [Structure of the AU PS](the-ukps.html#structure-of-the-uk-ps).
 
 The IPS recommends two potential operations (`$summary` and `$docref`) for how IPS documents may be generated, but does not constrain solutions or strategies for the creation, sharing and use of patient summary documents (see [Generating & Accessing IPS Documents](https://hl7.org/fhir/uv/ips/Generation-and-Data-Inclusion.html)). These and other options for generation and access have been discussed during the AU PS project and HL7 AU Connectathons. The options under discussion for most implementations in the Australian context are referenced and briefly described in this guide in the sections below. 
 

@@ -36,7 +36,7 @@ As part of profiling, uk-ps PS inherits the uk-ps Core localised terminology and
 In terms of support in uk-ps PS profiles, a coded element can have support defined for one or more value sets. Coded elements that define support for more than one value set include them in a profile by slicing the [Coding](http://hl7.org/fhir/R4/datatypes.html#Coding) part of the element and placing *Must Support* on each value set slice. These value set slices are not intended to prevent systems from supplying only a text value. Most coded *Must Support* elements in uk-ps PS profiles define support for one value set, which is bound to the supported element and no value set slice is present.
 
 For:
-* a description of the localisation of terminology in uk-ps PS, refer to [Terminology Localisation](the-aups.html#terminology-localisation)
+* a description of the localisation of terminology in uk-ps PS, refer to [Terminology Localisation](the-ukps.html#terminology-localisation)
 * a list of the terminologies supported in uk-ps PS, refer to the [Terminology](terminology.html) page
 * guidance on selection of terminology in HL7 uk-ps IGs, refer to the uk-ps Base guidance on [Terminology Selection](https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#terminology-selection)
 
@@ -61,7 +61,7 @@ For:
    * IPS profile (where only the IPS profile exists)
    * uk-ps Core profile (where only the uk-ps Core profile exists)
    * uk-ps Base profile (where available and neither the IPS or uk-ps Core profile exists)
-* Where a profile referenced in [uk-ps PS Bundle](StructureDefinition-au-ps-bundle.html) is not defined in IPS, or has _Must Support_ elements with no obligations in IPS, the uk-ps PS obligations default to: 
+* Where a profile referenced in [uk-ps PS Bundle](StructureDefinition-uk-ps-bundle.html) is not defined in IPS, or has _Must Support_ elements with no obligations in IPS, the uk-ps PS obligations default to: 
   - uk-ps PS Producer: SHALL:populate-if-known
   - uk-ps PS Consumer: SHALL:handle and SHOULD:display 
 
@@ -77,7 +77,7 @@ uk-ps PS profiles:
 
 When modelling uk-ps PS resource profiles, they:
 * are derived from uk-ps Core profiles, or where not available, the uk-ps Base profile (where it exists)
-* apply additional requirements inherited from IPS (in accordance with the [uk-ps PS Profile Design Principles](general-guidance.html#au-ps-profile-design-principles)) 
+* apply additional requirements inherited from IPS (in accordance with the [uk-ps PS Profile Design Principles](general-guidance.html#uk-ps-profile-design-principles)) 
 * apply additional requirements agreed by the uk-ps PS project (e.g. inclusion of uk-ps PS Encounter profile)
 * use [compliesWithProfile](https://build.fhir.org/ig/HL7/fhir-extensions/StructureDefinition-structuredefinition-compliesWithProfile.html) to assert compliance with the corresponding IPS profile (where it exists)
 
@@ -95,11 +95,11 @@ This modelling applies the typical HL7 uk-ps profiling approach that uses deriva
 *Figure 2: Profiling approach for uk-ps PS Patient profile*<a name="aupspatientprofilingapproach">
 <br/><br/>
 
-Due to this modelling, the "Differential Table" in an uk-ps PS profile shows the patient summary requirements that are additional to uk-ps Core. In some profiles (e.g. [uk-ps PS Organization](StructureDefinition-au-ps-organization.html)), the only additional requirements are the obligations for uk-ps PS actors.
+Due to this modelling, the "Differential Table" in an uk-ps PS profile shows the patient summary requirements that are additional to uk-ps Core. In some profiles (e.g. [uk-ps PS Organization](StructureDefinition-uk-ps-organization.html)), the only additional requirements are the obligations for uk-ps PS actors.
 
-The [uk-ps PS Bundle](StructureDefinition-au-ps-bundle.html) profile is not based on uk-ps Core or uk-ps Base as no Bundle profile exists in either IG. The approach to profiling for uk-ps PS Bundle is to:
+The [uk-ps PS Bundle](StructureDefinition-uk-ps-bundle.html) profile is not based on uk-ps Core or uk-ps Base as no Bundle profile exists in either IG. The approach to profiling for uk-ps PS Bundle is to:
 * derive from the FHIR Bundle resource
-* apply requirements inherited from IPS (in accordance with the [uk-ps PS Profile Design Principles](general-guidance.html#au-ps-profile-design-principles)) 
+* apply requirements inherited from IPS (in accordance with the [uk-ps PS Profile Design Principles](general-guidance.html#uk-ps-profile-design-principles)) 
 * apply additional requirements agreed by the uk-ps PS project
 * use [compliesWithProfile](https://build.fhir.org/ig/HL7/fhir-extensions/StructureDefinition-structuredefinition-compliesWithProfile.html) to assert compliance with IPS
 
@@ -109,12 +109,12 @@ The [uk-ps PS Bundle](StructureDefinition-au-ps-bundle.html) profile is not base
 *Figure 3: Profiling approach for uk-ps PS Bundle profile*
 <br/><br/>
 
-This approach to [uk-ps PS Bundle](StructureDefinition-au-ps-bundle.html) profiling (deriving from the FHIR Bundle resource and not [Bundle (IPS)](https://build.fhir.org/ig/HL7/fhir-ips/en/StructureDefinition-Bundle-uv-ips.html) profile) has been taken as at the time of publication of this release there is a tooling limitation that prevents meeting both of the below conditions:
+This approach to [uk-ps PS Bundle](StructureDefinition-uk-ps-bundle.html) profiling (deriving from the FHIR Bundle resource and not [Bundle (IPS)](https://build.fhir.org/ig/HL7/fhir-ips/en/StructureDefinition-Bundle-uv-ips.html) profile) has been taken as at the time of publication of this release there is a tooling limitation that prevents meeting both of the below conditions:
 * derivation from Bundle (IPS)
 * changing reference targets to uk-ps PS profiles (as uk-ps PS profiles derive from uk-ps Core and not IPS they cannot be easily assessed as meeting IPS rules by the tooling)
 
 Additional detail on profiling is:
-* described in the guidance section [Localisation of the IPS](the-aups.html#localisation-of-the-ips)
+* described in the guidance section [Localisation of the IPS](the-ukps.html#localisation-of-the-ips)
 * the modelling inherited from uk-ps Core is described in the uk-ps Core [Resource Profile Approach](https://build.fhir.org/ig/hl7au/au-fhir-core/general-guidance.html#resource-profile-approach)
 
 ###### Use of Must Support and Obligations
@@ -131,7 +131,7 @@ See [Must Support and Obligation](general-requirements.html#must-support-and-obl
 
 ###### Potential Profiling Options
 
-When managing [profile complexity and requirements](relationship.html) in the [national and international context for uk-ps PS](the-aups.html#the-au-ps-au-patient-summary), the following mechanisms are available:
+When managing [profile complexity and requirements](relationship.html) in the [national and international context for uk-ps PS](the-ukps.html#the-uk-ps-au-patient-summary), the following mechanisms are available:
 1. [Derived from Profiles (derive)](https://build.fhir.org/structuredefinition-definitions.html#StructureDefinition.baseDefinition)
 1. Informal alignment (human authoring of rules in a profile)
 1. [Complies With Profile (compliesWithProfile)](https://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-compliesWithProfile.html)
@@ -167,7 +167,7 @@ uk-ps PS actors are defined to describe the specific sets of functionality suppo
 In this release, uk-ps PS does not include capability statements that describe the requirements for an uk-ps PS actor. It is anticipated that capability statements may be included in future releases of this IG.
 
 ##### uk-ps PS Actor Design Principles
- uk-ps PS actors are designed to ensure compliance with IPS and support the [use of patient summaries in Australia](the-aups.html#aupintendedto). uk-ps PS actor design principles are as follows:
+ uk-ps PS actors are designed to ensure compliance with IPS and support the [use of patient summaries in Australia](the-ukps.html#aupintendedto). uk-ps PS actor design principles are as follows:
 * uk-ps PS actors:
   * **SHALL** inherit the narrative conformance requirements from uk-ps Core and IPS including Missing Data, Empty Sections, Known Absence of Data
   * **SHALL** inherit IPS document requirements (see [uk-ps PS Resource Profile Approach](general-guidance.html#resource-profile-approach))
@@ -204,7 +204,7 @@ The uk-ps PS shares the same structure as IPS and contains sections that can inc
 
 The uk-ps PS identifies a number of [terminologies](terminology.html) as *Must Support* for uk-ps PS consumers and producers. Primary terminologies used in this specification include [SNOMED CT Australian Edition (SNOMED CT-uk-ps)](https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#snomed-ct-australian-edition) for clinical concepts (e.g. allergies, problems, procedures, medicines), LOINC for observation codes (e.g. pathology results and vital signs), UCUM for units of measure,  ISO 3166 for countries, PBS Item codes for medicines, Australian Immunisation Register codes for vaccines, and FHIR defined CodeSystems.
 
-Within [the uk-ps PS](the-aups.html) context (i.e. the Australian healthcare context), the Australian localised value sets, developed and published by the [National Clinical Terminology Service](https://www.healthterminologies.gov.au) (NCTS) and the HL7 uk-ps FHIR Working Group are preferred over IPS value sets to support the consumer on their healthcare journey in the uk-ps healthcare context.
+Within [the uk-ps PS](the-ukps.html) context (i.e. the Australian healthcare context), the Australian localised value sets, developed and published by the [National Clinical Terminology Service](https://www.healthterminologies.gov.au) (NCTS) and the HL7 uk-ps FHIR Working Group are preferred over IPS value sets to support the consumer on their healthcare journey in the uk-ps healthcare context.
 
 In an IPS context, IPS proposes that to support interoperability of IPS content between organisations that use different SNOMED CT value set content, a 'common proximal ancestor' strategy is used. See IPS [Structuring Terminology Choices](https://hl7.org/fhir/uv/ips/STU2/General-Principles.html#structuring-terminology-choices) for more information.
  

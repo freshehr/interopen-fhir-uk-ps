@@ -50,6 +50,3 @@ This guide is divided into several pages which are listed at the top of each pag
   - [License and Legal](license.html): This page outlines the license and legal requirements for material in UK PS.
 - [Change Log](changes.html): This page documents the changes across versions of this guide.
 
-### Collaboration
-This guide is the product of collaborative work undertaken with participants from:
-Primary Editors: {{TBD}}.

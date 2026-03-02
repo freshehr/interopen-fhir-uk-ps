@@ -35,6 +35,6 @@ All the profile information for the {{site.data.fhir.ig.title}} in a single CSV 
 
 The following link to the ImplementationGuide resource defines the technical details of this publication, including dependencies and publishing parameters:
 
-- [XML](ImplementationGuide-hl7.fhir.au.ps.xml) 
-- [JSON](ImplementationGuide-hl7.fhir.au.ps.json)
-- [TTL](ImplementationGuide-hl7.fhir.au.ps.ttl)
+- [XML](ImplementationGuide-hl7.fhir.uk.ps.xml) 
+- [JSON](ImplementationGuide-hl7.fhir.uk.ps.json)
+- [TTL](ImplementationGuide-hl7.fhir.uk.ps.ttl)
