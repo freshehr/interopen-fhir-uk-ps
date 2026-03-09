@@ -7,7 +7,6 @@
       "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"
     ]
   },
-  "name":"uk-ps-AllergyIntolerance",
   "identifier": [
     {
       "system": "http://test-nhs-scr-ips.com/allergy",

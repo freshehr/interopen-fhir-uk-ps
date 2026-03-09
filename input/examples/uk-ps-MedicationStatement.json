@@ -3,19 +3,17 @@
     "id": "be80ee95-5d08-4e61-8f65-237833b0dc2e",
     "meta": {
         "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement",
+            "https://fhir.hl7.org.uk/ps/StructureDefinition/uk-ps-MedicationStatement",
             "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"
         ]
     },
-    "name":"uk-ps-MedicationStatement",
-
     "contained": [
         {
             "resourceType": "Medication",
             "id": "med",
             "meta": {
                 "profile": [
-                    "https://fhir.hl7.org.uk/StructureDefinition/uk-ps-Medication",
+                    "https://fhir.hl7.org.uk/ps/StructureDefinition/uk-ps-Medication",
                     "http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"
                 ]
             },

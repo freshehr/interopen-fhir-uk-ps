@@ -7,6 +7,7 @@
             "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"
         ]
     },
+    "fullUrl" :"urn:uuid:92bf81ec-eed1-4105-ab1b-4e9ae84e4443",
     "identifier": [
         {
             "extension": [

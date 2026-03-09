@@ -29,7 +29,7 @@
 
 **Example:**
 
-* [AllergyIntolerance/uk-ps-AllergyIntolerance](AllergyIntolerance-uk-ps-AllergyIntolerance.html)
+* [AllergyIntolerance/uk-ps-AllergyIntolerance](input/examples/uk-ps-AllergyIntolerance.html)
 * [Example HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Allergies.html)
 
 

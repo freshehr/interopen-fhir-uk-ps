@@ -39,5 +39,5 @@ NOTE: The UK Core profile specifies that the "derivedFrom" should be provided, w
 
 **Example:**
 
-* [Example FHIR MedicationStatement](examples/MedicationStatement.json)
+* [Example FHIR MedicationStatement](input/examples/uk-ps-MedicationStatement.json)
 * [Example HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Medications.html)
